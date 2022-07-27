@@ -1,0 +1,1039 @@
+{
+    "uid": "a7f58438-f330-4114-a1d9-3b66b696f936",
+    "name": "2_Default_Xgboost",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "building_type_Marina",
+                "building_type_Library",
+                "building_type_1",
+                "roof_shape_1",
+                "mwfrs_WallXbracingMomentFrame",
+                "mwfrs_1",
+                "foundation_type_1",
+                "wall_structure_ConcretepiersinsulatedconcreteformICFwalls",
+                "wall_structure_1",
+                "wall_substrate_Woodsheathing",
+                "wall_substrate_1",
+                "wall_cladding_VinylSidingstandardStone",
+                "wall_cladding_WoodBoardsWoodShakeShinglestonewall",
+                "wall_cladding_VinylSidingstandardWoodBoards",
+                "wall_cladding_PlywoodSidingStone",
+                "wall_cladding_AluminumsidingEIFS",
+                "wall_cladding_WoodBoardsstone",
+                "wall_cladding_BrickFiberCementBoardPlywoodSiding",
+                "wall_cladding_BrickPlywoodSidingVinylSidingunknown",
+                "wall_cladding_BrickEIFS",
+                "wall_cladding_1",
+                "roof_system_SteelcoldformedSteeljoists",
+                "roof_system_SteelhotrolledSteeljoists",
+                "roof_system_WoodtrussesWoodrafter",
+                "roof_system_1",
+                "roof_substrate_type_Plywood",
+                "roof_substrate_type_1",
+                "roof_cover_Metalcorrugatedconcretetopping",
+                "roof_cover_BuiltupwithGravel",
+                "roof_cover_1"
+            ],
+            "scale_y": {
+                "scale": [
+                    0.4351173793654718
+                ],
+                "mean": [
+                    1.068343117970351
+                ],
+                "var": [
+                    0.1893271338258759
+                ],
+                "n_samples_seen": 470,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "building_type_Marina": [
+                        "remove_column"
+                    ],
+                    "building_type_Library": [
+                        "remove_column"
+                    ],
+                    "building_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_shape_1": [
+                        "remove_column"
+                    ],
+                    "mwfrs_WallXbracingMomentFrame": [
+                        "remove_column"
+                    ],
+                    "mwfrs_1": [
+                        "remove_column"
+                    ],
+                    "foundation_type_1": [
+                        "remove_column"
+                    ],
+                    "wall_structure_ConcretepiersinsulatedconcreteformICFwalls": [
+                        "remove_column"
+                    ],
+                    "wall_structure_1": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_Woodsheathing": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_1": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsWoodShakeShinglestonewall": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardWoodBoards": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_PlywoodSidingStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_AluminumsidingEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsstone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickFiberCementBoardPlywoodSiding": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickPlywoodSidingVinylSidingunknown": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_1": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelcoldformedSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelhotrolledSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_WoodtrussesWoodrafter": [
+                        "remove_column"
+                    ],
+                    "roof_system_1": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_Plywood": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_cover_Metalcorrugatedconcretetopping": [
+                        "remove_column"
+                    ],
+                    "roof_cover_BuiltupwithGravel": [
+                        "remove_column"
+                    ],
+                    "roof_cover_1": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "building_type_Marina",
+                "building_type_Library",
+                "building_type_1",
+                "roof_shape_1",
+                "mwfrs_WallXbracingMomentFrame",
+                "mwfrs_1",
+                "foundation_type_1",
+                "wall_structure_ConcretepiersinsulatedconcreteformICFwalls",
+                "wall_structure_1",
+                "wall_substrate_Woodsheathing",
+                "wall_substrate_1",
+                "wall_cladding_VinylSidingstandardStone",
+                "wall_cladding_WoodBoardsWoodShakeShinglestonewall",
+                "wall_cladding_VinylSidingstandardWoodBoards",
+                "wall_cladding_PlywoodSidingStone",
+                "wall_cladding_AluminumsidingEIFS",
+                "wall_cladding_WoodBoardsstone",
+                "wall_cladding_BrickFiberCementBoardPlywoodSiding",
+                "wall_cladding_BrickPlywoodSidingVinylSidingunknown",
+                "wall_cladding_BrickEIFS",
+                "wall_cladding_1",
+                "roof_system_SteelcoldformedSteeljoists",
+                "roof_system_SteelhotrolledSteeljoists",
+                "roof_system_WoodtrussesWoodrafter",
+                "roof_system_1",
+                "roof_substrate_type_Plywood",
+                "roof_substrate_type_1",
+                "roof_cover_Metalcorrugatedconcretetopping",
+                "roof_cover_BuiltupwithGravel",
+                "roof_cover_1"
+            ],
+            "scale_y": {
+                "scale": [
+                    0.43357573756607504
+                ],
+                "mean": [
+                    1.0679551997644063
+                ],
+                "var": [
+                    0.18798792020596597
+                ],
+                "n_samples_seen": 470,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "building_type_Marina": [
+                        "remove_column"
+                    ],
+                    "building_type_Library": [
+                        "remove_column"
+                    ],
+                    "building_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_shape_1": [
+                        "remove_column"
+                    ],
+                    "mwfrs_WallXbracingMomentFrame": [
+                        "remove_column"
+                    ],
+                    "mwfrs_1": [
+                        "remove_column"
+                    ],
+                    "foundation_type_1": [
+                        "remove_column"
+                    ],
+                    "wall_structure_ConcretepiersinsulatedconcreteformICFwalls": [
+                        "remove_column"
+                    ],
+                    "wall_structure_1": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_Woodsheathing": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_1": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsWoodShakeShinglestonewall": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardWoodBoards": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_PlywoodSidingStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_AluminumsidingEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsstone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickFiberCementBoardPlywoodSiding": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickPlywoodSidingVinylSidingunknown": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_1": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelcoldformedSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelhotrolledSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_WoodtrussesWoodrafter": [
+                        "remove_column"
+                    ],
+                    "roof_system_1": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_Plywood": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_cover_Metalcorrugatedconcretetopping": [
+                        "remove_column"
+                    ],
+                    "roof_cover_BuiltupwithGravel": [
+                        "remove_column"
+                    ],
+                    "roof_cover_1": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "building_type_Marina",
+                "building_type_Library",
+                "building_type_1",
+                "roof_shape_1",
+                "mwfrs_WallXbracingMomentFrame",
+                "mwfrs_1",
+                "foundation_type_1",
+                "wall_structure_ConcretepiersinsulatedconcreteformICFwalls",
+                "wall_structure_1",
+                "wall_substrate_Woodsheathing",
+                "wall_substrate_1",
+                "wall_cladding_VinylSidingstandardStone",
+                "wall_cladding_WoodBoardsWoodShakeShinglestonewall",
+                "wall_cladding_VinylSidingstandardWoodBoards",
+                "wall_cladding_PlywoodSidingStone",
+                "wall_cladding_AluminumsidingEIFS",
+                "wall_cladding_WoodBoardsstone",
+                "wall_cladding_BrickFiberCementBoardPlywoodSiding",
+                "wall_cladding_BrickPlywoodSidingVinylSidingunknown",
+                "wall_cladding_BrickEIFS",
+                "wall_cladding_1",
+                "roof_system_SteelcoldformedSteeljoists",
+                "roof_system_SteelhotrolledSteeljoists",
+                "roof_system_WoodtrussesWoodrafter",
+                "roof_system_1",
+                "roof_substrate_type_Plywood",
+                "roof_substrate_type_1",
+                "roof_cover_Metalcorrugatedconcretetopping",
+                "roof_cover_BuiltupwithGravel",
+                "roof_cover_1"
+            ],
+            "scale_y": {
+                "scale": [
+                    0.4315714022946746
+                ],
+                "mean": [
+                    1.0495993770942396
+                ],
+                "var": [
+                    0.18625387527859188
+                ],
+                "n_samples_seen": 470,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "building_type_Marina": [
+                        "remove_column"
+                    ],
+                    "building_type_Library": [
+                        "remove_column"
+                    ],
+                    "building_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_shape_1": [
+                        "remove_column"
+                    ],
+                    "mwfrs_WallXbracingMomentFrame": [
+                        "remove_column"
+                    ],
+                    "mwfrs_1": [
+                        "remove_column"
+                    ],
+                    "foundation_type_1": [
+                        "remove_column"
+                    ],
+                    "wall_structure_ConcretepiersinsulatedconcreteformICFwalls": [
+                        "remove_column"
+                    ],
+                    "wall_structure_1": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_Woodsheathing": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_1": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsWoodShakeShinglestonewall": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardWoodBoards": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_PlywoodSidingStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_AluminumsidingEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsstone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickFiberCementBoardPlywoodSiding": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickPlywoodSidingVinylSidingunknown": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_1": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelcoldformedSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelhotrolledSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_WoodtrussesWoodrafter": [
+                        "remove_column"
+                    ],
+                    "roof_system_1": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_Plywood": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_cover_Metalcorrugatedconcretetopping": [
+                        "remove_column"
+                    ],
+                    "roof_cover_BuiltupwithGravel": [
+                        "remove_column"
+                    ],
+                    "roof_cover_1": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "building_type_Marina",
+                "building_type_Library",
+                "building_type_1",
+                "roof_shape_1",
+                "mwfrs_WallXbracingMomentFrame",
+                "mwfrs_1",
+                "foundation_type_1",
+                "wall_structure_ConcretepiersinsulatedconcreteformICFwalls",
+                "wall_structure_1",
+                "wall_substrate_Woodsheathing",
+                "wall_substrate_1",
+                "wall_cladding_VinylSidingstandardStone",
+                "wall_cladding_WoodBoardsWoodShakeShinglestonewall",
+                "wall_cladding_VinylSidingstandardWoodBoards",
+                "wall_cladding_PlywoodSidingStone",
+                "wall_cladding_AluminumsidingEIFS",
+                "wall_cladding_WoodBoardsstone",
+                "wall_cladding_BrickFiberCementBoardPlywoodSiding",
+                "wall_cladding_BrickPlywoodSidingVinylSidingunknown",
+                "wall_cladding_BrickEIFS",
+                "wall_cladding_1",
+                "roof_system_SteelcoldformedSteeljoists",
+                "roof_system_SteelhotrolledSteeljoists",
+                "roof_system_WoodtrussesWoodrafter",
+                "roof_system_1",
+                "roof_substrate_type_Plywood",
+                "roof_substrate_type_1",
+                "roof_cover_Metalcorrugatedconcretetopping",
+                "roof_cover_BuiltupwithGravel",
+                "roof_cover_1"
+            ],
+            "scale_y": {
+                "scale": [
+                    0.4290683907200567
+                ],
+                "mean": [
+                    1.064930021969803
+                ],
+                "var": [
+                    0.18409968391509926
+                ],
+                "n_samples_seen": 471,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "building_type_Marina": [
+                        "remove_column"
+                    ],
+                    "building_type_Library": [
+                        "remove_column"
+                    ],
+                    "building_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_shape_1": [
+                        "remove_column"
+                    ],
+                    "mwfrs_WallXbracingMomentFrame": [
+                        "remove_column"
+                    ],
+                    "mwfrs_1": [
+                        "remove_column"
+                    ],
+                    "foundation_type_1": [
+                        "remove_column"
+                    ],
+                    "wall_structure_ConcretepiersinsulatedconcreteformICFwalls": [
+                        "remove_column"
+                    ],
+                    "wall_structure_1": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_Woodsheathing": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_1": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsWoodShakeShinglestonewall": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardWoodBoards": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_PlywoodSidingStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_AluminumsidingEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsstone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickFiberCementBoardPlywoodSiding": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickPlywoodSidingVinylSidingunknown": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_1": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelcoldformedSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelhotrolledSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_WoodtrussesWoodrafter": [
+                        "remove_column"
+                    ],
+                    "roof_system_1": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_Plywood": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_cover_Metalcorrugatedconcretetopping": [
+                        "remove_column"
+                    ],
+                    "roof_cover_BuiltupwithGravel": [
+                        "remove_column"
+                    ],
+                    "roof_cover_1": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "remove_columns": [
+                "building_type_Marina",
+                "building_type_Library",
+                "building_type_1",
+                "roof_shape_1",
+                "mwfrs_WallXbracingMomentFrame",
+                "mwfrs_1",
+                "foundation_type_1",
+                "wall_structure_ConcretepiersinsulatedconcreteformICFwalls",
+                "wall_structure_1",
+                "wall_substrate_Woodsheathing",
+                "wall_substrate_1",
+                "wall_cladding_VinylSidingstandardStone",
+                "wall_cladding_WoodBoardsWoodShakeShinglestonewall",
+                "wall_cladding_VinylSidingstandardWoodBoards",
+                "wall_cladding_PlywoodSidingStone",
+                "wall_cladding_AluminumsidingEIFS",
+                "wall_cladding_WoodBoardsstone",
+                "wall_cladding_BrickFiberCementBoardPlywoodSiding",
+                "wall_cladding_BrickPlywoodSidingVinylSidingunknown",
+                "wall_cladding_BrickEIFS",
+                "wall_cladding_1",
+                "roof_system_SteelcoldformedSteeljoists",
+                "roof_system_SteelhotrolledSteeljoists",
+                "roof_system_WoodtrussesWoodrafter",
+                "roof_system_1",
+                "roof_substrate_type_Plywood",
+                "roof_substrate_type_1",
+                "roof_cover_Metalcorrugatedconcretetopping",
+                "roof_cover_BuiltupwithGravel",
+                "roof_cover_1"
+            ],
+            "scale_y": {
+                "scale": [
+                    0.4306161692304617
+                ],
+                "mean": [
+                    1.056761265102944
+                ],
+                "var": [
+                    0.18543028520271765
+                ],
+                "n_samples_seen": 471,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "building_type_Marina": [
+                        "remove_column"
+                    ],
+                    "building_type_Library": [
+                        "remove_column"
+                    ],
+                    "building_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_shape_1": [
+                        "remove_column"
+                    ],
+                    "mwfrs_WallXbracingMomentFrame": [
+                        "remove_column"
+                    ],
+                    "mwfrs_1": [
+                        "remove_column"
+                    ],
+                    "foundation_type_1": [
+                        "remove_column"
+                    ],
+                    "wall_structure_ConcretepiersinsulatedconcreteformICFwalls": [
+                        "remove_column"
+                    ],
+                    "wall_structure_1": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_Woodsheathing": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_1": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsWoodShakeShinglestonewall": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardWoodBoards": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_PlywoodSidingStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_AluminumsidingEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsstone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickFiberCementBoardPlywoodSiding": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickPlywoodSidingVinylSidingunknown": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_1": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelcoldformedSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelhotrolledSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_WoodtrussesWoodrafter": [
+                        "remove_column"
+                    ],
+                    "roof_system_1": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_Plywood": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_cover_Metalcorrugatedconcretetopping": [
+                        "remove_column"
+                    ],
+                    "roof_cover_BuiltupwithGravel": [
+                        "remove_column"
+                    ],
+                    "roof_cover_1": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.5.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "0de7aa82-2dbc-4d42-bfea-1cf8ffca2c97",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 2,
+                "eval_metric": "rmse",
+                "explain_level": 1
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 28
+        },
+        {
+            "library_version": "1.5.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "95915f89-0364-4fbd-afcd-3120a00dfe54",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 2,
+                "eval_metric": "rmse",
+                "explain_level": 1
+            },
+            "name": "learner_fold_1",
+            "best_ntree_limit": 27
+        },
+        {
+            "library_version": "1.5.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "a35a8570-591c-42ac-b4a4-6fdd905dc845",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 2,
+                "eval_metric": "rmse",
+                "explain_level": 1
+            },
+            "name": "learner_fold_2",
+            "best_ntree_limit": 106
+        },
+        {
+            "library_version": "1.5.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "61dd2983-cf41-461c-a731-44e6aa074cd9",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 2,
+                "eval_metric": "rmse",
+                "explain_level": 1
+            },
+            "name": "learner_fold_3",
+            "best_ntree_limit": 38
+        },
+        {
+            "library_version": "1.5.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "faf13010-8f7c-4a6a-80e8-8c460dea87ae",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 2,
+                "eval_metric": "rmse",
+                "explain_level": 1
+            },
+            "name": "learner_fold_4",
+            "best_ntree_limit": 56
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "building_type_Marina": [
+                    "remove_column"
+                ],
+                "building_type_Library": [
+                    "remove_column"
+                ],
+                "building_type_1": [
+                    "remove_column"
+                ],
+                "roof_shape_1": [
+                    "remove_column"
+                ],
+                "mwfrs_WallXbracingMomentFrame": [
+                    "remove_column"
+                ],
+                "mwfrs_1": [
+                    "remove_column"
+                ],
+                "foundation_type_1": [
+                    "remove_column"
+                ],
+                "wall_structure_ConcretepiersinsulatedconcreteformICFwalls": [
+                    "remove_column"
+                ],
+                "wall_structure_1": [
+                    "remove_column"
+                ],
+                "wall_substrate_Woodsheathing": [
+                    "remove_column"
+                ],
+                "wall_substrate_1": [
+                    "remove_column"
+                ],
+                "wall_cladding_VinylSidingstandardStone": [
+                    "remove_column"
+                ],
+                "wall_cladding_WoodBoardsWoodShakeShinglestonewall": [
+                    "remove_column"
+                ],
+                "wall_cladding_VinylSidingstandardWoodBoards": [
+                    "remove_column"
+                ],
+                "wall_cladding_PlywoodSidingStone": [
+                    "remove_column"
+                ],
+                "wall_cladding_AluminumsidingEIFS": [
+                    "remove_column"
+                ],
+                "wall_cladding_WoodBoardsstone": [
+                    "remove_column"
+                ],
+                "wall_cladding_BrickFiberCementBoardPlywoodSiding": [
+                    "remove_column"
+                ],
+                "wall_cladding_BrickPlywoodSidingVinylSidingunknown": [
+                    "remove_column"
+                ],
+                "wall_cladding_BrickEIFS": [
+                    "remove_column"
+                ],
+                "wall_cladding_1": [
+                    "remove_column"
+                ],
+                "roof_system_SteelcoldformedSteeljoists": [
+                    "remove_column"
+                ],
+                "roof_system_SteelhotrolledSteeljoists": [
+                    "remove_column"
+                ],
+                "roof_system_WoodtrussesWoodrafter": [
+                    "remove_column"
+                ],
+                "roof_system_1": [
+                    "remove_column"
+                ],
+                "roof_substrate_type_Plywood": [
+                    "remove_column"
+                ],
+                "roof_substrate_type_1": [
+                    "remove_column"
+                ],
+                "roof_cover_Metalcorrugatedconcretetopping": [
+                    "remove_column"
+                ],
+                "roof_cover_BuiltupwithGravel": [
+                    "remove_column"
+                ],
+                "roof_cover_1": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "X_path": "Perform_regression/X.data",
+            "y_path": "Perform_regression/y.data",
+            "results_path": "Perform_regression"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "objective": "reg:squarederror",
+            "eta": 0.075,
+            "max_depth": 6,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 2,
+            "eval_metric": "rmse",
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 1,
+        "name": "2_Default_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "2_Default_Xgboost/learner_fold_0.xgboost",
+        "2_Default_Xgboost/learner_fold_1.xgboost",
+        "2_Default_Xgboost/learner_fold_2.xgboost",
+        "2_Default_Xgboost/learner_fold_3.xgboost",
+        "2_Default_Xgboost/learner_fold_4.xgboost"
+    ],
+    "predictions_fname": "2_Default_Xgboost/predictions_out_of_folds.csv",
+    "metric_name": "rmse",
+    "final_loss": 0.9350925950290554,
+    "train_time": 12.794994115829468,
+    "is_stacked": false,
+    "single_prediction_time": 0.1012270450592041
+}

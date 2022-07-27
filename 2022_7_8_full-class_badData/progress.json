@@ -1,0 +1,4254 @@
+{
+    "fit_level": "finished",
+    "time_controller": {
+        "total_time_limit": 3600,
+        "model_time_limit": null,
+        "steps": [
+            "simple_algorithms",
+            "default_algorithms",
+            "mix_encoding",
+            "golden_features",
+            "insert_random_feature",
+            "features_selection",
+            "hill_climbing_1",
+            "hill_climbing_2",
+            "ensemble",
+            "stack",
+            "ensemble_stacked"
+        ],
+        "algorithms": [
+            "Baseline",
+            "Linear",
+            "Decision Tree",
+            "Random Forest",
+            "Xgboost",
+            "Neural Network"
+        ],
+        "spend": [
+            {
+                "model_name": "prepare_data",
+                "model_type": "prepare_data",
+                "fit_level": "prepare_data",
+                "train_time": 0.10536313056945801
+            },
+            {
+                "model_name": "1_Baseline",
+                "model_type": "Baseline",
+                "fit_level": "simple_algorithms",
+                "train_time": 24.10904622077942
+            },
+            {
+                "model_name": "2_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "simple_algorithms",
+                "train_time": 41.403918743133545
+            },
+            {
+                "model_name": "3_Linear",
+                "model_type": "Linear",
+                "fit_level": "simple_algorithms",
+                "train_time": 36.425163984298706
+            },
+            {
+                "model_name": "4_Default_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "default_algorithms",
+                "train_time": 50.850245237350464
+            },
+            {
+                "model_name": "5_Default_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "default_algorithms",
+                "train_time": 17.302370071411133
+            },
+            {
+                "model_name": "6_Default_RandomForest",
+                "model_type": "Random Forest",
+                "fit_level": "default_algorithms",
+                "train_time": 45.68010497093201
+            },
+            {
+                "model_name": "4_Default_Xgboost_categorical_mix",
+                "model_type": "Xgboost",
+                "fit_level": "mix_encoding",
+                "train_time": 41.119625091552734
+            },
+            {
+                "model_name": "6_Default_RandomForest_GoldenFeatures",
+                "model_type": "Random Forest",
+                "fit_level": "golden_features",
+                "train_time": 58.72642397880554
+            },
+            {
+                "model_name": "4_Default_Xgboost_GoldenFeatures",
+                "model_type": "Xgboost",
+                "fit_level": "golden_features",
+                "train_time": 76.87421894073486
+            },
+            {
+                "model_name": "4_Default_Xgboost_categorical_mix_GoldenFeatures",
+                "model_type": "Xgboost",
+                "fit_level": "golden_features",
+                "train_time": 65.7778422832489
+            },
+            {
+                "model_name": "6_Default_RandomForest_RandomFeature",
+                "model_type": "Random Forest",
+                "fit_level": "insert_random_feature",
+                "train_time": 54.643683195114136
+            },
+            {
+                "model_name": "6_Default_RandomForest_SelectedFeatures",
+                "model_type": "Random Forest",
+                "fit_level": "features_selection",
+                "train_time": 74.54168725013733
+            },
+            {
+                "model_name": "4_Default_Xgboost_GoldenFeatures_SelectedFeatures",
+                "model_type": "Xgboost",
+                "fit_level": "features_selection",
+                "train_time": 94.05919218063354
+            },
+            {
+                "model_name": "5_Default_NeuralNetwork_SelectedFeatures",
+                "model_type": "Neural Network",
+                "fit_level": "features_selection",
+                "train_time": 66.7055230140686
+            },
+            {
+                "model_name": "7_RandomForest",
+                "model_type": "Random Forest",
+                "fit_level": "hill_climbing_1",
+                "train_time": 98.83814692497253
+            },
+            {
+                "model_name": "8_Xgboost_GoldenFeatures_SelectedFeatures",
+                "model_type": "Xgboost",
+                "fit_level": "hill_climbing_1",
+                "train_time": 117.06462407112122
+            },
+            {
+                "model_name": "9_RandomForest_SelectedFeatures",
+                "model_type": "Random Forest",
+                "fit_level": "hill_climbing_1",
+                "train_time": 118.54120230674744
+            },
+            {
+                "model_name": "10_Xgboost_GoldenFeatures",
+                "model_type": "Xgboost",
+                "fit_level": "hill_climbing_1",
+                "train_time": 141.56687998771667
+            },
+            {
+                "model_name": "11_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "hill_climbing_1",
+                "train_time": 133.2024440765381
+            },
+            {
+                "model_name": "12_DecisionTree",
+                "model_type": "Decision Tree",
+                "fit_level": "hill_climbing_1",
+                "train_time": 152.3065700531006
+            },
+            {
+                "model_name": "13_NeuralNetwork_SelectedFeatures",
+                "model_type": "Neural Network",
+                "fit_level": "hill_climbing_1",
+                "train_time": 123.26132297515869
+            },
+            {
+                "model_name": "14_NeuralNetwork_SelectedFeatures",
+                "model_type": "Neural Network",
+                "fit_level": "hill_climbing_1",
+                "train_time": 123.75479698181152
+            },
+            {
+                "model_name": "15_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "hill_climbing_1",
+                "train_time": 123.6659152507782
+            },
+            {
+                "model_name": "16_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "hill_climbing_1",
+                "train_time": 127.24642419815063
+            },
+            {
+                "model_name": "Ensemble",
+                "model_type": "Ensemble",
+                "fit_level": "ensemble",
+                "train_time": 1.2351758480072021
+            }
+        ],
+        "is_hill_climbing": true,
+        "is_stacking": true
+    },
+    "all_params": {
+        "simple_algorithms": [
+            {
+                "additional": {
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Baseline",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "1_Baseline",
+                "status": "trained",
+                "final_loss": 1.5019794582758008,
+                "train_time": 24.418787002563477,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "criterion": "gini",
+                    "max_depth": 3,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "2_DecisionTree",
+                "status": "trained",
+                "final_loss": 0.4247811890802977,
+                "train_time": 42.03308081626892,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Linear",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "3_Linear",
+                "status": "trained",
+                "final_loss": 0.6853907564993542,
+                "train_time": 37.088839292526245,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            }
+        ],
+        "default_algorithms": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "4_Default_Xgboost",
+                "status": "trained",
+                "final_loss": 0.3032443036676882,
+                "train_time": 51.56079602241516,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "5_Default_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.9530267401804069,
+                "train_time": 17.814280033111572,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "gini",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "6_Default_RandomForest",
+                "status": "trained",
+                "final_loss": 0.29089104513294384,
+                "train_time": 46.39482307434082,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            }
+        ],
+        "mix_encoding": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "4_Default_Xgboost_categorical_mix",
+                "status": "trained",
+                "final_loss": 0.3056420645907811,
+                "train_time": 41.62241172790527,
+                "data_type": "original_categorical_mix",
+                "max_time_for_learner": 72.0
+            }
+        ],
+        "golden_features": [
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "golden_features": {
+                        "results_path": "2022_7_8_full-cat_norm-tts-class",
+                        "ml_task": "multiclass_classification",
+                        "n_jobs": -1
+                    }
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "gini",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "6_Default_RandomForest_GoldenFeatures",
+                "status": "trained",
+                "final_loss": 0.3118928547872874,
+                "train_time": 59.48966383934021,
+                "data_type": "original_golden_features",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "golden_features": {
+                        "results_path": "2022_7_8_full-cat_norm-tts-class",
+                        "ml_task": "multiclass_classification",
+                        "n_jobs": -1
+                    }
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "4_Default_Xgboost_GoldenFeatures",
+                "status": "trained",
+                "final_loss": 0.30205615485445725,
+                "train_time": 77.63950729370117,
+                "data_type": "original_golden_features",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_onehot"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "golden_features": {
+                        "results_path": "2022_7_8_full-cat_norm-tts-class",
+                        "ml_task": "multiclass_classification",
+                        "n_jobs": -1
+                    }
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "4_Default_Xgboost_categorical_mix_GoldenFeatures",
+                "status": "trained",
+                "final_loss": 0.30236529842698695,
+                "train_time": 66.33735632896423,
+                "data_type": "original_categorical_mix_golden_features",
+                "max_time_for_learner": 72.0
+            }
+        ],
+        "insert_random_feature": [
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "add_random_feature": true
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "gini",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 1
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 1,
+                "name": "6_Default_RandomForest_RandomFeature",
+                "status": "trained",
+                "final_loss": 0.2995588675201442,
+                "train_time": 55.16079115867615,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            }
+        ],
+        "features_selection": [
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "gini",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "6_Default_RandomForest_SelectedFeatures",
+                "status": "trained",
+                "final_loss": 0.29645996316531603,
+                "train_time": 75.10891437530518,
+                "data_type": "original_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "golden_features": {
+                        "results_path": "2022_7_8_full-cat_norm-tts-class",
+                        "ml_task": "multiclass_classification",
+                        "n_jobs": -1
+                    },
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "4_Default_Xgboost_GoldenFeatures_SelectedFeatures",
+                "status": "trained",
+                "final_loss": 0.2926669313054771,
+                "train_time": 94.73605036735535,
+                "data_type": "original_golden_features_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "5_Default_NeuralNetwork_SelectedFeatures",
+                "status": "trained",
+                "final_loss": 0.5280238128581217,
+                "train_time": 67.1537230014801,
+                "data_type": "original_features_selection",
+                "max_time_for_learner": 72.0
+            }
+        ],
+        "hill_climbing_1": [
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "entropy",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "7_RandomForest",
+                "status": "trained",
+                "final_loss": 0.2951066119136752,
+                "train_time": 99.584716796875,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "golden_features": {
+                        "results_path": "2022_7_8_full-cat_norm-tts-class",
+                        "ml_task": "multiclass_classification",
+                        "n_jobs": -1
+                    },
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 0.9,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "8_Xgboost_GoldenFeatures_SelectedFeatures",
+                "status": "trained",
+                "final_loss": 0.2864312224976586,
+                "train_time": 117.83089089393616,
+                "data_type": "original_golden_features_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "entropy",
+                    "max_features": 0.9,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "9_RandomForest_SelectedFeatures",
+                "status": "trained",
+                "final_loss": 0.323527985384183,
+                "train_time": 119.07014846801758,
+                "data_type": "original_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "golden_features": {
+                        "results_path": "2022_7_8_full-cat_norm-tts-class",
+                        "ml_task": "multiclass_classification",
+                        "n_jobs": -1
+                    }
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 0.9,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "10_Xgboost_GoldenFeatures",
+                "status": "trained",
+                "final_loss": 0.2977296389762086,
+                "train_time": 142.2887420654297,
+                "data_type": "original_golden_features",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "criterion": "gini",
+                    "max_depth": 2,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "11_DecisionTree",
+                "status": "trained",
+                "final_loss": 0.6682400431524803,
+                "train_time": 133.83060097694397,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 1,
+                    "train_cant_improve_limit": 0,
+                    "max_steps": 1,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Decision Tree",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "criterion": "gini",
+                    "max_depth": 4,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "12_DecisionTree",
+                "status": "trained",
+                "final_loss": 0.5355361392345852,
+                "train_time": 152.96368217468262,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 16,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "13_NeuralNetwork_SelectedFeatures",
+                "status": "trained",
+                "final_loss": 0.5402216558268332,
+                "train_time": 123.6976330280304,
+                "data_type": "original_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 64,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "14_NeuralNetwork_SelectedFeatures",
+                "status": "trained",
+                "final_loss": 0.7053516420665394,
+                "train_time": 124.20351195335388,
+                "data_type": "original_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 16,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "15_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 1.1899342393042374,
+                "train_time": 124.18291640281677,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 64,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "16_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            }
+        ],
+        "hill_climbing_2": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "golden_features": {
+                        "results_path": "2022_7_8_full-cat_norm-tts-class",
+                        "ml_task": "multiclass_classification",
+                        "n_jobs": -1
+                    },
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 5,
+                    "subsample": 1.0,
+                    "colsample_bytree": 0.9,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "17_Xgboost_GoldenFeatures_SelectedFeatures",
+                "status": "error",
+                "final_loss": null,
+                "train_time": null,
+                "data_type": "original_golden_features_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "gini",
+                    "max_features": 0.8,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "18_RandomForest",
+                "status": "skipped",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "gini",
+                    "max_features": 1.0,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "19_RandomForest",
+                "status": "skipped",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "golden_features": {
+                        "results_path": "2022_7_8_full-cat_norm-tts-class",
+                        "ml_task": "multiclass_classification",
+                        "n_jobs": -1
+                    },
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "objective": "multi:softprob",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 5,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 4,
+                    "eval_metric": "mlogloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "20_Xgboost_GoldenFeatures_SelectedFeatures",
+                "status": "skipped",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original_golden_features_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "entropy",
+                    "max_features": 0.8,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "21_RandomForest",
+                "status": "skipped",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "trees_in_step": 100,
+                    "train_cant_improve_limit": 1,
+                    "min_steps": 1,
+                    "max_steps": 50,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "hazards_present": [
+                            "categorical_to_int"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median"
+                        ],
+                        "year_built": [
+                            "na_fill_median"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification"
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Random Forest",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "criterion": "entropy",
+                    "max_features": 1.0,
+                    "min_samples_split": 30,
+                    "max_depth": 4,
+                    "seed": 6,
+                    "eval_metric_name": "logloss",
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "22_RandomForest",
+                "status": "skipped",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.01,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "23_NeuralNetwork_SelectedFeatures",
+                "status": "skipped",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.08,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "24_NeuralNetwork_SelectedFeatures",
+                "status": "skipped",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 16,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.01,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "25_NeuralNetwork_SelectedFeatures",
+                "status": "skipped",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original_features_selection",
+                "max_time_for_learner": 72.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "Unnamed0": [
+                            "scale_normal"
+                        ],
+                        "Buildinglat": [
+                            "scale_normal"
+                        ],
+                        "longitude": [
+                            "scale_normal"
+                        ],
+                        "hazards_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wind_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "surge_damage_rating": [
+                            "scale_normal"
+                        ],
+                        "rainwater_ingress_damage_rating": [
+                            "na_fill_median"
+                        ],
+                        "building_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "number_of_stories": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "understory_pct_of_building_footprint": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "year_built": [
+                            "na_fill_median",
+                            "scale_normal"
+                        ],
+                        "roof_shape": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "mwfrs": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "foundation_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_structure": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_substrate": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "wall_cladding": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_system": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_substrate_type": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "roof_cover": [
+                            "na_fill_median",
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "Buildinglong": [
+                            "scale_normal"
+                        ],
+                        "mindist": [
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude",
+                        "categorical_to_int"
+                    ],
+                    "ml_task": "multiclass_classification",
+                    "drop_features": [
+                        "understory_pct_of_building_footprint",
+                        "Buildinglong",
+                        "number_of_stories",
+                        "roof_cover",
+                        "building_type",
+                        "roof_shape",
+                        "wall_cladding",
+                        "wall_structure",
+                        "longitude",
+                        "foundation_type",
+                        "mwfrs",
+                        "year_built",
+                        "random_feature",
+                        "roof_system"
+                    ]
+                },
+                "validation_strategy": {
+                    "validation_type": "kfold",
+                    "k_folds": 5,
+                    "shuffle": true,
+                    "stratify": true,
+                    "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+                    "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+                    "results_path": "2022_7_8_full-cat_norm-tts-class"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "multiclass_classification",
+                    "n_jobs": -1,
+                    "dense_1_size": 16,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.08,
+                    "seed": 5,
+                    "num_class": 5,
+                    "explain_level": 2
+                },
+                "automl_random_state": 1234,
+                "ml_task": "multiclass_classification",
+                "explain_level": 2,
+                "name": "26_NeuralNetwork_SelectedFeatures",
+                "status": "skipped",
+                "final_loss": 1.3296164574178355,
+                "train_time": 127.72976303100586,
+                "data_type": "original_features_selection",
+                "max_time_for_learner": 72.0
+            }
+        ],
+        "ensemble": [
+            {
+                "model_type": "ensemble",
+                "is_stacked": false,
+                "name": "Ensemble",
+                "status": "trained",
+                "final_loss": 0.2591520718788719,
+                "train_time": 1.2351758480072021
+            }
+        ]
+    },
+    "adjust_validation": false
+}

@@ -1,0 +1,13 @@
+feature,mean_importance
+wall_substrate,-2.2204460492503132e-17
+roof_cover,-2.2204460492503132e-17
+roof_shape,0.0
+foundation_type,0.0
+wall_structure,0.0
+roof_system,0.006376194571400595
+Buildinglat,0.012881705395182052
+Buildinglong,0.013767174055911791
+roof_substrate_type,0.017743863091850765
+year_built,0.10248949557413731
+hazards_present,0.1909815142470406
+mindist,0.37734095920239896

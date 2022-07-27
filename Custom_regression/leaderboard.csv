@@ -1,0 +1,35 @@
+name,model_type,metric_type,metric_value,train_time
+1_DecisionTree,Decision Tree,rmse,1.0017644931607828,33.95
+2_Default_LightGBM,LightGBM,rmse,0.9181033842867357,22.17
+3_Default_Xgboost,Xgboost,rmse,0.9124812035615435,30.27
+4_Default_CatBoost,CatBoost,rmse,0.9189067762139171,25.97
+5_Default_RandomForest,Random Forest,rmse,0.9608592107825901,30.81
+3_Default_Xgboost_GoldenFeatures,Xgboost,rmse,0.9297061844073805,47.32
+2_Default_LightGBM_GoldenFeatures,LightGBM,rmse,0.9365864806271678,28.68
+4_Default_CatBoost_GoldenFeatures,CatBoost,rmse,0.9286088165665063,31.76
+3_Default_Xgboost_RandomFeature,Xgboost,rmse,0.9187596238255608,23.86
+3_Default_Xgboost_SelectedFeatures,Xgboost,rmse,0.9282798043071228,17.06
+2_Default_LightGBM_SelectedFeatures,LightGBM,rmse,0.9074794356547331,21.73
+4_Default_CatBoost_SelectedFeatures,CatBoost,rmse,0.903286275371582,11.87
+5_Default_RandomForest_SelectedFeatures,Random Forest,rmse,0.9626603758890944,20.93
+6_CatBoost_SelectedFeatures,CatBoost,rmse,0.9121345207270067,13.88
+7_CatBoost_SelectedFeatures,CatBoost,rmse,0.9108235461405723,12.03
+8_LightGBM_SelectedFeatures,LightGBM,rmse,0.910850115216563,22.61
+9_LightGBM_SelectedFeatures,LightGBM,rmse,0.9147275045421343,25.76
+10_Xgboost,Xgboost,rmse,0.9186217413855361,38.4
+11_LightGBM,LightGBM,rmse,0.9122810326391684,36.95
+12_LightGBM,LightGBM,rmse,0.9118262390796829,37.22
+13_CatBoost,CatBoost,rmse,0.9213368915871237,33.52
+14_CatBoost,CatBoost,rmse,0.9257872149293195,32.89
+15_Xgboost_SelectedFeatures,Xgboost,rmse,0.9010446111552557,284.5
+16_RandomForest,Random Forest,rmse,0.9810281172991311,831.29
+17_RandomForest,Random Forest,rmse,0.9525860398388813,51.85
+18_RandomForest_SelectedFeatures,Random Forest,rmse,0.9765733651169638,25.03
+19_RandomForest_SelectedFeatures,Random Forest,rmse,0.9462244873773591,33.01
+20_DecisionTree,Decision Tree,rmse,1.0348525632574004,54.27
+21_DecisionTree,Decision Tree,rmse,1.023397927828837,68.21
+22_Xgboost_SelectedFeatures,Xgboost,rmse,0.8981399301061965,49.15
+23_Xgboost_SelectedFeatures,Xgboost,rmse,0.9069248787877559,59.08
+24_LightGBM_SelectedFeatures,LightGBM,rmse,0.8943322210688563,56.18
+25_LightGBM_SelectedFeatures,LightGBM,rmse,0.9080416387904904,61.81
+26_Xgboost,Xgboost,rmse,0.9348852313730779,71.62

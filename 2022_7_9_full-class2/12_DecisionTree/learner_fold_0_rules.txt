@@ -1,0 +1,30 @@
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglat <= 30.283) and (Buildinglong > -85.626) then class: 1 (proba: 44.58%) | based on 166 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist > 15.143) and (Buildinglat > 29.805) then class: 2 (proba: 26.32%) | based on 133 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (roof_system > 1.5) and (hazards_present > 4.0) then class: 4 (proba: 86.15%) | based on 65 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglat <= 30.283) and (Buildinglong <= -85.626) then class: 1 (proba: 69.7%) | based on 33 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist <= 15.143) and (mindist <= 13.625) then class: 2 (proba: 38.89%) | based on 18 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglat > 30.283) and (roof_cover > 1.0) then class: 2 (proba: 91.67%) | based on 12 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist > 15.143) and (Buildinglat <= 29.805) then class: 2 (proba: 81.82%) | based on 11 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist <= 15.143) and (mindist > 13.625) then class: 4 (proba: 90.91%) | based on 11 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) and (foundation_type <= 10.0) and (hazards_present > 11.0) then class: 2 (proba: 75.0%) | based on 8 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) and (foundation_type <= 10.0) and (hazards_present <= 11.0) then class: 4 (proba: 66.67%) | based on 6 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) and (foundation_type > 10.0) then class: 3 (proba: 100.0%) | based on 4 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (roof_system > 1.5) and (hazards_present <= 4.0) then class: 3 (proba: 100.0%) | based on 2 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (roof_system <= 1.5) and (Buildinglat > 30.061) then class: 3 (proba: 100.0%) | based on 2 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglat > 30.283) and (roof_cover <= 1.0) then class: 3 (proba: 100.0%) | based on 1 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (roof_system <= 1.5) and (Buildinglat <= 30.061) then class: 2 (proba: 100.0%) | based on 1 samples
+

@@ -1,0 +1,16 @@
+[
+    "understory_pct_of_building_footprint",
+    "Buildinglong",
+    "number_of_stories",
+    "roof_cover",
+    "building_type",
+    "roof_shape",
+    "wall_cladding",
+    "wall_structure",
+    "longitude",
+    "foundation_type",
+    "mwfrs",
+    "year_built",
+    "random_feature",
+    "roof_system"
+]

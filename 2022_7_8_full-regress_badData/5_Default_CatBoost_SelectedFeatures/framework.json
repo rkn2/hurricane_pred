@@ -1,0 +1,904 @@
+{
+    "uid": "a7795a81-db70-482d-83c0-d90c97c42755",
+    "name": "5_Default_CatBoost_SelectedFeatures",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1995.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.44204460785873967
+                ],
+                "mean": [
+                    1.0674650309433567
+                ],
+                "var": [
+                    0.19540343533698692
+                ],
+                "n_samples_seen": 473,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "drop_features": [
+                "Unnamed0",
+                "mindist",
+                "building_type",
+                "longitude",
+                "Buildinglat",
+                "hazards_present",
+                "year_built",
+                "roof_shape",
+                "wall_substrate",
+                "roof_substrate_type",
+                "rainwater_ingress_damage_rating",
+                "roof_system",
+                "understory_pct_of_building_footprint",
+                "wall_cladding",
+                "number_of_stories",
+                "mwfrs",
+                "wall_structure",
+                "foundation_type",
+                "roof_cover",
+                "Buildinglong"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "drop_features": [
+                    "Unnamed0",
+                    "mindist",
+                    "building_type",
+                    "longitude",
+                    "Buildinglat",
+                    "hazards_present",
+                    "year_built",
+                    "roof_shape",
+                    "wall_substrate",
+                    "random_feature",
+                    "roof_substrate_type",
+                    "rainwater_ingress_damage_rating",
+                    "roof_system",
+                    "understory_pct_of_building_footprint",
+                    "wall_cladding",
+                    "number_of_stories",
+                    "mwfrs",
+                    "wall_structure",
+                    "foundation_type",
+                    "roof_cover",
+                    "Buildinglong"
+                ]
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1996.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.41745812694533563
+                ],
+                "mean": [
+                    1.0705988342857857
+                ],
+                "var": [
+                    0.17427128775270798
+                ],
+                "n_samples_seen": 473,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "drop_features": [
+                "Unnamed0",
+                "mindist",
+                "building_type",
+                "longitude",
+                "Buildinglat",
+                "hazards_present",
+                "year_built",
+                "roof_shape",
+                "wall_substrate",
+                "roof_substrate_type",
+                "rainwater_ingress_damage_rating",
+                "roof_system",
+                "understory_pct_of_building_footprint",
+                "wall_cladding",
+                "number_of_stories",
+                "mwfrs",
+                "wall_structure",
+                "foundation_type",
+                "roof_cover",
+                "Buildinglong"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "drop_features": [
+                    "Unnamed0",
+                    "mindist",
+                    "building_type",
+                    "longitude",
+                    "Buildinglat",
+                    "hazards_present",
+                    "year_built",
+                    "roof_shape",
+                    "wall_substrate",
+                    "random_feature",
+                    "roof_substrate_type",
+                    "rainwater_ingress_damage_rating",
+                    "roof_system",
+                    "understory_pct_of_building_footprint",
+                    "wall_cladding",
+                    "number_of_stories",
+                    "mwfrs",
+                    "wall_structure",
+                    "foundation_type",
+                    "roof_cover",
+                    "Buildinglong"
+                ]
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1993.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.43541201957544984
+                ],
+                "mean": [
+                    1.0597983312180996
+                ],
+                "var": [
+                    0.1895836267907719
+                ],
+                "n_samples_seen": 474,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "drop_features": [
+                "Unnamed0",
+                "mindist",
+                "building_type",
+                "longitude",
+                "Buildinglat",
+                "hazards_present",
+                "year_built",
+                "roof_shape",
+                "wall_substrate",
+                "roof_substrate_type",
+                "rainwater_ingress_damage_rating",
+                "roof_system",
+                "understory_pct_of_building_footprint",
+                "wall_cladding",
+                "number_of_stories",
+                "mwfrs",
+                "wall_structure",
+                "foundation_type",
+                "roof_cover",
+                "Buildinglong"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "drop_features": [
+                    "Unnamed0",
+                    "mindist",
+                    "building_type",
+                    "longitude",
+                    "Buildinglat",
+                    "hazards_present",
+                    "year_built",
+                    "roof_shape",
+                    "wall_substrate",
+                    "random_feature",
+                    "roof_substrate_type",
+                    "rainwater_ingress_damage_rating",
+                    "roof_system",
+                    "understory_pct_of_building_footprint",
+                    "wall_cladding",
+                    "number_of_stories",
+                    "mwfrs",
+                    "wall_structure",
+                    "foundation_type",
+                    "roof_cover",
+                    "Buildinglong"
+                ]
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "roof_substrate_type": "Plywood/OSB"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.43566650442689764
+                ],
+                "mean": [
+                    1.0630453521674927
+                ],
+                "var": [
+                    0.18980530307955204
+                ],
+                "n_samples_seen": 474,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "drop_features": [
+                "Unnamed0",
+                "mindist",
+                "building_type",
+                "longitude",
+                "Buildinglat",
+                "hazards_present",
+                "year_built",
+                "roof_shape",
+                "wall_substrate",
+                "roof_substrate_type",
+                "rainwater_ingress_damage_rating",
+                "roof_system",
+                "understory_pct_of_building_footprint",
+                "wall_cladding",
+                "number_of_stories",
+                "mwfrs",
+                "wall_structure",
+                "foundation_type",
+                "roof_cover",
+                "Buildinglong"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "drop_features": [
+                    "Unnamed0",
+                    "mindist",
+                    "building_type",
+                    "longitude",
+                    "Buildinglat",
+                    "hazards_present",
+                    "year_built",
+                    "roof_shape",
+                    "wall_substrate",
+                    "random_feature",
+                    "roof_substrate_type",
+                    "rainwater_ingress_damage_rating",
+                    "roof_system",
+                    "understory_pct_of_building_footprint",
+                    "wall_cladding",
+                    "number_of_stories",
+                    "mwfrs",
+                    "wall_structure",
+                    "foundation_type",
+                    "roof_cover",
+                    "Buildinglong"
+                ]
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1993.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.42565205102645715
+                ],
+                "mean": [
+                    1.0759102331298251
+                ],
+                "var": [
+                    0.1811796685430297
+                ],
+                "n_samples_seen": 474,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "drop_features": [
+                "Unnamed0",
+                "mindist",
+                "building_type",
+                "longitude",
+                "Buildinglat",
+                "hazards_present",
+                "year_built",
+                "roof_shape",
+                "wall_substrate",
+                "roof_substrate_type",
+                "rainwater_ingress_damage_rating",
+                "roof_system",
+                "understory_pct_of_building_footprint",
+                "wall_cladding",
+                "number_of_stories",
+                "mwfrs",
+                "wall_structure",
+                "foundation_type",
+                "roof_cover",
+                "Buildinglong"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "drop_features": [
+                    "Unnamed0",
+                    "mindist",
+                    "building_type",
+                    "longitude",
+                    "Buildinglat",
+                    "hazards_present",
+                    "year_built",
+                    "roof_shape",
+                    "wall_substrate",
+                    "random_feature",
+                    "roof_substrate_type",
+                    "rainwater_ingress_damage_rating",
+                    "roof_system",
+                    "understory_pct_of_building_footprint",
+                    "wall_cladding",
+                    "number_of_stories",
+                    "mwfrs",
+                    "wall_structure",
+                    "foundation_type",
+                    "roof_cover",
+                    "Buildinglong"
+                ]
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "58bab5a9-d16a-467b-9b4d-c730d829266b",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 329
+        },
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "84ec6bf2-3bfd-431e-8c3c-8487f8ac6ba8",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_1",
+            "best_ntree_limit": 39
+        },
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "0670a185-fde2-498c-9a57-ccf224d408d0",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_2",
+            "best_ntree_limit": 87
+        },
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "63dbe416-6455-4ffa-b9d1-695804a4debd",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_3",
+            "best_ntree_limit": 73
+        },
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "ec954643-7b97-4972-92d1-f2f00bace8e9",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_4",
+            "best_ntree_limit": 2822
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "rainwater_ingress_damage_rating": [
+                    "na_fill_median"
+                ],
+                "number_of_stories": [
+                    "na_fill_median"
+                ],
+                "understory_pct_of_building_footprint": [
+                    "na_fill_median"
+                ],
+                "year_built": [
+                    "na_fill_median"
+                ],
+                "roof_shape": [
+                    "na_fill_median"
+                ],
+                "mwfrs": [
+                    "na_fill_median"
+                ],
+                "foundation_type": [
+                    "na_fill_median"
+                ],
+                "wall_structure": [
+                    "na_fill_median"
+                ],
+                "wall_substrate": [
+                    "na_fill_median"
+                ],
+                "wall_cladding": [
+                    "na_fill_median"
+                ],
+                "roof_system": [
+                    "na_fill_median"
+                ],
+                "roof_substrate_type": [
+                    "na_fill_median"
+                ],
+                "roof_cover": [
+                    "na_fill_median"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression",
+            "drop_features": [
+                "Unnamed0",
+                "mindist",
+                "building_type",
+                "longitude",
+                "Buildinglat",
+                "hazards_present",
+                "year_built",
+                "roof_shape",
+                "wall_substrate",
+                "random_feature",
+                "roof_substrate_type",
+                "rainwater_ingress_damage_rating",
+                "roof_system",
+                "understory_pct_of_building_footprint",
+                "wall_cladding",
+                "number_of_stories",
+                "mwfrs",
+                "wall_structure",
+                "foundation_type",
+                "roof_cover",
+                "Buildinglong"
+            ]
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "X_path": "2022_7_8_full-cat_norm-tts/X.data",
+            "y_path": "2022_7_8_full-cat_norm-tts/y.data",
+            "results_path": "2022_7_8_full-cat_norm-tts"
+        },
+        "learner": {
+            "model_type": "CatBoost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "learning_rate": 0.1,
+            "depth": 6,
+            "rsm": 1,
+            "loss_function": "RMSE",
+            "seed": 5,
+            "eval_metric": "RMSE",
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "5_Default_CatBoost_SelectedFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_features_selection",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "5_Default_CatBoost_SelectedFeatures/learner_fold_0.catboost",
+        "5_Default_CatBoost_SelectedFeatures/learner_fold_1.catboost",
+        "5_Default_CatBoost_SelectedFeatures/learner_fold_2.catboost",
+        "5_Default_CatBoost_SelectedFeatures/learner_fold_3.catboost",
+        "5_Default_CatBoost_SelectedFeatures/learner_fold_4.catboost"
+    ],
+    "predictions_fname": "5_Default_CatBoost_SelectedFeatures/predictions_out_of_folds.csv",
+    "metric_name": "rmse",
+    "final_loss": 0.32623786202948263,
+    "train_time": 5.966845989227295,
+    "is_stacked": false
+}

@@ -1,0 +1,16 @@
+if (mindist > 10.564) and (year_built > 1995.5) and (Buildinglong <= -85.377) then response: 1.645 | based on 172 samples
+
+if (mindist > 10.564) and (year_built <= 1995.5) and (foundation_type <= 8.5) then response: 2.031 | based on 160 samples
+
+if (mindist <= 10.564) and (hazards_present <= 12.5) and (hazards_present > 3.5) then response: 3.903 | based on 62 samples
+
+if (mindist > 10.564) and (year_built > 1995.5) and (Buildinglong > -85.377) then response: 1.0 | based on 38 samples
+
+if (mindist <= 10.564) and (hazards_present > 12.5) and (roof_cover <= 2.5) then response: 2.722 | based on 18 samples
+
+if (mindist > 10.564) and (year_built <= 1995.5) and (foundation_type > 8.5) then response: 3.333 | based on 12 samples
+
+if (mindist <= 10.564) and (hazards_present > 12.5) and (roof_cover > 2.5) then response: 3.667 | based on 9 samples
+
+if (mindist <= 10.564) and (hazards_present <= 12.5) and (hazards_present <= 3.5) then response: 2.667 | based on 3 samples
+

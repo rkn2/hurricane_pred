@@ -1,0 +1,8 @@
+if (mindist > 10.468) and (building_type_SingleFamily > 0.5) then response: 1.699 | based on 312 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily <= 0.5) then response: 2.412 | based on 80 samples
+
+if (mindist <= 10.468) and (year_built <= 1996.5) then response: 3.793 | based on 58 samples
+
+if (mindist <= 10.468) and (year_built > 1996.5) then response: 2.55 | based on 20 samples
+

@@ -1,0 +1,40 @@
+{
+    "name": "Ensemble",
+    "ml_task": "multiclass_classification",
+    "optimize_metric": "logloss",
+    "selected_models": [
+        {
+            "model": "17_Xgboost_GoldenFeatures",
+            "repeat": 2.0
+        },
+        {
+            "model": "20_RandomForest",
+            "repeat": 2.0
+        },
+        {
+            "model": "4_Default_Xgboost_categorical_mix",
+            "repeat": 4.0
+        },
+        {
+            "model": "4_Default_Xgboost_categorical_mix_GoldenFeatures",
+            "repeat": 6.0
+        },
+        {
+            "model": "6_Default_RandomForest_SelectedFeatures",
+            "repeat": 7.0
+        },
+        {
+            "model": "7_Xgboost_GoldenFeatures",
+            "repeat": 5.0
+        },
+        {
+            "model": "8_Xgboost",
+            "repeat": 2.0
+        }
+    ],
+    "predictions_fname": "Ensemble/predictions_ensemble.csv",
+    "metric_name": "logloss",
+    "final_loss": 1.1239692111450825,
+    "train_time": 1.1921396255493164,
+    "is_stacked": false
+}

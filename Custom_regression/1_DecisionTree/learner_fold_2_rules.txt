@@ -1,0 +1,16 @@
+if (mindist > 10.271) and (year_built > 1995.5) and (roof_system_Steeljoists <= 0.5) then response: 1.54 | based on 215 samples
+
+if (mindist > 10.271) and (year_built <= 1995.5) and (number_of_stories <= 1.5) then response: 1.983 | based on 119 samples
+
+if (mindist <= 10.271) and (year_built <= 1996.5) and (year_built > 977.5) then response: 3.889 | based on 63 samples
+
+if (mindist > 10.271) and (year_built <= 1995.5) and (number_of_stories > 1.5) then response: 2.745 | based on 47 samples
+
+if (mindist <= 10.271) and (year_built > 1996.5) and (wall_cladding_PlywoodSidingWoodShakeShingle <= 0.5) then response: 2.706 | based on 17 samples
+
+if (mindist <= 10.271) and (year_built <= 1996.5) and (year_built <= 977.5) then response: 2.8 | based on 5 samples
+
+if (mindist > 10.271) and (year_built > 1995.5) and (roof_system_Steeljoists > 0.5) then response: 3.667 | based on 3 samples
+
+if (mindist <= 10.271) and (year_built > 1996.5) and (wall_cladding_PlywoodSidingWoodShakeShingle > 0.5) then response: 0.0 | based on 1 samples
+

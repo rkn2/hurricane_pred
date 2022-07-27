@@ -1,0 +1,1071 @@
+{
+    "uid": "3be1ca15-f551-436c-80b8-0d09111cb90c",
+    "name": "5_Default_CatBoost_GoldenFeatures",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1995.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "surge_damage_rating",
+                        "feature2": "wind_damage_rating",
+                        "operation": "sum",
+                        "score": 0.0919691958
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "ratio",
+                        "score": 0.1072272639
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1123761152
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "ratio",
+                        "score": 0.1161212377
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglong",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "Buildinglong",
+                        "feature2": "wind_damage_rating",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "multiply",
+                        "score": 0.1264890352
+                    },
+                    {
+                        "feature1": "longitude",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1269244705
+                    }
+                ],
+                "new_columns": [
+                    "surge_damage_rating_sum_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglat",
+                    "Buildinglat_diff_wind_damage_rating",
+                    "Buildinglat_ratio_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglong",
+                    "wind_damage_rating_ratio_longitude",
+                    "wind_damage_rating_multiply_longitude",
+                    "Buildinglong_multiply_wind_damage_rating",
+                    "wind_damage_rating_multiply_Buildinglat",
+                    "longitude_diff_wind_damage_rating"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.44204460785873967
+                ],
+                "mean": [
+                    1.0674650309433567
+                ],
+                "var": [
+                    0.19540343533698692
+                ],
+                "n_samples_seen": 473,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "2022_7_8_full-cat_norm-tts",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1996.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "surge_damage_rating",
+                        "feature2": "wind_damage_rating",
+                        "operation": "sum",
+                        "score": 0.0919691958
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "ratio",
+                        "score": 0.1072272639
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1123761152
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "ratio",
+                        "score": 0.1161212377
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglong",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "Buildinglong",
+                        "feature2": "wind_damage_rating",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "multiply",
+                        "score": 0.1264890352
+                    },
+                    {
+                        "feature1": "longitude",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1269244705
+                    }
+                ],
+                "new_columns": [
+                    "surge_damage_rating_sum_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglat",
+                    "Buildinglat_diff_wind_damage_rating",
+                    "Buildinglat_ratio_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglong",
+                    "wind_damage_rating_ratio_longitude",
+                    "wind_damage_rating_multiply_longitude",
+                    "Buildinglong_multiply_wind_damage_rating",
+                    "wind_damage_rating_multiply_Buildinglat",
+                    "longitude_diff_wind_damage_rating"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.41745812694533563
+                ],
+                "mean": [
+                    1.0705988342857857
+                ],
+                "var": [
+                    0.17427128775270798
+                ],
+                "n_samples_seen": 473,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "2022_7_8_full-cat_norm-tts",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1993.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "surge_damage_rating",
+                        "feature2": "wind_damage_rating",
+                        "operation": "sum",
+                        "score": 0.0919691958
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "ratio",
+                        "score": 0.1072272639
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1123761152
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "ratio",
+                        "score": 0.1161212377
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglong",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "Buildinglong",
+                        "feature2": "wind_damage_rating",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "multiply",
+                        "score": 0.1264890352
+                    },
+                    {
+                        "feature1": "longitude",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1269244705
+                    }
+                ],
+                "new_columns": [
+                    "surge_damage_rating_sum_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglat",
+                    "Buildinglat_diff_wind_damage_rating",
+                    "Buildinglat_ratio_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglong",
+                    "wind_damage_rating_ratio_longitude",
+                    "wind_damage_rating_multiply_longitude",
+                    "Buildinglong_multiply_wind_damage_rating",
+                    "wind_damage_rating_multiply_Buildinglat",
+                    "longitude_diff_wind_damage_rating"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.43541201957544984
+                ],
+                "mean": [
+                    1.0597983312180996
+                ],
+                "var": [
+                    0.1895836267907719
+                ],
+                "n_samples_seen": 474,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "2022_7_8_full-cat_norm-tts",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "roof_substrate_type": "Plywood/OSB"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "surge_damage_rating",
+                        "feature2": "wind_damage_rating",
+                        "operation": "sum",
+                        "score": 0.0919691958
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "ratio",
+                        "score": 0.1072272639
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1123761152
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "ratio",
+                        "score": 0.1161212377
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglong",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "Buildinglong",
+                        "feature2": "wind_damage_rating",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "multiply",
+                        "score": 0.1264890352
+                    },
+                    {
+                        "feature1": "longitude",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1269244705
+                    }
+                ],
+                "new_columns": [
+                    "surge_damage_rating_sum_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglat",
+                    "Buildinglat_diff_wind_damage_rating",
+                    "Buildinglat_ratio_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglong",
+                    "wind_damage_rating_ratio_longitude",
+                    "wind_damage_rating_multiply_longitude",
+                    "Buildinglong_multiply_wind_damage_rating",
+                    "wind_damage_rating_multiply_Buildinglat",
+                    "longitude_diff_wind_damage_rating"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.43566650442689764
+                ],
+                "mean": [
+                    1.0630453521674927
+                ],
+                "var": [
+                    0.18980530307955204
+                ],
+                "n_samples_seen": 474,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "2022_7_8_full-cat_norm-tts",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1993.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "surge_damage_rating",
+                        "feature2": "wind_damage_rating",
+                        "operation": "sum",
+                        "score": 0.0919691958
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "ratio",
+                        "score": 0.1072272639
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1123761152
+                    },
+                    {
+                        "feature1": "Buildinglat",
+                        "feature2": "wind_damage_rating",
+                        "operation": "ratio",
+                        "score": 0.1161212377
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglong",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "ratio",
+                        "score": 0.1182874064
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "longitude",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "Buildinglong",
+                        "feature2": "wind_damage_rating",
+                        "operation": "multiply",
+                        "score": 0.125398068
+                    },
+                    {
+                        "feature1": "wind_damage_rating",
+                        "feature2": "Buildinglat",
+                        "operation": "multiply",
+                        "score": 0.1264890352
+                    },
+                    {
+                        "feature1": "longitude",
+                        "feature2": "wind_damage_rating",
+                        "operation": "diff",
+                        "score": 0.1269244705
+                    }
+                ],
+                "new_columns": [
+                    "surge_damage_rating_sum_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglat",
+                    "Buildinglat_diff_wind_damage_rating",
+                    "Buildinglat_ratio_wind_damage_rating",
+                    "wind_damage_rating_ratio_Buildinglong",
+                    "wind_damage_rating_ratio_longitude",
+                    "wind_damage_rating_multiply_longitude",
+                    "Buildinglong_multiply_wind_damage_rating",
+                    "wind_damage_rating_multiply_Buildinglat",
+                    "longitude_diff_wind_damage_rating"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    0.42565205102645715
+                ],
+                "mean": [
+                    1.0759102331298251
+                ],
+                "var": [
+                    0.1811796685430297
+                ],
+                "n_samples_seen": 474,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    0.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median"
+                    ],
+                    "roof_system": [
+                        "na_fill_median"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "2022_7_8_full-cat_norm-tts",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "d2e1bfc8-769e-434d-a5b3-fd7c496ed0d8",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 88
+        },
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "28c53ef4-242b-45ed-a026-b77487e4dcd9",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_1",
+            "best_ntree_limit": 74
+        },
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "b84b67ef-7a28-4873-8b3f-a34f45764912",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_2",
+            "best_ntree_limit": 69
+        },
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "817d13db-5532-4a55-bc48-88546c314d39",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_3",
+            "best_ntree_limit": 102
+        },
+        {
+            "library_version": "1.0.6",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "b389ae97-eaf7-47d1-b96a-e1e1c3a30519",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 1,
+                "loss_function": "RMSE",
+                "seed": 5,
+                "eval_metric": "RMSE",
+                "explain_level": 2
+            },
+            "name": "learner_fold_4",
+            "best_ntree_limit": 159
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "rainwater_ingress_damage_rating": [
+                    "na_fill_median"
+                ],
+                "number_of_stories": [
+                    "na_fill_median"
+                ],
+                "understory_pct_of_building_footprint": [
+                    "na_fill_median"
+                ],
+                "year_built": [
+                    "na_fill_median"
+                ],
+                "roof_shape": [
+                    "na_fill_median"
+                ],
+                "mwfrs": [
+                    "na_fill_median"
+                ],
+                "foundation_type": [
+                    "na_fill_median"
+                ],
+                "wall_structure": [
+                    "na_fill_median"
+                ],
+                "wall_substrate": [
+                    "na_fill_median"
+                ],
+                "wall_cladding": [
+                    "na_fill_median"
+                ],
+                "roof_system": [
+                    "na_fill_median"
+                ],
+                "roof_substrate_type": [
+                    "na_fill_median"
+                ],
+                "roof_cover": [
+                    "na_fill_median"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression",
+            "golden_features": {
+                "results_path": "2022_7_8_full-cat_norm-tts",
+                "ml_task": "regression",
+                "n_jobs": -1
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "X_path": "2022_7_8_full-cat_norm-tts/X.data",
+            "y_path": "2022_7_8_full-cat_norm-tts/y.data",
+            "results_path": "2022_7_8_full-cat_norm-tts"
+        },
+        "learner": {
+            "model_type": "CatBoost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "learning_rate": 0.1,
+            "depth": 6,
+            "rsm": 1,
+            "loss_function": "RMSE",
+            "seed": 5,
+            "eval_metric": "RMSE",
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "5_Default_CatBoost_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "5_Default_CatBoost_GoldenFeatures/learner_fold_0.catboost",
+        "5_Default_CatBoost_GoldenFeatures/learner_fold_1.catboost",
+        "5_Default_CatBoost_GoldenFeatures/learner_fold_2.catboost",
+        "5_Default_CatBoost_GoldenFeatures/learner_fold_3.catboost",
+        "5_Default_CatBoost_GoldenFeatures/learner_fold_4.catboost"
+    ],
+    "predictions_fname": "5_Default_CatBoost_GoldenFeatures/predictions_out_of_folds.csv",
+    "metric_name": "rmse",
+    "final_loss": 0.36564251245452056,
+    "train_time": 7.143292188644409,
+    "is_stacked": false
+}

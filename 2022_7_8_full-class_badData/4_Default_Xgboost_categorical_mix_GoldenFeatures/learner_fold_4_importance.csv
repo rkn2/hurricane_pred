@@ -1,0 +1,103 @@
+feature,mean_importance
+year_built,-0.009693167440719552
+surge_damage_rating_ratio_Buildinglat,-0.0059630924614809564
+mindist,-0.004844311372203358
+wall_structure,-0.0028270890083858745
+building_type,-0.0025347558434231864
+roof_shape_Flat,-0.0023361862337185403
+roof_shape_Gable,-0.001963106189238839
+"roof_cover_""Metal, standing seam""",-0.0014728261252581198
+mwfrs,-0.0014208429129952238
+longitude_diff_surge_damage_rating,-0.0007975025576050232
+foundation_type_Wood Piers > 8 ft,-0.0007894222577244703
+"wall_substrate_""Wood, dimensional planks""",-0.0007813269872281814
+surge_damage_rating_multiply_Buildinglat,-0.0004406707519192032
+foundation_type_Cast-in-place concrete piers,-0.0002853276492175705
+surge_damage_rating_diff_Buildinglong,-0.00020726172221920968
+"roof_cover_""Metal, corrugated""",-0.0001027056600077847
+"roof_system_""Steel, hot rolled""",-3.7860946130230388e-06
+roof_shape_Complex,-2.9836670827232405e-06
+wall_substrate_Not Applicable,-6.182719086700317e-08
+"roof_cover_Asphalt shingles (laminated),""Metal, corrugated""",0.0
+"roof_system_""Steel, hot rolled"",""Wood, unknown""",0.0
+roof_cover_Roll roofing,0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+roof_cover_Tile Slate Roof Cover,0.0
+"roof_system_""Steel, cold formed""",0.0
+wall_substrate_masonry ,0.0
+wall_substrate_Thin aluminum siding,0.0
+"wall_substrate_Not Applicable,Wood Beams",0.0
+wall_substrate_None at first floor Rc moment frame,0.0
+wall_substrate_Metal panels,0.0
+wall_substrate_Insulated foam board,0.0
+"wall_substrate_""Wood, sheathing""",0.0
+"wall_substrate_""Wood, sheathing (corners only)""",0.0
+roof_cover_Unknown,0.0
+"roof_system_""Steel, joists""",0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+"roof_system_""Wood, rafter""",0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+roof_cover_Built-up with Gravel,0.0
+roof_cover_Built-up without Gravel,0.0
+roof_substrate_type_Plywood,0.0
+roof_cover_Clay tiles,0.0
+roof_cover_Metal shingles,0.0
+roof_substrate_type_None,0.0
+"wall_substrate_""Wood, sheathing (continuous)""",0.0
+roof_substrate_type_Dimensional lumber,0.0
+roof_system_Unknown,0.0
+roof_cover_Other,0.0
+roof_system_Concrete slab,0.0
+roof_cover_Red composite shingle,0.0
+"roof_system_""Wood, unknown""",0.0
+"roof_system_""Wood, rafter"",""Wood, trusses""",0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+roof_cover_Wood shingle,0.0
+foundation_type_Wood Piers <= 8 ft,0.0
+Buildinglat,0.0
+Buildinglong,0.0
+surge_damage_rating_ratio_rainwater_ingress_damage_rating,0.0
+roof_shape_Arch,0.0
+foundation_type_helical anchors spaced irregulary,0.0
+"roof_shape_Complex,Hip",0.0
+"roof_shape_Flat,Gable",0.0
+"roof_shape_Gable,Gambrel",0.0
+"roof_shape_Gable,Hip",0.0
+"roof_shape_Gable,Monoslope",0.0
+roof_shape_Gambrel,0.0
+"roof_shape_Complex,Gable",0.0
+roof_shape_Monoslope,0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+foundation_type_Concrete piers support cast concrete slab on grade,0.0
+foundation_type_Crawlspace,0.0
+foundation_type_Unreinforced masonry piers,0.0
+foundation_type_Ground anchors and strapping,0.0
+foundation_type_Reinforced masonry piers,0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+"roof_shape_Hip,Curved",0.0
+number_of_stories,2.8019322682204528e-05
+rainwater_ingress_damage_rating_multiply_surge_damage_rating,5.340353917264729e-05
+foundation_type_Slab-on-grade,5.9025961968839355e-05
+roof_shape_Hip,0.00019451610870279134
+foundation_type_Unknown,0.0002720246375617186
+rainwater_ingress_damage_rating,0.00045174826252255553
+Buildinglong_multiply_surge_damage_rating,0.0005250073337958794
+roof_substrate_type_Plywood/OSB,0.0006907022984350975
+wall_substrate_Unknown,0.0011556992212594318
+roof_cover_Asphalt shingles (3-tab),0.0015628123813766325
+roof_cover_Asphalt shingles (laminated),0.0018151432528333955
+wall_cladding,0.002127516755865777
+roof_shape_Gable/Hip Combo,0.002142038051102113
+"roof_system_""Wood, trusses""",0.003219660226318788
+understory_pct_of_building_footprint,0.006080356492834549
+longitude,0.007131265457403846
+roof_substrate_type_Unknown,0.010897332846613228
+Unnamed0,0.02075337683624129
+hazards_present,0.021170080945653404
+surge_damage_rating_multiply_wind_damage_rating,0.030934757335206186
+number_of_stories_ratio_surge_damage_rating,0.04025905130399484
+surge_damage_rating,0.10018339909739411
+wind_damage_rating,0.6244470137850208
+surge_damage_rating_sum_wind_damage_rating,0.8241495137560669

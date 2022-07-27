@@ -1,0 +1,30 @@
+if (mindist > 10.271) and (year_built > 1995.5) and (roof_system_Steeljoists <= 0.5) and (Unnamed0 <= 509.5) then response: 1.287 | based on 108 samples
+
+if (mindist > 10.271) and (year_built > 1995.5) and (roof_system_Steeljoists <= 0.5) and (Unnamed0 > 509.5) then response: 1.794 | based on 107 samples
+
+if (mindist > 10.271) and (year_built <= 1995.5) and (number_of_stories <= 1.5) and (mindist > 14.967) then response: 1.875 | based on 104 samples
+
+if (mindist <= 10.271) and (year_built <= 1996.5) and (year_built > 977.5) and (mindist <= 9.171) then response: 4.0 | based on 41 samples
+
+if (mindist > 10.271) and (year_built <= 1995.5) and (number_of_stories > 1.5) and (understory_pct_of_building_footprint <= 45.0) then response: 2.538 | based on 39 samples
+
+if (mindist <= 10.271) and (year_built <= 1996.5) and (year_built > 977.5) and (mindist > 9.171) then response: 3.682 | based on 22 samples
+
+if (mindist > 10.271) and (year_built <= 1995.5) and (number_of_stories <= 1.5) and (mindist <= 14.967) then response: 2.733 | based on 15 samples
+
+if (mindist <= 10.271) and (year_built > 1996.5) and (wall_cladding_PlywoodSidingWoodShakeShingle <= 0.5) and (understory_pct_of_building_footprint <= 62.5) then response: 2.4 | based on 10 samples
+
+if (mindist > 10.271) and (year_built <= 1995.5) and (number_of_stories > 1.5) and (understory_pct_of_building_footprint > 45.0) then response: 3.75 | based on 8 samples
+
+if (mindist <= 10.271) and (year_built > 1996.5) and (wall_cladding_PlywoodSidingWoodShakeShingle <= 0.5) and (understory_pct_of_building_footprint > 62.5) then response: 3.143 | based on 7 samples
+
+if (mindist <= 10.271) and (year_built <= 1996.5) and (year_built <= 977.5) and (wall_substrate_nan > 0.5) then response: 3.333 | based on 3 samples
+
+if (mindist > 10.271) and (year_built > 1995.5) and (roof_system_Steeljoists > 0.5) and (roof_substrate_type_PlywoodOSB <= 0.5) then response: 4.0 | based on 2 samples
+
+if (mindist <= 10.271) and (year_built <= 1996.5) and (year_built <= 977.5) and (wall_substrate_nan <= 0.5) then response: 2.0 | based on 2 samples
+
+if (mindist > 10.271) and (year_built > 1995.5) and (roof_system_Steeljoists > 0.5) and (roof_substrate_type_PlywoodOSB > 0.5) then response: 3.0 | based on 1 samples
+
+if (mindist <= 10.271) and (year_built > 1996.5) and (wall_cladding_PlywoodSidingWoodShakeShingle > 0.5) then response: 0.0 | based on 1 samples
+

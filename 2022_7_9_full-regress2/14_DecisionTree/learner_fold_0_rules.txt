@@ -1,0 +1,30 @@
+if (mindist > 10.507) and (year_built > 1995.5) and (roof_substrate_type > 1.5) and (Buildinglong <= -85.377) then response: 1.614 | based on 176 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (Buildinglong <= -85.373) and (year_built > 1964.5) then response: 2.708 | based on 89 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (wall_structure > 6.0) and (Buildinglong <= -85.423) then response: 3.957 | based on 47 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (roof_substrate_type > 1.5) and (Buildinglong > -85.377) then response: 0.971 | based on 35 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (Buildinglong > -85.373) and (wall_structure > 12.5) then response: 1.294 | based on 34 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (Buildinglong <= -85.373) and (year_built <= 1964.5) then response: 1.697 | based on 33 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (wall_structure > 6.0) and (Buildinglong > -85.423) then response: 3.615 | based on 26 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (Buildinglong > -85.373) and (wall_structure <= 12.5) then response: 2.875 | based on 8 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) and (wall_substrate <= 5.0) and (hazards_present <= 10.0) then response: 3.5 | based on 8 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) and (wall_substrate <= 5.0) and (hazards_present > 10.0) then response: 2.143 | based on 7 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (roof_substrate_type <= 1.5) and (Buildinglat <= 30.432) then response: 3.5 | based on 4 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (roof_substrate_type <= 1.5) and (Buildinglat > 30.432) then response: 2.0 | based on 3 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) and (wall_substrate > 5.0) then response: 0.0 | based on 1 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (wall_structure <= 6.0) and (Buildinglat > 30.062) then response: 3.0 | based on 1 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (wall_structure <= 6.0) and (Buildinglat <= 30.062) then response: 2.0 | based on 1 samples
+

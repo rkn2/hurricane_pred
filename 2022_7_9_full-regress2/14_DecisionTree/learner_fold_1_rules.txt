@@ -1,0 +1,28 @@
+if (mindist > 10.486) and (year_built > 1995.5) and (roof_substrate_type > 2.5) and (Buildinglong <= -85.377) then response: 1.621 | based on 174 samples
+
+if (mindist > 10.486) and (year_built <= 1995.5) and (Buildinglong <= -85.048) and (roof_system <= 11.0) then response: 2.52 | based on 100 samples
+
+if (mindist <= 10.486) and (year_built <= 1996.5) and (hazards_present <= 19.5) and (year_built > 970.0) then response: 3.859 | based on 64 samples
+
+if (mindist > 10.486) and (year_built <= 1995.5) and (Buildinglong <= -85.048) and (roof_system > 11.0) then response: 1.891 | based on 55 samples
+
+if (mindist > 10.486) and (year_built > 1995.5) and (roof_substrate_type > 2.5) and (Buildinglong > -85.377) then response: 1.079 | based on 38 samples
+
+if (mindist <= 10.486) and (year_built > 1996.5) and (hazards_present > 1.0) and (hazards_present <= 11.0) then response: 3.3 | based on 10 samples
+
+if (mindist <= 10.486) and (year_built > 1996.5) and (hazards_present > 1.0) and (hazards_present > 11.0) then response: 2.111 | based on 9 samples
+
+if (mindist > 10.486) and (year_built > 1995.5) and (roof_substrate_type <= 2.5) and (building_type <= 20.0) then response: 2.333 | based on 6 samples
+
+if (mindist > 10.486) and (year_built <= 1995.5) and (Buildinglong > -85.048) and (mindist <= 21.837) then response: 0.5 | based on 6 samples
+
+if (mindist <= 10.486) and (year_built <= 1996.5) and (hazards_present <= 19.5) and (year_built <= 970.0) then response: 2.8 | based on 5 samples
+
+if (mindist > 10.486) and (year_built > 1995.5) and (roof_substrate_type <= 2.5) and (building_type > 20.0) then response: 4.0 | based on 2 samples
+
+if (mindist > 10.486) and (year_built <= 1995.5) and (Buildinglong > -85.048) and (mindist > 21.837) then response: 2.0 | based on 2 samples
+
+if (mindist <= 10.486) and (year_built > 1996.5) and (hazards_present <= 1.0) then response: 0.0 | based on 1 samples
+
+if (mindist <= 10.486) and (year_built <= 1996.5) and (hazards_present > 19.5) then response: 1.0 | based on 1 samples
+

@@ -1,0 +1,1130 @@
+{
+    "uid": "af9265c4-bca7-4f9a-81f0-91d34fe0765e",
+    "name": "14_NeuralNetwork_SelectedFeatures",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "building_type_Marina",
+                "building_type_Library",
+                "building_type_1",
+                "roof_shape_1",
+                "mwfrs_WallXbracingMomentFrame",
+                "mwfrs_1",
+                "foundation_type_1",
+                "wall_structure_ConcretepiersinsulatedconcreteformICFwalls",
+                "wall_structure_1",
+                "wall_substrate_Woodsheathing",
+                "wall_substrate_1",
+                "wall_cladding_VinylSidingstandardStone",
+                "wall_cladding_WoodBoardsWoodShakeShinglestonewall",
+                "wall_cladding_VinylSidingstandardWoodBoards",
+                "wall_cladding_PlywoodSidingStone",
+                "wall_cladding_AluminumsidingEIFS",
+                "wall_cladding_WoodBoardsstone",
+                "wall_cladding_BrickFiberCementBoardPlywoodSiding",
+                "wall_cladding_BrickPlywoodSidingVinylSidingunknown",
+                "wall_cladding_BrickEIFS",
+                "wall_cladding_1",
+                "roof_system_SteelcoldformedSteeljoists",
+                "roof_system_SteelhotrolledSteeljoists",
+                "roof_system_WoodtrussesWoodrafter",
+                "roof_system_1",
+                "roof_substrate_type_Plywood",
+                "roof_substrate_type_1",
+                "roof_cover_Metalcorrugatedconcretetopping",
+                "roof_cover_BuiltupwithGravel",
+                "roof_cover_1"
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        212.14898706570554,
+                        0.3974252559854185,
+                        1.393465281659231,
+                        22.84815685636102,
+                        284.8985482341726,
+                        0.451625755963657,
+                        0.498639341285132,
+                        0.43910891036356864,
+                        0.4867445440296307,
+                        0.4989044282759546,
+                        0.49621118005808745,
+                        6.715095351159968
+                    ],
+                    "mean": [
+                        378.8052930056711,
+                        0.8034026465028355,
+                        1.4413988657844992,
+                        7.502835538752363,
+                        1947.3459357277882,
+                        0.7145557655954632,
+                        0.5368620037807184,
+                        0.7391304347826086,
+                        0.6143667296786389,
+                        0.5330812854442344,
+                        0.5614366729678639,
+                        18.139861080126654
+                    ],
+                    "var": [
+                        45007.19271300489,
+                        0.15794683409507543,
+                        1.9417454911896401,
+                        522.038271732877,
+                        81167.18278593916,
+                        0.20396582344974468,
+                        0.2486411926772703,
+                        0.19281663516068054,
+                        0.23692025114261311,
+                        0.24890562855335716,
+                        0.24622553521463966,
+                        45.09250557517021
+                    ],
+                    "n_samples_seen": 529,
+                    "n_features_in": 12,
+                    "columns": [
+                        "Unnamed0",
+                        "building_type_SingleFamily",
+                        "number_of_stories",
+                        "understory_pct_of_building_footprint",
+                        "year_built",
+                        "mwfrs_RoofDiaphragmwoodWallDiaphragmwood",
+                        "foundation_type_Slabongrade",
+                        "wall_structure_Woodframe",
+                        "wall_substrate_Woodsheathingcontinuous",
+                        "roof_system_Woodtrusses",
+                        "roof_substrate_type_PlywoodOSB",
+                        "mindist"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4
+            },
+            "ml_task": "multiclass_classification",
+            "drop_features": [
+                "building_type_Warehouse",
+                "building_type_Restaurant",
+                "building_type_AssistedLivingCenter",
+                "building_type_Shed",
+                "building_type_HotelMotel",
+                "building_type_Condominium10units",
+                "building_type_Hospital",
+                "building_type_ManufacturedHome",
+                "building_type_Educational",
+                "building_type_Professional",
+                "building_type_Office",
+                "building_type_DetachedGarage",
+                "building_type_Servicestation",
+                "building_type_Greenhouse",
+                "building_type_Apartment",
+                "building_type_Barn",
+                "building_type_Apartment10units",
+                "mwfrs_RoofDiaphragmwood",
+                "mwfrs_Unknown",
+                "mwfrs_RoofDiaphragmconcreteWallDiaphragmconcrete",
+                "wall_structure_Masonryunknown",
+                "wall_structure_Unknown",
+                "building_type_MultiFamily",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmconcrete",
+                "building_type_Unknown",
+                "building_type_Religious",
+                "roof_shape_nan",
+                "roof_shape_GableGambrel",
+                "roof_shape_GableMonoslopeCombo",
+                "roof_shape_Arch",
+                "roof_shape_HipCurved",
+                "roof_shape_HipGable",
+                "mwfrs_RoofDiaphragmconcreteWallDiaphragmmasonry",
+                "wall_structure_Steelcoldform",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmmasonry",
+                "mwfrs_WallDiaphragmconcrete",
+                "mwfrs_RoofDiaphragmsteelWallDiaphragmsteelMomentFrame",
+                "mwfrs_RoofDiaphragmsteelMomentFrame",
+                "roof_shape_FlatHip",
+                "wall_substrate_NotApplicableWoodBeams",
+                "building_type_GeneralArea",
+                "building_type_Retail",
+                "building_type_Government",
+                "wall_structure_Steelmomentresistingframe",
+                "wall_structure_Masonryreinforced",
+                "wall_structure_WoodframeMasonryunknown",
+                "mwfrs_RoofDiaphragmsteelWallDiaphragmmasonry",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmwoodWallDiaphragmconcrete",
+                "mwfrs_RoofDiaphragmsteelWallDiaphragmsteel",
+                "mwfrs_RoofDiaphragmconcreteWallDiaphragmsteelWallDiaphragmconcrete",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmsteel",
+                "mwfrs_WallDiaphragmwood",
+                "mwfrs_RoofDiaphragmsteel",
+                "mwfrs_WallDiaphragmmasonry",
+                "mwfrs_SingleRowofColumns",
+                "foundation_type_helicalanchorsspacedirregulary",
+                "foundation_type_WoodPiers_le_8ft",
+                "foundation_type_Unreinforcedmasonrypiers",
+                "wall_structure_WoodframeMasonryreinforced",
+                "foundation_type_SlabonGrateandWoodPiersunknownheight",
+                "foundation_type_Castinplaceconcretepiers",
+                "foundation_type_Reinforcedmasonrypiers",
+                "foundation_type_WoodPiers_g_8ft",
+                "foundation_type_Groundanchorsandstrapping",
+                "foundation_type_Reinforcedmasonrystemwall",
+                "foundation_type_Crawlspace",
+                "foundation_type_Concretepierssupportcastconcreteslabongrade",
+                "foundation_type_Unreinforcedmasonrystemwall",
+                "roof_cover_Concretetiles",
+                "mwfrs_RoofDiaphragmwoodRoofDiaphragmcomposite",
+                "mwfrs_RoofDiaphragmcompositeWallDiaphragmwood",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmwoodWallDiaphragmmasonry",
+                "foundation_type_Piers8ftunstrapped",
+                "wall_structure_ConcretemomentresistingframeSteelcoldform",
+                "wall_structure_Masonryunreinforced",
+                "wall_structure_WoodframeMasonryunreinforced",
+                "wall_structure_WoodframeMasonryunreinforcedMasonryreinforced",
+                "wall_structure_SolidBrickWythe",
+                "mwfrs_RoofDiaphragmsteelWallDiaphragmwood",
+                "wall_structure_SteelmomentresistingframeSteelbracedframe",
+                "wall_structure_MasonryunknownSteelmomentresistingframe",
+                "wall_structure_Concretemomentresistingframe",
+                "wall_structure_MasonryunreinforcedSteelmomentresistingframe",
+                "wall_structure_Concretetiltup",
+                "wall_structure_Brick",
+                "roof_shape_FlatGable",
+                "wall_structure_SteelFrame",
+                "wall_substrate_NotApplicable",
+                "wall_substrate_Wooddimensionalplanks",
+                "roof_cover_AsphaltshingleslaminatedMetalcorrugated",
+                "wall_substrate_NoneatfirstfloorRcmomentframe",
+                "wall_structure_Steelbracedframe",
+                "foundation_type_BrickandConcretepiersareseeninthebackhalfofthehomesfoundationbutfronthalfconsistsofabrickstonemasonrywall",
+                "wall_structure_nan",
+                "roof_shape_ComplexHip",
+                "roof_shape_MonolithicDome",
+                "wall_cladding_SheetMetal",
+                "wall_cladding_BrickWoodBoards",
+                "wall_cladding_concreteblocks",
+                "wall_cladding_VinylSidingunknownconcreteblocks",
+                "wall_cladding_BrickStone",
+                "wall_cladding_Corrugatedsteelpanels",
+                "wall_cladding_WoodShakeShingle",
+                "wall_cladding_StuccoVinylSidingunknown",
+                "wall_cladding_BrickVinylSidingstandard",
+                "wall_cladding_VinylSidingstandard",
+                "wall_cladding_Cedarstone",
+                "wall_cladding_PlywoodSiding",
+                "wall_cladding_BrickFiberCementBoard",
+                "wall_cladding_EIFS",
+                "wall_cladding_Concretemasonryunits",
+                "wall_cladding_PlywoodSidingStucco",
+                "wall_cladding_VinylSidingstandardWoodShakeShingle",
+                "wall_cladding_Aluminumsiding",
+                "wall_cladding_concretemasonryunits",
+                "wall_cladding_BrickWoodShakeShingle",
+                "roof_shape_Gambrel",
+                "roof_system_SteelhotrolledWoodunknown",
+                "roof_system_SteelhotrolledZpurlins",
+                "roof_substrate_type_Dimensionallumber",
+                "roof_substrate_type_None",
+                "roof_substrate_type_Metaldeck",
+                "wall_cladding_WoodBoards",
+                "wall_cladding_BrickVinylSidingunknownWoodShakeShingle",
+                "roof_cover_Unknown",
+                "wall_cladding_FiberCementBoardWoodBoardsWoodShakeShingle",
+                "wall_cladding_WoodPanelSiding",
+                "wall_cladding_Unknown",
+                "wall_cladding_FiberCementBoardVinylSidingunknownWoodBoards",
+                "wall_cladding_WoodPlankSiding",
+                "wall_cladding_WoodBoardsConcreteblock",
+                "wall_cladding_VinylSidingunknownWoodShakeShingle",
+                "wall_cladding_PlywoodSidingWoodShakeShingle",
+                "wall_cladding_VinylSidingunknownWoodBoards",
+                "wall_cladding_FiberCementBoardWoodBoardsconcreteblocks",
+                "wall_cladding_Cedarwood",
+                "wall_cladding_FiberCementBoardWoodBoards",
+                "wall_cladding_Masonryconcrete",
+                "wall_cladding_BrickStucco",
+                "wall_cladding_FiberCementBoardPlywoodSidingWoodShakeShingle",
+                "wall_cladding_VinylSidinghighwindrated",
+                "wall_cladding_FiberCementBoardVinylSidingstandard",
+                "wall_cladding_FiberCementBoardPlywoodSiding",
+                "wall_cladding_StuccoWoodBoards",
+                "wall_cladding_FiberCementBoardVinylSidingunknown",
+                "wall_cladding_StuccoWoodBoardsStone",
+                "wall_substrate_Metalpanels",
+                "wall_substrate_masonry",
+                "wall_cladding_nan",
+                "wall_cladding_FiberCementBoard",
+                "roof_cover_nan",
+                "roof_system_SteelcoldformedConcreteslab",
+                "roof_cover_TileSlateRoofCover",
+                "wall_cladding_CorrugatedsteelpanelsStucco",
+                "wall_cladding_BrickVinylSidingsinglewythe",
+                "roof_system_Steelcoldformed",
+                "wall_cladding_BrickCorrugatedsteelpanels",
+                "wall_cladding_Brickaboveavggrayshingle",
+                "roof_cover_Metalcorrugated",
+                "wall_cladding_AluminumsidingConcreteblock",
+                "wall_cladding_VinylSidingunknownStone",
+                "wall_cladding_StuccoStonebrick",
+                "wall_cladding_CurtainWall",
+                "wall_cladding_ConcreteBlock",
+                "roof_system_nan",
+                "roof_system_Concreteslab",
+                "roof_system_Steeljoists",
+                "roof_system_Unknown",
+                "wall_cladding_FiberCementBoardWoodShakeShingle",
+                "wall_substrate_None",
+                "wall_substrate_Insulatedfoamboard",
+                "wall_substrate_Woodsheathingcornersonly",
+                "roof_shape_Flat",
+                "roof_shape_GableHip",
+                "roof_shape_Unknown",
+                "roof_shape_GableMonoslope",
+                "roof_shape_ComplexGable",
+                "roof_shape_Monoslope",
+                "wall_cladding_EIFSWoodBoards",
+                "wall_cladding_StuccoConcreteBlock",
+                "wall_cladding_WoodBoardsmasonryconcreteblocks",
+                "roof_cover_BuiltupwithoutGravel",
+                "roof_cover_AsphaltshingleslaminatedMetalstandingseam",
+                "roof_system_Steelhotrolled",
+                "roof_cover_Claytiles",
+                "roof_cover_reinforcedconcretestucco",
+                "roof_cover_MetalcorrugatedMetalstandingseam",
+                "wall_cladding_BrickCorrugatedsteelpanelsPlywoodSiding",
+                "roof_cover_Asphaltshingles3tabMetalstandingseam",
+                "roof_cover_compositeshingles",
+                "roof_cover_WoodshakeWoodshingle",
+                "roof_cover_UnknownNoclearpicturesofroof",
+                "roof_cover_Rollroofing",
+                "roof_cover_Metalshingles",
+                "roof_cover_Woodshingle",
+                "wall_cladding_BrickPlywoodSiding",
+                "roof_cover_Redcompositeshingle",
+                "wall_cladding_WoodBoardsWoodShakeShingle",
+                "roof_system_WoodrafterWoodtrusses",
+                "roof_system_Woodrafter",
+                "wall_cladding_BrickStuccoWoodBoards",
+                "wall_cladding_Cedar",
+                "roof_cover_Other",
+                "wall_substrate_Thinaluminumsiding",
+                "wall_cladding_FiberCementBoardCorrugatedsteelpanels",
+                "wall_cladding_FiberCementBoardconcreteblock",
+                "roof_system_Woodtrusses",
+                "roof_cover_Asphaltshingleslaminated",
+                "wall_cladding_Brick",
+                "roof_cover_Asphaltshingles3tab",
+                "wall_structure_Woodframe",
+                "foundation_type_Unknown",
+                "roof_system_Woodunknown",
+                "roof_shape_Hip",
+                "wall_substrate_nan",
+                "roof_substrate_type_Unknown",
+                "roof_cover_Metalstandingseam"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "Unnamed0": [
+                        "scale_normal"
+                    ],
+                    "building_type_SingleFamily": [
+                        "scale_normal"
+                    ],
+                    "building_type_Marina": [
+                        "remove_column"
+                    ],
+                    "building_type_Library": [
+                        "remove_column"
+                    ],
+                    "building_type_1": [
+                        "remove_column"
+                    ],
+                    "number_of_stories": [
+                        "scale_normal"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "scale_normal"
+                    ],
+                    "year_built": [
+                        "scale_normal"
+                    ],
+                    "roof_shape_1": [
+                        "remove_column"
+                    ],
+                    "mwfrs_RoofDiaphragmwoodWallDiaphragmwood": [
+                        "scale_normal"
+                    ],
+                    "mwfrs_WallXbracingMomentFrame": [
+                        "remove_column"
+                    ],
+                    "mwfrs_1": [
+                        "remove_column"
+                    ],
+                    "foundation_type_Slabongrade": [
+                        "scale_normal"
+                    ],
+                    "foundation_type_1": [
+                        "remove_column"
+                    ],
+                    "wall_structure_Woodframe": [
+                        "scale_normal"
+                    ],
+                    "wall_structure_ConcretepiersinsulatedconcreteformICFwalls": [
+                        "remove_column"
+                    ],
+                    "wall_structure_1": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_Woodsheathingcontinuous": [
+                        "scale_normal"
+                    ],
+                    "wall_substrate_Woodsheathing": [
+                        "remove_column"
+                    ],
+                    "wall_substrate_1": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsWoodShakeShinglestonewall": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_VinylSidingstandardWoodBoards": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_PlywoodSidingStone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_AluminumsidingEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_WoodBoardsstone": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickFiberCementBoardPlywoodSiding": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickPlywoodSidingVinylSidingunknown": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_BrickEIFS": [
+                        "remove_column"
+                    ],
+                    "wall_cladding_1": [
+                        "remove_column"
+                    ],
+                    "roof_system_Woodtrusses": [
+                        "scale_normal"
+                    ],
+                    "roof_system_SteelcoldformedSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_SteelhotrolledSteeljoists": [
+                        "remove_column"
+                    ],
+                    "roof_system_WoodtrussesWoodrafter": [
+                        "remove_column"
+                    ],
+                    "roof_system_1": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_PlywoodOSB": [
+                        "scale_normal"
+                    ],
+                    "roof_substrate_type_Plywood": [
+                        "remove_column"
+                    ],
+                    "roof_substrate_type_1": [
+                        "remove_column"
+                    ],
+                    "roof_cover_Metalcorrugatedconcretetopping": [
+                        "remove_column"
+                    ],
+                    "roof_cover_BuiltupwithGravel": [
+                        "remove_column"
+                    ],
+                    "roof_cover_1": [
+                        "remove_column"
+                    ],
+                    "mindist": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification",
+                "drop_features": [
+                    "building_type_Warehouse",
+                    "building_type_Restaurant",
+                    "building_type_AssistedLivingCenter",
+                    "building_type_Shed",
+                    "building_type_HotelMotel",
+                    "roof_system_Woodtrusses_diff_roof_cover_BuiltupwithoutGravel",
+                    "building_type_Condominium10units",
+                    "building_type_Hospital",
+                    "building_type_ManufacturedHome",
+                    "building_type_Educational",
+                    "building_type_Professional",
+                    "building_type_Office",
+                    "building_type_DetachedGarage",
+                    "building_type_Servicestation",
+                    "building_type_Greenhouse",
+                    "building_type_Apartment",
+                    "building_type_Barn",
+                    "building_type_Apartment10units",
+                    "mwfrs_RoofDiaphragmwood",
+                    "mwfrs_Unknown",
+                    "mwfrs_RoofDiaphragmconcreteWallDiaphragmconcrete",
+                    "wall_structure_Masonryunknown",
+                    "wall_structure_Unknown",
+                    "building_type_MultiFamily",
+                    "mwfrs_RoofDiaphragmwoodWallDiaphragmconcrete",
+                    "building_type_Unknown",
+                    "building_type_Religious",
+                    "roof_shape_nan",
+                    "roof_shape_GableGambrel",
+                    "roof_shape_GableMonoslopeCombo",
+                    "roof_shape_Arch",
+                    "roof_shape_HipCurved",
+                    "roof_shape_HipGable",
+                    "roof_shape_FlatGable_diff_roof_system_Woodtrusses",
+                    "mwfrs_RoofDiaphragmconcreteWallDiaphragmmasonry",
+                    "wall_structure_Steelcoldform",
+                    "mwfrs_RoofDiaphragmwoodWallDiaphragmmasonry",
+                    "mwfrs_WallDiaphragmconcrete",
+                    "mwfrs_RoofDiaphragmsteelWallDiaphragmsteelMomentFrame",
+                    "mwfrs_RoofDiaphragmsteelMomentFrame",
+                    "roof_shape_FlatHip",
+                    "wall_substrate_NotApplicableWoodBeams",
+                    "wall_cladding_FiberCementBoardWoodBoards_diff_roof_system_Woodtrusses",
+                    "wall_structure_Woodframe_ratio_roof_system_Woodtrusses",
+                    "building_type_GeneralArea",
+                    "roof_system_Woodtrusses_ratio_wall_structure_Woodframe",
+                    "building_type_Retail",
+                    "building_type_Government",
+                    "wall_structure_Steelmomentresistingframe",
+                    "wall_structure_Masonryreinforced",
+                    "wall_structure_WoodframeMasonryunknown",
+                    "mwfrs_RoofDiaphragmsteelWallDiaphragmmasonry",
+                    "mwfrs_RoofDiaphragmwoodWallDiaphragmwoodWallDiaphragmconcrete",
+                    "mwfrs_RoofDiaphragmsteelWallDiaphragmsteel",
+                    "mwfrs_RoofDiaphragmconcreteWallDiaphragmsteelWallDiaphragmconcrete",
+                    "mwfrs_RoofDiaphragmwoodWallDiaphragmsteel",
+                    "mwfrs_WallDiaphragmwood",
+                    "mwfrs_RoofDiaphragmsteel",
+                    "mwfrs_WallDiaphragmmasonry",
+                    "mwfrs_SingleRowofColumns",
+                    "foundation_type_helicalanchorsspacedirregulary",
+                    "foundation_type_WoodPiers_le_8ft",
+                    "foundation_type_Unreinforcedmasonrypiers",
+                    "wall_structure_WoodframeMasonryreinforced",
+                    "foundation_type_SlabonGrateandWoodPiersunknownheight",
+                    "foundation_type_Castinplaceconcretepiers",
+                    "foundation_type_Reinforcedmasonrypiers",
+                    "foundation_type_WoodPiers_g_8ft",
+                    "foundation_type_Groundanchorsandstrapping",
+                    "foundation_type_Reinforcedmasonrystemwall",
+                    "foundation_type_Crawlspace",
+                    "foundation_type_Concretepierssupportcastconcreteslabongrade",
+                    "foundation_type_Unreinforcedmasonrystemwall",
+                    "roof_cover_Concretetiles",
+                    "mwfrs_RoofDiaphragmwoodRoofDiaphragmcomposite",
+                    "mwfrs_RoofDiaphragmcompositeWallDiaphragmwood",
+                    "mwfrs_RoofDiaphragmwoodWallDiaphragmwoodWallDiaphragmmasonry",
+                    "foundation_type_Piers8ftunstrapped",
+                    "wall_structure_ConcretemomentresistingframeSteelcoldform",
+                    "wall_structure_Masonryunreinforced",
+                    "wall_structure_WoodframeMasonryunreinforced",
+                    "wall_structure_WoodframeMasonryunreinforcedMasonryreinforced",
+                    "wall_structure_SolidBrickWythe",
+                    "mwfrs_RoofDiaphragmsteelWallDiaphragmwood",
+                    "wall_structure_SteelmomentresistingframeSteelbracedframe",
+                    "wall_structure_MasonryunknownSteelmomentresistingframe",
+                    "wall_structure_Concretemomentresistingframe",
+                    "wall_structure_MasonryunreinforcedSteelmomentresistingframe",
+                    "wall_structure_Concretetiltup",
+                    "wall_structure_Brick",
+                    "roof_shape_FlatGable",
+                    "wall_structure_SteelFrame",
+                    "wall_substrate_NotApplicable",
+                    "wall_substrate_Wooddimensionalplanks",
+                    "roof_cover_AsphaltshingleslaminatedMetalcorrugated",
+                    "wall_substrate_NoneatfirstfloorRcmomentframe",
+                    "wall_structure_Steelbracedframe",
+                    "foundation_type_BrickandConcretepiersareseeninthebackhalfofthehomesfoundationbutfronthalfconsistsofabrickstonemasonrywall",
+                    "wall_structure_nan",
+                    "roof_shape_ComplexHip",
+                    "roof_shape_MonolithicDome",
+                    "wall_cladding_SheetMetal",
+                    "roof_cover_Asphaltshingleslaminated_multiply_roof_system_Woodtrusses",
+                    "wall_cladding_BrickWoodBoards",
+                    "wall_cladding_concreteblocks",
+                    "wall_cladding_VinylSidingunknownconcreteblocks",
+                    "wall_cladding_BrickStone",
+                    "wall_cladding_Corrugatedsteelpanels",
+                    "wall_cladding_WoodShakeShingle",
+                    "wall_cladding_StuccoVinylSidingunknown",
+                    "wall_cladding_BrickVinylSidingstandard",
+                    "wall_cladding_VinylSidingstandard",
+                    "wall_cladding_Cedarstone",
+                    "wall_cladding_PlywoodSiding",
+                    "wall_cladding_BrickFiberCementBoard",
+                    "wall_cladding_EIFS",
+                    "wall_cladding_Concretemasonryunits",
+                    "wall_cladding_PlywoodSidingStucco",
+                    "wall_cladding_VinylSidingstandardWoodShakeShingle",
+                    "wall_cladding_Aluminumsiding",
+                    "wall_cladding_concretemasonryunits",
+                    "wall_cladding_BrickWoodShakeShingle",
+                    "roof_shape_Gambrel",
+                    "roof_system_SteelhotrolledWoodunknown",
+                    "roof_system_SteelhotrolledZpurlins",
+                    "roof_substrate_type_Dimensionallumber",
+                    "roof_substrate_type_None",
+                    "roof_substrate_type_Metaldeck",
+                    "wall_cladding_WoodBoards",
+                    "wall_cladding_BrickVinylSidingunknownWoodShakeShingle",
+                    "roof_cover_Unknown",
+                    "wall_structure_SolidBrickWythe_diff_roof_system_Woodtrusses",
+                    "wall_cladding_FiberCementBoardWoodBoardsWoodShakeShingle",
+                    "wall_cladding_WoodPanelSiding",
+                    "wall_cladding_Unknown",
+                    "wall_cladding_FiberCementBoardVinylSidingunknownWoodBoards",
+                    "wall_cladding_WoodPlankSiding",
+                    "wall_cladding_WoodBoardsConcreteblock",
+                    "wall_cladding_VinylSidingunknownWoodShakeShingle",
+                    "wall_cladding_PlywoodSidingWoodShakeShingle",
+                    "wall_cladding_VinylSidingunknownWoodBoards",
+                    "wall_cladding_FiberCementBoardWoodBoardsconcreteblocks",
+                    "wall_cladding_Cedarwood",
+                    "wall_cladding_FiberCementBoardWoodBoards",
+                    "wall_cladding_Masonryconcrete",
+                    "wall_cladding_BrickStucco",
+                    "wall_cladding_FiberCementBoardPlywoodSidingWoodShakeShingle",
+                    "wall_cladding_VinylSidinghighwindrated",
+                    "wall_cladding_FiberCementBoardVinylSidingstandard",
+                    "wall_cladding_FiberCementBoardPlywoodSiding",
+                    "wall_cladding_StuccoWoodBoards",
+                    "wall_cladding_FiberCementBoardVinylSidingunknown",
+                    "wall_cladding_StuccoWoodBoardsStone",
+                    "wall_substrate_Metalpanels",
+                    "wall_substrate_masonry",
+                    "wall_cladding_nan",
+                    "wall_cladding_FiberCementBoard",
+                    "roof_cover_nan",
+                    "roof_system_SteelcoldformedConcreteslab",
+                    "roof_cover_TileSlateRoofCover",
+                    "wall_cladding_CorrugatedsteelpanelsStucco",
+                    "wall_cladding_BrickVinylSidingsinglewythe",
+                    "roof_system_Steelcoldformed",
+                    "wall_cladding_BrickCorrugatedsteelpanels",
+                    "wall_cladding_Brickaboveavggrayshingle",
+                    "roof_cover_Metalcorrugated",
+                    "wall_cladding_AluminumsidingConcreteblock",
+                    "wall_cladding_VinylSidingunknownStone",
+                    "wall_cladding_StuccoStonebrick",
+                    "wall_cladding_CurtainWall",
+                    "wall_cladding_ConcreteBlock",
+                    "roof_system_nan",
+                    "roof_system_Concreteslab",
+                    "roof_system_Steeljoists",
+                    "roof_system_Unknown",
+                    "wall_cladding_FiberCementBoardWoodShakeShingle",
+                    "wall_substrate_None",
+                    "wall_substrate_Insulatedfoamboard",
+                    "wall_substrate_Woodsheathingcornersonly",
+                    "roof_shape_Flat",
+                    "roof_system_Woodtrusses_diff_roof_cover_WoodshakeWoodshingle",
+                    "roof_shape_GableHip",
+                    "roof_shape_Unknown",
+                    "roof_shape_GableMonoslope",
+                    "roof_shape_ComplexGable",
+                    "roof_shape_Monoslope",
+                    "wall_cladding_EIFSWoodBoards",
+                    "wall_cladding_StuccoConcreteBlock",
+                    "wall_cladding_WoodBoardsmasonryconcreteblocks",
+                    "roof_cover_BuiltupwithoutGravel",
+                    "roof_cover_AsphaltshingleslaminatedMetalstandingseam",
+                    "roof_system_Steelhotrolled",
+                    "roof_cover_Claytiles",
+                    "roof_cover_reinforcedconcretestucco",
+                    "roof_cover_MetalcorrugatedMetalstandingseam",
+                    "wall_cladding_BrickCorrugatedsteelpanelsPlywoodSiding",
+                    "roof_cover_Asphaltshingles3tabMetalstandingseam",
+                    "roof_cover_compositeshingles",
+                    "roof_cover_WoodshakeWoodshingle",
+                    "roof_cover_UnknownNoclearpicturesofroof",
+                    "roof_cover_Rollroofing",
+                    "roof_cover_Metalshingles",
+                    "roof_cover_Woodshingle",
+                    "wall_cladding_BrickPlywoodSiding",
+                    "roof_cover_Redcompositeshingle",
+                    "wall_cladding_WoodBoardsWoodShakeShingle",
+                    "roof_system_WoodrafterWoodtrusses",
+                    "roof_system_Woodrafter",
+                    "wall_cladding_BrickStuccoWoodBoards",
+                    "wall_cladding_Cedar",
+                    "roof_cover_Other",
+                    "wall_substrate_Thinaluminumsiding",
+                    "wall_cladding_FiberCementBoardCorrugatedsteelpanels",
+                    "wall_cladding_FiberCementBoardconcreteblock",
+                    "roof_system_Woodtrusses_ratio_roof_cover_Asphaltshingleslaminated",
+                    "roof_system_Woodunknown_diff_roof_cover_Asphaltshingleslaminated",
+                    "roof_system_Woodtrusses",
+                    "roof_system_Woodtrusses_sum_roof_shape_Gambrel",
+                    "roof_cover_Asphaltshingleslaminated",
+                    "wall_cladding_Brick",
+                    "roof_cover_Asphaltshingles3tab",
+                    "wall_structure_Woodframe",
+                    "foundation_type_Unknown",
+                    "roof_system_Woodunknown",
+                    "roof_shape_Hip",
+                    "wall_substrate_nan",
+                    "roof_substrate_type_Unknown_sum_foundation_type_WoodPiers_le_8ft",
+                    "roof_system_Woodtrusses_diff_roof_cover_Metalstandingseam",
+                    "roof_substrate_type_Unknown",
+                    "roof_cover_Metalstandingseam",
+                    "random_feature"
+                ]
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "77e836a5-30b1-48a8-b64c-d41d1ad59551",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "dense_1_size": 64,
+                "dense_2_size": 16,
+                "learning_rate": 0.01,
+                "num_class": 5,
+                "explain_level": 1
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Unnamed0": [
+                    "scale_normal"
+                ],
+                "building_type_SingleFamily": [
+                    "scale_normal"
+                ],
+                "building_type_Marina": [
+                    "remove_column"
+                ],
+                "building_type_Library": [
+                    "remove_column"
+                ],
+                "building_type_1": [
+                    "remove_column"
+                ],
+                "number_of_stories": [
+                    "scale_normal"
+                ],
+                "understory_pct_of_building_footprint": [
+                    "scale_normal"
+                ],
+                "year_built": [
+                    "scale_normal"
+                ],
+                "roof_shape_1": [
+                    "remove_column"
+                ],
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmwood": [
+                    "scale_normal"
+                ],
+                "mwfrs_WallXbracingMomentFrame": [
+                    "remove_column"
+                ],
+                "mwfrs_1": [
+                    "remove_column"
+                ],
+                "foundation_type_Slabongrade": [
+                    "scale_normal"
+                ],
+                "foundation_type_1": [
+                    "remove_column"
+                ],
+                "wall_structure_Woodframe": [
+                    "scale_normal"
+                ],
+                "wall_structure_ConcretepiersinsulatedconcreteformICFwalls": [
+                    "remove_column"
+                ],
+                "wall_structure_1": [
+                    "remove_column"
+                ],
+                "wall_substrate_Woodsheathingcontinuous": [
+                    "scale_normal"
+                ],
+                "wall_substrate_Woodsheathing": [
+                    "remove_column"
+                ],
+                "wall_substrate_1": [
+                    "remove_column"
+                ],
+                "wall_cladding_VinylSidingstandardStone": [
+                    "remove_column"
+                ],
+                "wall_cladding_WoodBoardsWoodShakeShinglestonewall": [
+                    "remove_column"
+                ],
+                "wall_cladding_VinylSidingstandardWoodBoards": [
+                    "remove_column"
+                ],
+                "wall_cladding_PlywoodSidingStone": [
+                    "remove_column"
+                ],
+                "wall_cladding_AluminumsidingEIFS": [
+                    "remove_column"
+                ],
+                "wall_cladding_WoodBoardsstone": [
+                    "remove_column"
+                ],
+                "wall_cladding_BrickFiberCementBoardPlywoodSiding": [
+                    "remove_column"
+                ],
+                "wall_cladding_BrickPlywoodSidingVinylSidingunknown": [
+                    "remove_column"
+                ],
+                "wall_cladding_BrickEIFS": [
+                    "remove_column"
+                ],
+                "wall_cladding_1": [
+                    "remove_column"
+                ],
+                "roof_system_Woodtrusses": [
+                    "scale_normal"
+                ],
+                "roof_system_SteelcoldformedSteeljoists": [
+                    "remove_column"
+                ],
+                "roof_system_SteelhotrolledSteeljoists": [
+                    "remove_column"
+                ],
+                "roof_system_WoodtrussesWoodrafter": [
+                    "remove_column"
+                ],
+                "roof_system_1": [
+                    "remove_column"
+                ],
+                "roof_substrate_type_PlywoodOSB": [
+                    "scale_normal"
+                ],
+                "roof_substrate_type_Plywood": [
+                    "remove_column"
+                ],
+                "roof_substrate_type_1": [
+                    "remove_column"
+                ],
+                "roof_cover_Metalcorrugatedconcretetopping": [
+                    "remove_column"
+                ],
+                "roof_cover_BuiltupwithGravel": [
+                    "remove_column"
+                ],
+                "roof_cover_1": [
+                    "remove_column"
+                ],
+                "mindist": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification",
+            "drop_features": [
+                "building_type_Warehouse",
+                "building_type_Restaurant",
+                "building_type_AssistedLivingCenter",
+                "building_type_Shed",
+                "building_type_HotelMotel",
+                "roof_system_Woodtrusses_diff_roof_cover_BuiltupwithoutGravel",
+                "building_type_Condominium10units",
+                "building_type_Hospital",
+                "building_type_ManufacturedHome",
+                "building_type_Educational",
+                "building_type_Professional",
+                "building_type_Office",
+                "building_type_DetachedGarage",
+                "building_type_Servicestation",
+                "building_type_Greenhouse",
+                "building_type_Apartment",
+                "building_type_Barn",
+                "building_type_Apartment10units",
+                "mwfrs_RoofDiaphragmwood",
+                "mwfrs_Unknown",
+                "mwfrs_RoofDiaphragmconcreteWallDiaphragmconcrete",
+                "wall_structure_Masonryunknown",
+                "wall_structure_Unknown",
+                "building_type_MultiFamily",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmconcrete",
+                "building_type_Unknown",
+                "building_type_Religious",
+                "roof_shape_nan",
+                "roof_shape_GableGambrel",
+                "roof_shape_GableMonoslopeCombo",
+                "roof_shape_Arch",
+                "roof_shape_HipCurved",
+                "roof_shape_HipGable",
+                "roof_shape_FlatGable_diff_roof_system_Woodtrusses",
+                "mwfrs_RoofDiaphragmconcreteWallDiaphragmmasonry",
+                "wall_structure_Steelcoldform",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmmasonry",
+                "mwfrs_WallDiaphragmconcrete",
+                "mwfrs_RoofDiaphragmsteelWallDiaphragmsteelMomentFrame",
+                "mwfrs_RoofDiaphragmsteelMomentFrame",
+                "roof_shape_FlatHip",
+                "wall_substrate_NotApplicableWoodBeams",
+                "wall_cladding_FiberCementBoardWoodBoards_diff_roof_system_Woodtrusses",
+                "wall_structure_Woodframe_ratio_roof_system_Woodtrusses",
+                "building_type_GeneralArea",
+                "roof_system_Woodtrusses_ratio_wall_structure_Woodframe",
+                "building_type_Retail",
+                "building_type_Government",
+                "wall_structure_Steelmomentresistingframe",
+                "wall_structure_Masonryreinforced",
+                "wall_structure_WoodframeMasonryunknown",
+                "mwfrs_RoofDiaphragmsteelWallDiaphragmmasonry",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmwoodWallDiaphragmconcrete",
+                "mwfrs_RoofDiaphragmsteelWallDiaphragmsteel",
+                "mwfrs_RoofDiaphragmconcreteWallDiaphragmsteelWallDiaphragmconcrete",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmsteel",
+                "mwfrs_WallDiaphragmwood",
+                "mwfrs_RoofDiaphragmsteel",
+                "mwfrs_WallDiaphragmmasonry",
+                "mwfrs_SingleRowofColumns",
+                "foundation_type_helicalanchorsspacedirregulary",
+                "foundation_type_WoodPiers_le_8ft",
+                "foundation_type_Unreinforcedmasonrypiers",
+                "wall_structure_WoodframeMasonryreinforced",
+                "foundation_type_SlabonGrateandWoodPiersunknownheight",
+                "foundation_type_Castinplaceconcretepiers",
+                "foundation_type_Reinforcedmasonrypiers",
+                "foundation_type_WoodPiers_g_8ft",
+                "foundation_type_Groundanchorsandstrapping",
+                "foundation_type_Reinforcedmasonrystemwall",
+                "foundation_type_Crawlspace",
+                "foundation_type_Concretepierssupportcastconcreteslabongrade",
+                "foundation_type_Unreinforcedmasonrystemwall",
+                "roof_cover_Concretetiles",
+                "mwfrs_RoofDiaphragmwoodRoofDiaphragmcomposite",
+                "mwfrs_RoofDiaphragmcompositeWallDiaphragmwood",
+                "mwfrs_RoofDiaphragmwoodWallDiaphragmwoodWallDiaphragmmasonry",
+                "foundation_type_Piers8ftunstrapped",
+                "wall_structure_ConcretemomentresistingframeSteelcoldform",
+                "wall_structure_Masonryunreinforced",
+                "wall_structure_WoodframeMasonryunreinforced",
+                "wall_structure_WoodframeMasonryunreinforcedMasonryreinforced",
+                "wall_structure_SolidBrickWythe",
+                "mwfrs_RoofDiaphragmsteelWallDiaphragmwood",
+                "wall_structure_SteelmomentresistingframeSteelbracedframe",
+                "wall_structure_MasonryunknownSteelmomentresistingframe",
+                "wall_structure_Concretemomentresistingframe",
+                "wall_structure_MasonryunreinforcedSteelmomentresistingframe",
+                "wall_structure_Concretetiltup",
+                "wall_structure_Brick",
+                "roof_shape_FlatGable",
+                "wall_structure_SteelFrame",
+                "wall_substrate_NotApplicable",
+                "wall_substrate_Wooddimensionalplanks",
+                "roof_cover_AsphaltshingleslaminatedMetalcorrugated",
+                "wall_substrate_NoneatfirstfloorRcmomentframe",
+                "wall_structure_Steelbracedframe",
+                "foundation_type_BrickandConcretepiersareseeninthebackhalfofthehomesfoundationbutfronthalfconsistsofabrickstonemasonrywall",
+                "wall_structure_nan",
+                "roof_shape_ComplexHip",
+                "roof_shape_MonolithicDome",
+                "wall_cladding_SheetMetal",
+                "roof_cover_Asphaltshingleslaminated_multiply_roof_system_Woodtrusses",
+                "wall_cladding_BrickWoodBoards",
+                "wall_cladding_concreteblocks",
+                "wall_cladding_VinylSidingunknownconcreteblocks",
+                "wall_cladding_BrickStone",
+                "wall_cladding_Corrugatedsteelpanels",
+                "wall_cladding_WoodShakeShingle",
+                "wall_cladding_StuccoVinylSidingunknown",
+                "wall_cladding_BrickVinylSidingstandard",
+                "wall_cladding_VinylSidingstandard",
+                "wall_cladding_Cedarstone",
+                "wall_cladding_PlywoodSiding",
+                "wall_cladding_BrickFiberCementBoard",
+                "wall_cladding_EIFS",
+                "wall_cladding_Concretemasonryunits",
+                "wall_cladding_PlywoodSidingStucco",
+                "wall_cladding_VinylSidingstandardWoodShakeShingle",
+                "wall_cladding_Aluminumsiding",
+                "wall_cladding_concretemasonryunits",
+                "wall_cladding_BrickWoodShakeShingle",
+                "roof_shape_Gambrel",
+                "roof_system_SteelhotrolledWoodunknown",
+                "roof_system_SteelhotrolledZpurlins",
+                "roof_substrate_type_Dimensionallumber",
+                "roof_substrate_type_None",
+                "roof_substrate_type_Metaldeck",
+                "wall_cladding_WoodBoards",
+                "wall_cladding_BrickVinylSidingunknownWoodShakeShingle",
+                "roof_cover_Unknown",
+                "wall_structure_SolidBrickWythe_diff_roof_system_Woodtrusses",
+                "wall_cladding_FiberCementBoardWoodBoardsWoodShakeShingle",
+                "wall_cladding_WoodPanelSiding",
+                "wall_cladding_Unknown",
+                "wall_cladding_FiberCementBoardVinylSidingunknownWoodBoards",
+                "wall_cladding_WoodPlankSiding",
+                "wall_cladding_WoodBoardsConcreteblock",
+                "wall_cladding_VinylSidingunknownWoodShakeShingle",
+                "wall_cladding_PlywoodSidingWoodShakeShingle",
+                "wall_cladding_VinylSidingunknownWoodBoards",
+                "wall_cladding_FiberCementBoardWoodBoardsconcreteblocks",
+                "wall_cladding_Cedarwood",
+                "wall_cladding_FiberCementBoardWoodBoards",
+                "wall_cladding_Masonryconcrete",
+                "wall_cladding_BrickStucco",
+                "wall_cladding_FiberCementBoardPlywoodSidingWoodShakeShingle",
+                "wall_cladding_VinylSidinghighwindrated",
+                "wall_cladding_FiberCementBoardVinylSidingstandard",
+                "wall_cladding_FiberCementBoardPlywoodSiding",
+                "wall_cladding_StuccoWoodBoards",
+                "wall_cladding_FiberCementBoardVinylSidingunknown",
+                "wall_cladding_StuccoWoodBoardsStone",
+                "wall_substrate_Metalpanels",
+                "wall_substrate_masonry",
+                "wall_cladding_nan",
+                "wall_cladding_FiberCementBoard",
+                "roof_cover_nan",
+                "roof_system_SteelcoldformedConcreteslab",
+                "roof_cover_TileSlateRoofCover",
+                "wall_cladding_CorrugatedsteelpanelsStucco",
+                "wall_cladding_BrickVinylSidingsinglewythe",
+                "roof_system_Steelcoldformed",
+                "wall_cladding_BrickCorrugatedsteelpanels",
+                "wall_cladding_Brickaboveavggrayshingle",
+                "roof_cover_Metalcorrugated",
+                "wall_cladding_AluminumsidingConcreteblock",
+                "wall_cladding_VinylSidingunknownStone",
+                "wall_cladding_StuccoStonebrick",
+                "wall_cladding_CurtainWall",
+                "wall_cladding_ConcreteBlock",
+                "roof_system_nan",
+                "roof_system_Concreteslab",
+                "roof_system_Steeljoists",
+                "roof_system_Unknown",
+                "wall_cladding_FiberCementBoardWoodShakeShingle",
+                "wall_substrate_None",
+                "wall_substrate_Insulatedfoamboard",
+                "wall_substrate_Woodsheathingcornersonly",
+                "roof_shape_Flat",
+                "roof_system_Woodtrusses_diff_roof_cover_WoodshakeWoodshingle",
+                "roof_shape_GableHip",
+                "roof_shape_Unknown",
+                "roof_shape_GableMonoslope",
+                "roof_shape_ComplexGable",
+                "roof_shape_Monoslope",
+                "wall_cladding_EIFSWoodBoards",
+                "wall_cladding_StuccoConcreteBlock",
+                "wall_cladding_WoodBoardsmasonryconcreteblocks",
+                "roof_cover_BuiltupwithoutGravel",
+                "roof_cover_AsphaltshingleslaminatedMetalstandingseam",
+                "roof_system_Steelhotrolled",
+                "roof_cover_Claytiles",
+                "roof_cover_reinforcedconcretestucco",
+                "roof_cover_MetalcorrugatedMetalstandingseam",
+                "wall_cladding_BrickCorrugatedsteelpanelsPlywoodSiding",
+                "roof_cover_Asphaltshingles3tabMetalstandingseam",
+                "roof_cover_compositeshingles",
+                "roof_cover_WoodshakeWoodshingle",
+                "roof_cover_UnknownNoclearpicturesofroof",
+                "roof_cover_Rollroofing",
+                "roof_cover_Metalshingles",
+                "roof_cover_Woodshingle",
+                "wall_cladding_BrickPlywoodSiding",
+                "roof_cover_Redcompositeshingle",
+                "wall_cladding_WoodBoardsWoodShakeShingle",
+                "roof_system_WoodrafterWoodtrusses",
+                "roof_system_Woodrafter",
+                "wall_cladding_BrickStuccoWoodBoards",
+                "wall_cladding_Cedar",
+                "roof_cover_Other",
+                "wall_substrate_Thinaluminumsiding",
+                "wall_cladding_FiberCementBoardCorrugatedsteelpanels",
+                "wall_cladding_FiberCementBoardconcreteblock",
+                "roof_system_Woodtrusses_ratio_roof_cover_Asphaltshingleslaminated",
+                "roof_system_Woodunknown_diff_roof_cover_Asphaltshingleslaminated",
+                "roof_system_Woodtrusses",
+                "roof_system_Woodtrusses_sum_roof_shape_Gambrel",
+                "roof_cover_Asphaltshingleslaminated",
+                "wall_cladding_Brick",
+                "roof_cover_Asphaltshingles3tab",
+                "wall_structure_Woodframe",
+                "foundation_type_Unknown",
+                "roof_system_Woodunknown",
+                "roof_shape_Hip",
+                "wall_substrate_nan",
+                "roof_substrate_type_Unknown_sum_foundation_type_WoodPiers_le_8ft",
+                "roof_system_Woodtrusses_diff_roof_cover_Metalstandingseam",
+                "roof_substrate_type_Unknown",
+                "roof_cover_Metalstandingseam",
+                "random_feature"
+            ]
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.9,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_2/X.data",
+            "y_path": "AutoML_2/y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1236,
+            "dense_1_size": 64,
+            "dense_2_size": 16,
+            "learning_rate": 0.01,
+            "num_class": 5,
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 1,
+        "name": "14_NeuralNetwork_SelectedFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_features_selection",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "14_NeuralNetwork_SelectedFeatures/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "14_NeuralNetwork_SelectedFeatures/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 1.8458442255699776,
+    "train_time": 0.6077761650085449,
+    "is_stacked": false,
+    "single_prediction_time": 0.009218692779541016
+}

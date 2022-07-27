@@ -1,0 +1,26 @@
+if (mindist > 10.468) and (building_type_SingleFamily > 0.5) and (foundation_type_WoodPiers_le_8ft <= 0.5) and (number_of_stories <= 1.75) then response: 1.502 | based on 223 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily > 0.5) and (foundation_type_WoodPiers_le_8ft <= 0.5) and (number_of_stories > 1.75) then response: 1.987 | based on 77 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown <= 0.5) and (roof_shape_Gable <= 0.5) then response: 2.5 | based on 42 samples
+
+if (mindist <= 10.468) and (year_built <= 2003.5) and (wall_cladding_FiberCementBoard <= 0.5) and (mindist <= 9.171) then response: 4.0 | based on 41 samples
+
+if (mindist <= 10.468) and (year_built <= 2003.5) and (wall_cladding_FiberCementBoard <= 0.5) and (mindist > 9.171) then response: 3.515 | based on 33 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown <= 0.5) and (roof_shape_Gable > 0.5) then response: 3.167 | based on 24 samples
+
+if (mindist <= 10.468) and (year_built > 2003.5) and (wall_cladding_PlywoodSidingWoodShakeShingle <= 0.5) and (understory_pct_of_building_footprint <= 95.0) then response: 2.1 | based on 10 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown > 0.5) and (building_type_Unknown <= 0.5) then response: 1.444 | based on 9 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily > 0.5) and (foundation_type_WoodPiers_le_8ft > 0.5) then response: 4.0 | based on 6 samples
+
+if (mindist <= 10.468) and (year_built > 2003.5) and (wall_cladding_PlywoodSidingWoodShakeShingle <= 0.5) and (understory_pct_of_building_footprint > 95.0) then response: 3.333 | based on 3 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown > 0.5) and (building_type_Unknown > 0.5) then response: 4.0 | based on 1 samples
+
+if (mindist <= 10.468) and (year_built > 2003.5) and (wall_cladding_PlywoodSidingWoodShakeShingle > 0.5) then response: 0.0 | based on 1 samples
+
+if (mindist <= 10.468) and (year_built <= 2003.5) and (wall_cladding_FiberCementBoard > 0.5) then response: 1.0 | based on 1 samples
+

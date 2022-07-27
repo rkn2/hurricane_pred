@@ -1,0 +1,105 @@
+feature,mean_importance
+Unnamed0,-0.008817626592241423
+building_type,-0.00560706660401924
+roof_substrate_type_Plywood/OSB,-0.0019294827112129932
+year_built,-0.0015816194420101403
+roof_shape_Gable,-0.0008696783553151621
+wall_structure,-0.000867944767996054
+mwfrs,-0.0008454722610592103
+"roof_system_""Steel, cold formed""",-0.0005693039222925744
+understory_pct_of_building_footprint,-0.0003877203598493417
+Buildinglong_multiply_surge_damage_rating,-0.00036114258926457367
+wall_substrate_Not Applicable,-3.1668135598927895e-05
+"roof_shape_Complex,Gable",-1.348389797851679e-05
+"wall_substrate_""Wood, sheathing""",0.0
+"roof_system_""Steel, hot rolled"",Z purlins",0.0
+"roof_system_""Steel, hot rolled"",""Wood, unknown""",0.0
+foundation_type_Wood Piers <= 8 ft,0.0
+foundation_type_Wood Piers > 8 ft,0.0
+"roof_system_""Steel, hot rolled"",""Steel, joists""",0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+wall_substrate_Insulated foam board,0.0
+"roof_system_""Steel, cold formed"",""Steel, joists""",0.0
+"wall_substrate_Not Applicable,Wood Beams",0.0
+"wall_substrate_""Wood, sheathing (continuous)""",0.0
+"wall_substrate_""Wood, sheathing (corners only)""",0.0
+wall_substrate_None at first floor Rc moment frame,0.0
+"roof_system_""Steel, joists""",0.0
+wall_substrate_Metal panels,0.0
+"wall_substrate_""Wood, dimensional planks""",0.0
+wall_substrate_None,0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+"roof_system_""Wood, rafter"",""Wood, trusses""",0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+roof_cover_Unknown,0.0
+roof_cover_Roll roofing,0.0
+roof_cover_Metal shingles,0.0
+roof_cover_Clay tiles,0.0
+roof_cover_Built-up without Gravel,0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, corrugated""",0.0
+"roof_system_""Wood, rafter""",0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+"roof_cover_""Metal, corrugated""",0.0
+roof_substrate_type_Plywood,0.0
+roof_substrate_type_None,0.0
+roof_substrate_type_Metal deck,0.0
+roof_substrate_type_Dimensional lumber,0.0
+roof_system_Unknown,0.0
+roof_system_Concrete slab,0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+foundation_type_Unreinforced masonry piers,0.0
+roof_cover_composite shingles,0.0
+"roof_shape_Gable,Monoslope",0.0
+roof_shape_Complex,0.0
+"roof_shape_Complex,Hip",0.0
+roof_shape_Flat,0.0
+"roof_shape_Flat,Gable",0.0
+"roof_shape_Gable,Gambrel",0.0
+"roof_shape_Gable,Hip",0.0
+surge_damage_rating_ratio_rainwater_ingress_damage_rating,0.0
+surge_damage_rating_diff_Buildinglong,0.0
+Buildinglong,0.0
+roof_shape_Gambrel,0.0
+roof_shape_Arch,0.0
+Buildinglat,0.0
+roof_shape_Unknown,0.0
+foundation_type_Cast-in-place concrete piers,0.0
+foundation_type_Concrete piers support cast concrete slab on grade,0.0
+foundation_type_Crawlspace,0.0
+foundation_type_Ground anchors and strapping,0.0
+"foundation_type_Piers <= 8 ft, unstrapped",0.0
+foundation_type_Reinforced masonry piers,0.0
+foundation_type_Reinforced masonry stem wall,0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+"roof_shape_Hip,Gable",0.0
+roof_cover_Wood shingle,0.0
+roof_shape_Monoslope,3.0898246444532872e-06
+"roof_system_""Steel, hot rolled""",1.0412180123209325e-05
+rainwater_ingress_damage_rating_multiply_surge_damage_rating,2.3876374759579377e-05
+"roof_system_""Wood, unknown""",2.4946234306366665e-05
+roof_cover_Asphalt shingles (laminated),4.857103614243074e-05
+surge_damage_rating_multiply_Buildinglat,5.714198370939672e-05
+roof_shape_Gable/Hip Combo,6.359634654861113e-05
+foundation_type_Unknown,0.0003000438213348278
+number_of_stories,0.0003885641756678604
+wall_cladding,0.0005097156813164472
+foundation_type_Slab-on-grade,0.000999767126656359
+rainwater_ingress_damage_rating,0.0011105315399770777
+wall_substrate_Unknown,0.0015787575926099362
+roof_shape_Hip,0.001877234024660901
+roof_cover_Asphalt shingles (3-tab),0.00311986364486837
+mindist,0.003994235721956762
+"roof_system_""Wood, trusses""",0.00460778041547083
+roof_substrate_type_Unknown,0.006301913025374151
+"roof_cover_""Metal, standing seam""",0.0068123281815973494
+longitude_diff_surge_damage_rating,0.007200172900402213
+hazards_present,0.007965638604359459
+surge_damage_rating,0.01198646851322228
+number_of_stories_ratio_surge_damage_rating,0.014524226125423634
+longitude,0.03273042354951885
+surge_damage_rating_multiply_wind_damage_rating,0.03316222506285713
+surge_damage_rating_ratio_Buildinglat,0.11181669230220699
+wind_damage_rating,0.7207329165065237
+surge_damage_rating_sum_wind_damage_rating,0.8456304306023512

@@ -1,0 +1,8 @@
+if (surge_damage_rating <= 2.5) and (wind_damage_rating <= 2.5) then response: 1.336 | based on 292 samples
+
+if (surge_damage_rating <= 2.5) and (wind_damage_rating > 2.5) then response: 3.212 | based on 104 samples
+
+if (surge_damage_rating > 2.5) and (surge_damage_rating > 3.5) then response: 4.0 | based on 62 samples
+
+if (surge_damage_rating > 2.5) and (surge_damage_rating <= 3.5) then response: 3.125 | based on 16 samples
+

@@ -1,0 +1,125 @@
+{
+    "columns": [
+        "Unnamed0",
+        "Buildinglat",
+        "longitude",
+        "hazards_present",
+        "wind_damage_rating",
+        "surge_damage_rating",
+        "rainwater_ingress_damage_rating",
+        "building_type",
+        "number_of_stories",
+        "understory_pct_of_building_footprint",
+        "year_built",
+        "roof_shape",
+        "mwfrs",
+        "foundation_type",
+        "wall_structure",
+        "wall_substrate",
+        "wall_cladding",
+        "roof_system",
+        "roof_substrate_type",
+        "roof_cover",
+        "Buildinglong",
+        "mindist"
+    ],
+    "rows": 592,
+    "cols": 22,
+    "target_is_numeric": true,
+    "columns_info": {
+        "Unnamed0": [
+            "scale"
+        ],
+        "Buildinglat": [
+            "scale"
+        ],
+        "longitude": [
+            "scale"
+        ],
+        "hazards_present": [
+            "categorical",
+            "many_categories"
+        ],
+        "wind_damage_rating": [
+            "scale"
+        ],
+        "surge_damage_rating": [
+            "scale"
+        ],
+        "rainwater_ingress_damage_rating": [
+            "missing_values"
+        ],
+        "building_type": [
+            "categorical",
+            "many_categories"
+        ],
+        "number_of_stories": [
+            "missing_values",
+            "scale"
+        ],
+        "understory_pct_of_building_footprint": [
+            "missing_values",
+            "scale"
+        ],
+        "year_built": [
+            "missing_values",
+            "scale"
+        ],
+        "roof_shape": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "mwfrs": [
+            "missing_values",
+            "categorical",
+            "many_categories"
+        ],
+        "foundation_type": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "wall_structure": [
+            "missing_values",
+            "categorical",
+            "many_categories"
+        ],
+        "wall_substrate": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "wall_cladding": [
+            "missing_values",
+            "categorical",
+            "many_categories"
+        ],
+        "roof_system": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "roof_substrate_type": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "roof_cover": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "Buildinglong": [
+            "scale"
+        ],
+        "mindist": [
+            "scale"
+        ]
+    },
+    "target_info": [],
+    "n_features": 22,
+    "is_sample_weighted": false,
+    "n_classes": 5,
+    "num_class": 5
+}

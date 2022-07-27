@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "surge_damage_rating",
+            "feature2": "wind_damage_rating",
+            "operation": "sum",
+            "score": 0.939381204
+        },
+        {
+            "feature1": "surge_damage_rating",
+            "feature2": "wind_damage_rating",
+            "operation": "multiply",
+            "score": 1.2746086457
+        },
+        {
+            "feature1": "rainwater_ingress_damage_rating",
+            "feature2": "surge_damage_rating",
+            "operation": "multiply",
+            "score": 1.3031984363
+        },
+        {
+            "feature1": "surge_damage_rating",
+            "feature2": "rainwater_ingress_damage_rating",
+            "operation": "ratio",
+            "score": 1.3031984363
+        },
+        {
+            "feature1": "number_of_stories",
+            "feature2": "surge_damage_rating",
+            "operation": "ratio",
+            "score": 1.3333956327
+        },
+        {
+            "feature1": "surge_damage_rating",
+            "feature2": "Buildinglat",
+            "operation": "ratio",
+            "score": 1.3582564183
+        },
+        {
+            "feature1": "longitude",
+            "feature2": "surge_damage_rating",
+            "operation": "diff",
+            "score": 1.3606126398
+        },
+        {
+            "feature1": "Buildinglong",
+            "feature2": "surge_damage_rating",
+            "operation": "multiply",
+            "score": 1.3606126398
+        },
+        {
+            "feature1": "surge_damage_rating",
+            "feature2": "Buildinglong",
+            "operation": "diff",
+            "score": 1.3606126398
+        },
+        {
+            "feature1": "surge_damage_rating",
+            "feature2": "Buildinglat",
+            "operation": "multiply",
+            "score": 1.3606126398
+        }
+    ],
+    "new_columns": [
+        "surge_damage_rating_sum_wind_damage_rating",
+        "surge_damage_rating_multiply_wind_damage_rating",
+        "rainwater_ingress_damage_rating_multiply_surge_damage_rating",
+        "surge_damage_rating_ratio_rainwater_ingress_damage_rating",
+        "number_of_stories_ratio_surge_damage_rating",
+        "surge_damage_rating_ratio_Buildinglat",
+        "longitude_diff_surge_damage_rating",
+        "Buildinglong_multiply_surge_damage_rating",
+        "surge_damage_rating_diff_Buildinglong",
+        "surge_damage_rating_multiply_Buildinglat"
+    ],
+    "ml_task": "multiclass_classification"
+}

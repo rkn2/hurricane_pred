@@ -1,0 +1,32 @@
+if (mindist > 10.316) and (year_built > 1995.75) and (hazards_present <= 17.5) and (building_type <= 19.0) then class: 1 (proba: 51.41%) | based on 177 samples
+
+if (mindist > 10.316) and (year_built <= 1995.75) and (mindist > 15.143) and (Buildinglat > 29.802) then class: 2 (proba: 29.85%) | based on 134 samples
+
+if (mindist <= 10.316) and (hazards_present <= 14.0) and (hazards_present > 4.5) and (wall_cladding > 2.5) then class: 4 (proba: 96.43%) | based on 56 samples
+
+if (mindist > 10.316) and (year_built > 1995.75) and (hazards_present > 17.5) and (Buildinglat > 30.159) then class: 2 (proba: 59.09%) | based on 22 samples
+
+if (mindist <= 10.316) and (hazards_present > 14.0) and (roof_cover <= 2.5) and (year_built <= 2016.5) then class: 3 (proba: 52.63%) | based on 19 samples
+
+if (mindist > 10.316) and (year_built > 1995.75) and (hazards_present > 17.5) and (Buildinglat <= 30.159) then class: 1 (proba: 53.85%) | based on 13 samples
+
+if (mindist > 10.316) and (year_built <= 1995.75) and (mindist <= 15.143) and (mindist <= 13.625) then class: 4 (proba: 38.46%) | based on 13 samples
+
+if (mindist > 10.316) and (year_built <= 1995.75) and (mindist <= 15.143) and (mindist > 13.625) then class: 4 (proba: 90.0%) | based on 10 samples
+
+if (mindist > 10.316) and (year_built <= 1995.75) and (mindist > 15.143) and (Buildinglat <= 29.802) then class: 2 (proba: 88.89%) | based on 9 samples
+
+if (mindist > 10.316) and (year_built > 1995.75) and (hazards_present <= 17.5) and (building_type > 19.0) then class: 0 (proba: 33.33%) | based on 6 samples
+
+if (mindist <= 10.316) and (hazards_present > 14.0) and (roof_cover > 2.5) and (roof_shape <= 13.0) then class: 4 (proba: 100.0%) | based on 6 samples
+
+if (mindist <= 10.316) and (hazards_present > 14.0) and (roof_cover <= 2.5) and (year_built > 2016.5) then class: 2 (proba: 100.0%) | based on 2 samples
+
+if (mindist <= 10.316) and (hazards_present <= 14.0) and (hazards_present <= 4.5) and (roof_system > 11.0) then class: 0 (proba: 50.0%) | based on 2 samples
+
+if (mindist <= 10.316) and (hazards_present <= 14.0) and (hazards_present <= 4.5) and (roof_system <= 11.0) then class: 3 (proba: 100.0%) | based on 2 samples
+
+if (mindist <= 10.316) and (hazards_present > 14.0) and (roof_cover > 2.5) and (roof_shape > 13.0) then class: 3 (proba: 100.0%) | based on 1 samples
+
+if (mindist <= 10.316) and (hazards_present <= 14.0) and (hazards_present > 4.5) and (wall_cladding <= 2.5) then class: 3 (proba: 100.0%) | based on 1 samples
+

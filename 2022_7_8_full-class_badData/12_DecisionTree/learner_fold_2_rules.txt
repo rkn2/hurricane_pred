@@ -1,0 +1,26 @@
+if (wind_damage_rating <= 1.5) and (surge_damage_rating <= 3.5) and (wind_damage_rating > 0.5) and (surge_damage_rating <= 1.5) then class: 1 (proba: 96.92%) | based on 130 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating <= 2.5) and (surge_damage_rating <= 2.5) and (Buildinglat <= 30.454) then class: 2 (proba: 93.5%) | based on 123 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating > 2.5) and (wind_damage_rating <= 3.5) and (surge_damage_rating <= 3.5) then class: 3 (proba: 91.03%) | based on 78 samples
+
+if (wind_damage_rating <= 1.5) and (surge_damage_rating > 3.5) then class: 4 (proba: 100.0%) | based on 51 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating > 2.5) and (wind_damage_rating > 3.5) and (Buildinglong > -85.672) then class: 4 (proba: 90.48%) | based on 42 samples
+
+if (wind_damage_rating <= 1.5) and (surge_damage_rating <= 3.5) and (wind_damage_rating <= 0.5) and (surge_damage_rating <= 0.5) then class: 0 (proba: 96.3%) | based on 27 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating <= 2.5) and (surge_damage_rating > 2.5) and (surge_damage_rating > 3.5) then class: 4 (proba: 100.0%) | based on 5 samples
+
+if (wind_damage_rating <= 1.5) and (surge_damage_rating <= 3.5) and (wind_damage_rating > 0.5) and (surge_damage_rating > 1.5) then class: 2 (proba: 100.0%) | based on 5 samples
+
+if (wind_damage_rating <= 1.5) and (surge_damage_rating <= 3.5) and (wind_damage_rating <= 0.5) and (surge_damage_rating > 0.5) then class: 1 (proba: 60.0%) | based on 5 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating > 2.5) and (wind_damage_rating > 3.5) and (Buildinglong <= -85.672) then class: 2 (proba: 66.67%) | based on 3 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating > 2.5) and (wind_damage_rating <= 3.5) and (surge_damage_rating > 3.5) then class: 4 (proba: 100.0%) | based on 2 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating <= 2.5) and (surge_damage_rating > 2.5) and (surge_damage_rating <= 3.5) then class: 3 (proba: 100.0%) | based on 2 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating <= 2.5) and (surge_damage_rating <= 2.5) and (Buildinglat > 30.454) then class: 1 (proba: 100.0%) | based on 1 samples
+

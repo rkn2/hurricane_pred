@@ -1,0 +1,10 @@
+feature,shap_importance
+wind_damage_rating,1.1668539872574057
+surge_damage_rating,0.3341239353733838
+hazards_present,0.019289909330273643
+Buildinglat,0.014440969881680631
+mindist,0.013170308425640927
+roof_substrate_type,0.010126306866207543
+Unnamed0,0.0072199566218773695
+rainwater_ingress_damage_rating,0.0022504471964876344
+wall_substrate,0.0

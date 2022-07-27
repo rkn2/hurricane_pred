@@ -1,0 +1,28 @@
+if (mindist > 10.507) and (year_built > 1995.5) and (roof_substrate_type > 3.0) and (Buildinglong <= -85.399) then response: 1.669 | based on 145 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (roof_substrate_type > 3.0) and (Buildinglong > -85.399) then response: 1.234 | based on 64 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (Buildinglong <= -85.373) and (Buildinglong > -85.642) then response: 2.794 | based on 63 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (Buildinglong <= -85.373) and (Buildinglong <= -85.642) then response: 1.965 | based on 57 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (hazards_present <= 21.0) and (hazards_present <= 13.0) then response: 3.885 | based on 52 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (Buildinglong > -85.373) and (roof_system > 7.5) then response: 1.4 | based on 40 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (hazards_present <= 21.0) and (hazards_present > 13.0) then response: 3.45 | based on 20 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) and (hazards_present > 1.0) and (hazards_present > 12.0) then response: 2.3 | based on 10 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) and (hazards_present > 1.0) and (hazards_present <= 12.0) then response: 3.222 | based on 9 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (roof_substrate_type <= 3.0) and (building_type <= 20.0) then response: 2.333 | based on 6 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (Buildinglong > -85.373) and (roof_system <= 7.5) then response: 2.75 | based on 4 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (roof_substrate_type <= 3.0) and (building_type > 20.0) then response: 4.0 | based on 2 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) and (hazards_present <= 1.0) then response: 0.0 | based on 1 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) and (hazards_present > 21.0) then response: 1.0 | based on 1 samples
+

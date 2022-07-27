@@ -1,0 +1,32 @@
+if (mindist > 10.564) and (year_built > 1995.5) and (Buildinglong <= -85.377) and (hazards_present > 0.5) then response: 1.675 | based on 169 samples
+
+if (mindist > 10.564) and (year_built <= 1995.5) and (foundation_type <= 8.5) and (Buildinglong <= -85.373) then response: 2.198 | based on 121 samples
+
+if (mindist <= 10.564) and (hazards_present <= 12.5) and (hazards_present > 3.5) and (Buildinglat > 29.945) then response: 3.933 | based on 60 samples
+
+if (mindist > 10.564) and (year_built <= 1995.5) and (foundation_type <= 8.5) and (Buildinglong > -85.373) then response: 1.513 | based on 39 samples
+
+if (mindist > 10.564) and (year_built > 1995.5) and (Buildinglong > -85.377) and (year_built > 2000.5) then response: 0.739 | based on 23 samples
+
+if (mindist <= 10.564) and (hazards_present > 12.5) and (roof_cover <= 2.5) and (Buildinglat > 29.945) then response: 2.562 | based on 16 samples
+
+if (mindist > 10.564) and (year_built > 1995.5) and (Buildinglong > -85.377) and (year_built <= 2000.5) then response: 1.4 | based on 15 samples
+
+if (mindist <= 10.564) and (hazards_present > 12.5) and (roof_cover > 2.5) and (wall_cladding > 7.5) then response: 3.857 | based on 7 samples
+
+if (mindist > 10.564) and (year_built <= 1995.5) and (foundation_type > 8.5) and (mindist > 15.635) then response: 2.667 | based on 6 samples
+
+if (mindist > 10.564) and (year_built <= 1995.5) and (foundation_type > 8.5) and (mindist <= 15.635) then response: 4.0 | based on 6 samples
+
+if (mindist > 10.564) and (year_built > 1995.5) and (Buildinglong <= -85.377) and (hazards_present <= 0.5) then response: 0.0 | based on 3 samples
+
+if (mindist <= 10.564) and (hazards_present > 12.5) and (roof_cover > 2.5) and (wall_cladding <= 7.5) then response: 3.0 | based on 2 samples
+
+if (mindist <= 10.564) and (hazards_present > 12.5) and (roof_cover <= 2.5) and (Buildinglat <= 29.945) then response: 4.0 | based on 2 samples
+
+if (mindist <= 10.564) and (hazards_present <= 12.5) and (hazards_present > 3.5) and (Buildinglat <= 29.945) then response: 3.0 | based on 2 samples
+
+if (mindist <= 10.564) and (hazards_present <= 12.5) and (hazards_present <= 3.5) and (roof_shape > 0.5) then response: 3.0 | based on 2 samples
+
+if (mindist <= 10.564) and (hazards_present <= 12.5) and (hazards_present <= 3.5) and (roof_shape <= 0.5) then response: 2.0 | based on 1 samples
+

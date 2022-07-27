@@ -1,0 +1,16 @@
+if (mindist > 10.486) and (year_built > 1995.5) and (roof_substrate_type > 2.5) then response: 1.524 | based on 212 samples
+
+if (mindist > 10.486) and (year_built <= 1995.5) and (Buildinglong <= -85.048) then response: 2.297 | based on 155 samples
+
+if (mindist <= 10.486) and (year_built <= 1996.5) and (hazards_present <= 19.5) then response: 3.783 | based on 69 samples
+
+if (mindist <= 10.486) and (year_built > 1996.5) and (hazards_present > 1.0) then response: 2.737 | based on 19 samples
+
+if (mindist > 10.486) and (year_built > 1995.5) and (roof_substrate_type <= 2.5) then response: 2.75 | based on 8 samples
+
+if (mindist > 10.486) and (year_built <= 1995.5) and (Buildinglong > -85.048) then response: 0.875 | based on 8 samples
+
+if (mindist <= 10.486) and (year_built > 1996.5) and (hazards_present <= 1.0) then response: 0.0 | based on 1 samples
+
+if (mindist <= 10.486) and (year_built <= 1996.5) and (hazards_present > 19.5) then response: 1.0 | based on 1 samples
+

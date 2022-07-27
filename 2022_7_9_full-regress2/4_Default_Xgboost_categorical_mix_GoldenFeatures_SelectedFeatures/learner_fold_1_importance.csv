@@ -1,0 +1,22 @@
+feature,mean_importance
+Buildinglong_multiply_Buildinglat,-0.018111889963326733
+year_built_ratio_number_of_stories,-0.0067992077940273845
+mindist,-0.0001548493509438309
+number_of_stories_ratio_year_built,0.001387274604319022
+number_of_stories_diff_mindist,0.0017664476427746046
+"roof_system_""Steel, joists""",0.00192414271370418
+roof_shape_Hip,0.0028887545343712962
+wall_substrate_Not Applicable,0.009625852911383181
+foundation_type_Wood Piers <= 8 ft,0.010364931357041352
+wall_structure,0.012964153705983339
+"wall_substrate_""Wood, sheathing (continuous)""",0.013091458802230393
+roof_shape_Gable,0.014049924111217148
+"roof_cover_""Metal, standing seam""",0.01971451585296209
+mindist_ratio_year_built,0.030174030222541014
+Buildinglat,0.03713766660738462
+roof_substrate_type_Unknown,0.04079377150915553
+number_of_stories_sum_Buildinglat,0.06245474549629915
+Buildinglong,0.0670871035277604
+year_built,0.214681138452179
+mindist_multiply_year_built,0.2679822375447557
+hazards_present,0.2966926350415222

@@ -1,0 +1,92 @@
+feature,mean_importance
+wall_structure,-0.00482726950566591
+longitude,-0.0038737877388903413
+roof_shape_Monoslope,-0.003083055049418701
+year_built,-0.000560461540978896
+wall_substrate_Not Applicable,-0.0005256134174497801
+"roof_cover_""Metal, standing seam""",-0.00022168843340310274
+"roof_shape_Complex,Gable",-0.00018767944381260782
+roof_shape_Gable/Hip Combo,-0.00013195610691705273
+"roof_system_""Steel, hot rolled""",-9.150597127815241e-05
+foundation_type_Unknown,-8.950635537765816e-05
+foundation_type_Slab-on-grade,-7.185905563263373e-05
+rainwater_ingress_damage_rating,-6.451942607149652e-05
+number_of_stories,-5.2487101707088255e-05
+building_type,-2.5125080092203155e-05
+roof_shape_Hip,-3.308448992658808e-06
+"roof_system_""Steel, cold formed"",""Steel, joists""",0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+wall_substrate_masonry ,0.0
+wall_substrate_Thin aluminum siding,0.0
+wall_substrate_None at first floor Rc moment frame,0.0
+"roof_system_""Steel, hot rolled"",""Steel, joists""",0.0
+"roof_system_""Wood, rafter""",0.0
+"roof_system_""Wood, rafter"",""Wood, trusses""",0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+roof_system_Concrete slab,0.0
+wall_substrate_None,0.0
+"roof_system_""Steel, cold formed""",0.0
+"wall_substrate_""Wood, dimensional planks""",0.0
+roof_substrate_type_Plywood,0.0
+roof_substrate_type_Dimensional lumber,0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+roof_cover_Unknown,0.0
+roof_cover_Red composite shingle,0.0
+roof_cover_Other,0.0
+roof_cover_Metal shingles,0.0
+roof_cover_Clay tiles,0.0
+roof_cover_Built-up without Gravel,0.0
+roof_system_Unknown,0.0
+roof_cover_Built-up with Gravel,0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+roof_cover_Asphalt shingles (3-tab),0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+"roof_cover_""Metal, corrugated""",0.0
+roof_substrate_type_Plywood/OSB,0.0
+wall_substrate_Insulated foam board,0.0
+roof_substrate_type_None,0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+"wall_substrate_""Wood, sheathing""",0.0
+roof_cover_composite shingles,0.0
+"wall_substrate_""Wood, sheathing (continuous)""",0.0
+Buildinglat,0.0
+Buildinglong,0.0
+roof_shape_Arch,0.0
+roof_shape_Complex,0.0
+"roof_shape_Complex,Hip",0.0
+roof_shape_Flat,0.0
+"roof_shape_Flat,Gable",0.0
+"roof_shape_Gable,Hip",0.0
+"roof_shape_Gable,Monoslope",0.0
+"wall_substrate_""Wood, sheathing (corners only)""",0.0
+"roof_shape_Hip,Curved",0.0
+foundation_type_Cast-in-place concrete piers,0.0
+foundation_type_Concrete piers support cast concrete slab on grade,0.0
+roof_shape_Gambrel,0.0
+foundation_type_Wood Piers <= 8 ft,0.0
+foundation_type_Ground anchors and strapping,0.0
+roof_cover_Wood shingle,0.0
+"foundation_type_Piers <= 8 ft, unstrapped",0.0
+foundation_type_Reinforced masonry stem wall,0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+foundation_type_helical anchors spaced irregulary,0.0
+foundation_type_Unreinforced masonry piers,0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+foundation_type_Wood Piers > 8 ft,0.0
+foundation_type_Crawlspace,0.0
+roof_substrate_type_Unknown,6.139042758399049e-05
+foundation_type_Reinforced masonry piers,6.392852715988717e-05
+wall_cladding,8.799322618140704e-05
+"roof_system_""Wood, trusses""",0.00013982437654915246
+"roof_system_""Steel, joists""",0.00015104576436938966
+roof_shape_Gable,0.0001549404682429034
+"roof_system_""Wood, unknown""",0.00027308365961078995
+understory_pct_of_building_footprint,0.0005117170942276206
+mwfrs,0.0007166784883234606
+wall_substrate_Unknown,0.0007929963775872489
+roof_cover_Asphalt shingles (laminated),0.0008508522571780919
+mindist,0.0074040039897928425
+Unnamed0,0.02317633659279785
+hazards_present,0.02689279798881694
+surge_damage_rating,1.1651037785302578
+wind_damage_rating,1.2199034189405809

@@ -1,0 +1,30 @@
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist > 15.151) and (roof_shape <= 11.0) then class: 1 (proba: 28.12%) | based on 128 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglong <= -85.399) and (hazards_present <= 15.5) then class: 1 (proba: 44.14%) | based on 111 samples
+
+if (mindist <= 10.507) and (mindist <= 9.188) and (year_built <= 2013.0) and (year_built > 977.5) then class: 4 (proba: 95.65%) | based on 46 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglong > -85.399) and (number_of_stories <= 1.75) then class: 1 (proba: 73.33%) | based on 45 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglong <= -85.399) and (hazards_present > 15.5) then class: 2 (proba: 58.62%) | based on 29 samples
+
+if (mindist <= 10.507) and (mindist > 9.188) and (Buildinglong <= -85.416) and (year_built <= 2001.0) then class: 3 (proba: 52.0%) | based on 25 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglong > -85.399) and (number_of_stories > 1.75) then class: 2 (proba: 57.14%) | based on 21 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist > 15.151) and (roof_shape > 11.0) then class: 2 (proba: 65.0%) | based on 20 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist <= 15.151) and (mindist <= 13.367) then class: 2 (proba: 46.67%) | based on 15 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist <= 15.151) and (mindist > 13.367) then class: 4 (proba: 84.62%) | based on 13 samples
+
+if (mindist <= 10.507) and (mindist > 9.188) and (Buildinglong > -85.416) and (Buildinglong <= -85.414) then class: 4 (proba: 100.0%) | based on 9 samples
+
+if (mindist <= 10.507) and (mindist > 9.188) and (Buildinglong <= -85.416) and (year_built > 2001.0) then class: 2 (proba: 50.0%) | based on 6 samples
+
+if (mindist <= 10.507) and (mindist > 9.188) and (Buildinglong > -85.416) and (Buildinglong > -85.414) then class: 3 (proba: 66.67%) | based on 3 samples
+
+if (mindist <= 10.507) and (mindist <= 9.188) and (year_built > 2013.0) then class: 2 (proba: 100.0%) | based on 2 samples
+
+if (mindist <= 10.507) and (mindist <= 9.188) and (year_built <= 2013.0) and (year_built <= 977.5) then class: 2 (proba: 100.0%) | based on 1 samples
+

@@ -1,0 +1,16 @@
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft <= 0.5) and (building_type_SingleFamily > 0.5) then response: 1.659 | based on 296 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft <= 0.5) and (building_type_SingleFamily <= 0.5) then response: 2.266 | based on 79 samples
+
+if (mindist <= 10.287) and (year_built <= 2003.5) and (year_built > 970.0) then response: 3.753 | based on 73 samples
+
+if (mindist <= 10.287) and (year_built > 2003.5) and (wall_cladding_PlywoodSidingWoodShakeShingle <= 0.5) then response: 2.375 | based on 8 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft > 0.5) and (mindist <= 16.385) then response: 4.0 | based on 7 samples
+
+if (mindist <= 10.287) and (year_built <= 2003.5) and (year_built <= 970.0) then response: 2.5 | based on 4 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft > 0.5) and (mindist > 16.385) then response: 2.5 | based on 2 samples
+
+if (mindist <= 10.287) and (year_built > 2003.5) and (wall_cladding_PlywoodSidingWoodShakeShingle > 0.5) then response: 0.0 | based on 1 samples
+

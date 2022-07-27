@@ -1,0 +1,10 @@
+feature,mean_importance
+roof_cover_Asphaltshingleslaminated,0.0011477196921689137
+wall_substrate_Unknown,0.006714940682839643
+wall_structure_nan,0.015215622501810277
+building_type_SingleFamily,0.06137824376390151
+roof_substrate_type_Unknown,0.07388400213424877
+number_of_stories,0.09146150293987243
+Unnamed0,0.129969521014485
+year_built,0.23787897462611068
+mindist,0.3796052842560729

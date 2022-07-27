@@ -1,0 +1,10 @@
+feature,shap_importance
+mindist,0.3691784894788904
+year_built,0.14457693111258624
+roof_substrate_type_Unknown,0.08942184363419155
+building_type_SingleFamily,0.06074577273561286
+Unnamed0,0.041335059680792235
+number_of_stories,0.03810262670637107
+roof_cover_Asphaltshingleslaminated,0.021150818078485456
+wall_structure_nan,0.002728587037883136
+wall_substrate_Unknown,0.0007581577066885331

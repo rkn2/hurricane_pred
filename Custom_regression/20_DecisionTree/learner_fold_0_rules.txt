@@ -1,0 +1,8 @@
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft <= 0.5) then response: 1.787 | based on 375 samples
+
+if (mindist <= 10.287) and (year_built <= 2003.5) then response: 3.688 | based on 77 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft > 0.5) then response: 3.667 | based on 9 samples
+
+if (mindist <= 10.287) and (year_built > 2003.5) then response: 2.111 | based on 9 samples
+

@@ -1,0 +1,136 @@
+feature,mean_importance
+21_NeuralNetwork_SelectedFeatures_prediction,-0.02390873769988342
+8_Xgboost_GoldenFeatures_prediction,-0.023327047869111283
+17_NeuralNetwork_prediction,-0.00836999507596814
+4_Default_Xgboost_prediction,-0.006380882432317003
+hazards_present,-0.006159551292860365
+number_of_stories,-0.006042327356550703
+24_NeuralNetwork_prediction,-0.004428556364590719
+6_Default_RandomForest_GoldenFeatures_prediction,-0.0035444886779759655
+year_built_ratio_number_of_stories,-0.0033251651168031415
+number_of_stories_ratio_year_built,-0.0021416130496665796
+23_NeuralNetwork_prediction,-0.002029749870838238
+Buildinglat_diff_Buildinglong,-0.0019490545259589931
+roof_shape_Hip,-0.0017816675924892556
+7_Xgboost_GoldenFeatures_SelectedFeatures_prediction,-0.0016844923499150343
+6_Default_RandomForest_prediction,-0.00125084967954876
+mindist_ratio_year_built,-0.001083050136296837
+roof_shape_Gable,-0.0010659703179196844
+2_DecisionTree_prediction,-0.0009982590385285706
+wall_substrate_Unknown,-0.0008986413969108486
+13_DecisionTree_prediction,-0.000571631612341883
+Buildinglong,-0.0004783865888330352
+number_of_stories_multiply_Buildinglat,-0.00035303175385128507
+understory_pct_of_building_footprint,-0.0003104246550477585
+3_Linear_prediction,-0.00029356242966054323
+"roof_system_""Steel, hot rolled""",-0.00028618918888079214
+"wall_substrate_""Wood, sheathing (continuous)""",-4.045828157310805e-05
+"roof_system_""Steel, hot rolled"",Z purlins",0.0
+foundation_type_Unreinforced masonry piers,0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+"roof_system_""Steel, hot rolled"",""Wood, unknown""",0.0
+foundation_type_Wood Piers <= 8 ft,0.0
+foundation_type_helical anchors spaced irregulary,0.0
+"roof_system_""Steel, hot rolled"",""Steel, joists""",0.0
+"wall_substrate_""Wood, sheathing""",0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+wall_substrate_Insulated foam board,0.0
+wall_substrate_Thin aluminum siding,0.0
+"wall_substrate_Not Applicable,Wood Beams",0.0
+"wall_substrate_""Wood, sheathing (corners only)""",0.0
+wall_substrate_Not Applicable,0.0
+wall_substrate_None at first floor Rc moment frame,0.0
+wall_substrate_None,0.0
+wall_substrate_Metal panels,0.0
+"wall_substrate_""Wood, dimensional planks""",0.0
+wall_substrate_masonry ,0.0
+roof_shape_Monoslope,0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+roof_cover_Unknown,0.0
+roof_cover_Tile Slate Roof Cover,0.0
+roof_cover_Roll roofing,0.0
+roof_cover_Red composite shingle,0.0
+roof_cover_Other,0.0
+roof_cover_Metal shingles,0.0
+roof_cover_Clay tiles,0.0
+roof_cover_Built-up without Gravel,0.0
+roof_cover_Built-up with Gravel,0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, corrugated""",0.0
+"roof_system_""Wood, rafter""",0.0
+roof_cover_Asphalt shingles (laminated),0.0
+"roof_cover_""Metal, standing seam""",0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+"roof_cover_""Metal, corrugated""",0.0
+roof_substrate_type_Plywood/OSB,0.0
+roof_substrate_type_Plywood,0.0
+roof_substrate_type_None,0.0
+roof_substrate_type_Metal deck,0.0
+roof_substrate_type_Dimensional lumber,0.0
+roof_system_Unknown,0.0
+foundation_type_Unknown,0.0
+roof_system_Concrete slab,0.0
+"roof_system_""Wood, unknown""",0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+roof_cover_composite shingles,0.0
+"roof_shape_Flat,Gable",0.0
+roof_shape_Complex,0.0
+roof_shape_Arch,0.0
+"roof_shape_Gable,Gambrel",0.0
+"roof_shape_Gable,Hip",0.0
+"roof_shape_Gable,Monoslope",0.0
+roof_shape_Gable/Hip Combo,0.0
+roof_shape_Gambrel,0.0
+"roof_shape_Hip,Curved",0.0
+"roof_shape_Hip,Gable",0.0
+roof_cover_Wood shingle,0.0
+roof_shape_Unknown,0.0
+foundation_type_Cast-in-place concrete piers,0.0
+foundation_type_Reinforced masonry piers,0.0
+foundation_type_Concrete piers support cast concrete slab on grade,0.0
+foundation_type_Crawlspace,0.0
+foundation_type_Ground anchors and strapping,0.0
+"foundation_type_Piers <= 8 ft, unstrapped",0.0
+"roof_shape_Complex,Hip",0.0
+"roof_shape_Complex,Gable",0.0
+"roof_system_""Steel, cold formed""",9.035686965190859e-05
+foundation_type_Wood Piers > 8 ft,0.00010642081733729381
+5_Default_NeuralNetwork_prediction,0.00011094680787766542
+14_DecisionTree_prediction,0.00011180778020702942
+"roof_system_""Wood, trusses""",0.00043411474554797545
+mindist_multiply_year_built,0.00044163084372261796
+mindist,0.000825661680189671
+11_RandomForest_prediction,0.0011349401798536052
+22_NeuralNetwork_SelectedFeatures_prediction,0.0011443497835920136
+roof_cover_Asphalt shingles (3-tab),0.00116262158210938
+6_Default_RandomForest_SelectedFeatures_prediction,0.0014459717852141284
+"roof_system_""Steel, joists""",0.0018495175442842405
+wall_structure,0.0019564559942085056
+number_of_stories_diff_mindist,0.002239715027760192
+12_RandomForest_prediction,0.0029111924257587017
+roof_substrate_type_Unknown,0.0029308044203687047
+roof_shape_Flat,0.0030758677315332107
+9_RandomForest_SelectedFeatures_prediction,0.003096618269201401
+understory_pct_of_building_footprint_diff_mindist,0.00321830114040933
+wall_cladding,0.0032665973770121147
+4_Default_Xgboost_categorical_mix_GoldenFeatures_prediction,0.003662797493601788
+foundation_type_Slab-on-grade,0.0038788961162520286
+number_of_stories_sum_Buildinglat,0.0038868290525294834
+Buildinglong_multiply_Buildinglat,0.0039494986949617505
+building_type,0.004034040393190841
+20_RandomForest_SelectedFeatures_prediction,0.004173688652745455
+Buildinglat,0.00441117534163038
+4_Default_Xgboost_categorical_mix_prediction,0.004477834493447163
+year_built,0.004791364499507589
+4_Default_Xgboost_GoldenFeatures_prediction,0.00497752035679635
+16_NeuralNetwork_SelectedFeatures_prediction,0.005771516193034709
+mwfrs,0.00696025866737493
+4_Default_Xgboost_categorical_mix_GoldenFeatures_SelectedFeatures_prediction,0.007876486616890754
+15_NeuralNetwork_SelectedFeatures_prediction,0.008377610537293068
+10_RandomForest_SelectedFeatures_prediction,0.010635958929863265
+5_Default_NeuralNetwork_SelectedFeatures_prediction,0.020607648844737803
+18_NeuralNetwork_prediction,0.02066979164757503
+Ensemble_prediction,0.12114320979262443
+19_Xgboost_GoldenFeatures_SelectedFeatures_prediction,0.132040136299249

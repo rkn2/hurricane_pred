@@ -1,0 +1,16 @@
+if (mindist > 10.446) and (year_built > 1995.5) and (roof_system_Steeljoists <= 0.5) then response: 1.55 | based on 209 samples
+
+if (mindist > 10.446) and (year_built <= 1995.5) and (number_of_stories <= 1.5) then response: 1.953 | based on 128 samples
+
+if (mindist <= 10.446) and (year_built <= 1995.0) and (wall_cladding_FiberCementBoard <= 0.5) then response: 3.812 | based on 69 samples
+
+if (mindist > 10.446) and (year_built <= 1995.5) and (number_of_stories > 1.5) then response: 2.822 | based on 45 samples
+
+if (mindist <= 10.446) and (year_built > 1995.0) and (understory_pct_of_building_footprint <= 62.5) then response: 2.333 | based on 12 samples
+
+if (mindist <= 10.446) and (year_built > 1995.0) and (understory_pct_of_building_footprint > 62.5) then response: 3.4 | based on 5 samples
+
+if (mindist > 10.446) and (year_built > 1995.5) and (roof_system_Steeljoists > 0.5) then response: 4.0 | based on 2 samples
+
+if (mindist <= 10.446) and (year_built <= 1995.0) and (wall_cladding_FiberCementBoard > 0.5) then response: 1.0 | based on 1 samples
+

@@ -1,0 +1,26 @@
+if (mindist > 11.174) and (year_built <= 1995.5) and (hazards_present > 0.5) and (Buildinglong <= -85.373) then response: 2.406 | based on 133 samples
+
+if (mindist > 11.174) and (year_built > 1995.5) and (mindist > 18.747) and (building_type <= 21.0) then response: 1.756 | based on 119 samples
+
+if (mindist > 11.174) and (year_built > 1995.5) and (mindist <= 18.747) and (number_of_stories <= 1.75) then response: 1.075 | based on 53 samples
+
+if (mindist <= 11.174) and (year_built <= 1996.5) and (hazards_present <= 20.5) and (hazards_present <= 13.0) then response: 3.939 | based on 49 samples
+
+if (mindist > 11.174) and (year_built <= 1995.5) and (hazards_present > 0.5) and (Buildinglong > -85.373) then response: 1.717 | based on 46 samples
+
+if (mindist > 11.174) and (year_built > 1995.5) and (mindist <= 18.747) and (number_of_stories > 1.75) then response: 1.72 | based on 25 samples
+
+if (mindist <= 11.174) and (year_built <= 1996.5) and (hazards_present <= 20.5) and (hazards_present > 13.0) then response: 3.381 | based on 21 samples
+
+if (mindist <= 11.174) and (year_built > 1996.5) and (hazards_present > 1.5) and (hazards_present > 12.5) then response: 2.286 | based on 14 samples
+
+if (mindist <= 11.174) and (year_built > 1996.5) and (hazards_present > 1.5) and (hazards_present <= 12.5) then response: 3.429 | based on 7 samples
+
+if (mindist > 11.174) and (year_built <= 1995.5) and (hazards_present <= 0.5) then response: 0.0 | based on 3 samples
+
+if (mindist > 11.174) and (year_built > 1995.5) and (mindist > 18.747) and (building_type > 21.0) then response: 3.5 | based on 2 samples
+
+if (mindist <= 11.174) and (year_built > 1996.5) and (hazards_present <= 1.5) then response: 0.0 | based on 1 samples
+
+if (mindist <= 11.174) and (year_built <= 1996.5) and (hazards_present > 20.5) then response: 1.0 | based on 1 samples
+

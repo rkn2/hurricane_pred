@@ -1,0 +1,28 @@
+if (mindist > 10.468) and (building_type_SingleFamily > 0.5) and (understory_pct_of_building_footprint <= 17.5) and (Unnamed0 <= 720.0) then response: 1.652 | based on 282 samples
+
+if (mindist <= 10.468) and (year_built <= 1996.5) and (wall_cladding_FiberCementBoard <= 0.5) and (year_built > 970.0) then response: 3.889 | based on 54 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown <= 0.5) and (year_built <= 1984.5) then response: 2.897 | based on 39 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown <= 0.5) and (year_built > 1984.5) then response: 2.188 | based on 32 samples
+
+if (mindist <= 10.468) and (year_built > 1996.5) and (wall_substrate_Unknown <= 0.5) and (wall_structure_ConcretemomentresistingframeSteelcoldform <= 0.5) then response: 2.778 | based on 18 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily > 0.5) and (understory_pct_of_building_footprint > 17.5) and (mindist <= 14.511) then response: 2.125 | based on 16 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily > 0.5) and (understory_pct_of_building_footprint > 17.5) and (mindist > 14.511) then response: 3.375 | based on 8 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown > 0.5) and (mindist <= 26.758) then response: 0.75 | based on 8 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily > 0.5) and (understory_pct_of_building_footprint <= 17.5) and (Unnamed0 > 720.0) then response: 0.5 | based on 6 samples
+
+if (mindist <= 10.468) and (year_built <= 1996.5) and (wall_cladding_FiberCementBoard <= 0.5) and (year_built <= 970.0) then response: 3.0 | based on 3 samples
+
+if (mindist > 10.468) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown > 0.5) and (mindist > 26.758) then response: 4.0 | based on 1 samples
+
+if (mindist <= 10.468) and (year_built > 1996.5) and (wall_substrate_Unknown > 0.5) then response: 0.0 | based on 1 samples
+
+if (mindist <= 10.468) and (year_built > 1996.5) and (wall_substrate_Unknown <= 0.5) and (wall_structure_ConcretemomentresistingframeSteelcoldform > 0.5) then response: 1.0 | based on 1 samples
+
+if (mindist <= 10.468) and (year_built <= 1996.5) and (wall_cladding_FiberCementBoard > 0.5) then response: 1.0 | based on 1 samples
+

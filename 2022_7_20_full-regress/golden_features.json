@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "number_of_stories",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.7900651718
+        },
+        {
+            "feature1": "Buildinglat",
+            "feature2": "Buildinglong",
+            "operation": "diff",
+            "score": 0.7973158499
+        },
+        {
+            "feature1": "year_built",
+            "feature2": "number_of_stories",
+            "operation": "ratio",
+            "score": 0.8250059614
+        },
+        {
+            "feature1": "Buildinglong",
+            "feature2": "Buildinglat",
+            "operation": "multiply",
+            "score": 0.8312143636
+        },
+        {
+            "feature1": "number_of_stories",
+            "feature2": "Buildinglat",
+            "operation": "sum",
+            "score": 0.8335576499
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "year_built",
+            "operation": "ratio",
+            "score": 0.8343729222
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "year_built",
+            "operation": "multiply",
+            "score": 0.8377252629
+        },
+        {
+            "feature1": "number_of_stories",
+            "feature2": "Buildinglat",
+            "operation": "multiply",
+            "score": 0.8385212003
+        },
+        {
+            "feature1": "number_of_stories",
+            "feature2": "year_built",
+            "operation": "ratio",
+            "score": 0.8438475856
+        },
+        {
+            "feature1": "understory_pct_of_building_footprint",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8475888108
+        }
+    ],
+    "new_columns": [
+        "number_of_stories_diff_mindist",
+        "Buildinglat_diff_Buildinglong",
+        "year_built_ratio_number_of_stories",
+        "Buildinglong_multiply_Buildinglat",
+        "number_of_stories_sum_Buildinglat",
+        "mindist_ratio_year_built",
+        "mindist_multiply_year_built",
+        "number_of_stories_multiply_Buildinglat",
+        "number_of_stories_ratio_year_built",
+        "understory_pct_of_building_footprint_diff_mindist"
+    ],
+    "ml_task": "regression"
+}

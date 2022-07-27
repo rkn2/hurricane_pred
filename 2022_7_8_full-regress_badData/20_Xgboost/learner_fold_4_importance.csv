@@ -1,0 +1,94 @@
+feature,mean_importance
+wall_cladding,-0.0029427189804876823
+number_of_stories,-0.0017856934343131986
+roof_substrate_type_Unknown,-0.0016493419322015119
+wall_substrate_Not Applicable,-0.000990190439636962
+building_type,-0.0009576434394278188
+wall_substrate_Unknown,-0.0007557442019774568
+roof_shape_Gable,-0.0005973102304102473
+"wall_substrate_""Wood, dimensional planks""",-0.0005522708365366336
+"wall_substrate_""Wood, sheathing (continuous)""",-0.00044364207413466196
+"roof_system_""Wood, unknown""",-0.0003688821875692416
+"roof_system_""Wood, trusses""",-0.00020526593531439984
+roof_shape_Flat,-0.00016138789525489418
+roof_cover_Asphalt shingles (3-tab),-0.00010392971284410301
+roof_shape_Complex,-3.520879594308135e-05
+"roof_cover_""Metal, corrugated""",-2.0691348657086996e-05
+"roof_system_""Steel, joists""",0.0
+"roof_system_""Steel, hot rolled"",Z purlins",0.0
+"roof_system_""Steel, hot rolled"",""Wood, unknown""",0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+"roof_system_""Steel, cold formed"",""Steel, joists""",0.0
+"roof_system_""Steel, cold formed""",0.0
+roof_cover_Roll roofing,0.0
+"wall_substrate_Not Applicable,Wood Beams",0.0
+roof_cover_Tile Slate Roof Cover,0.0
+wall_substrate_None at first floor Rc moment frame,0.0
+wall_substrate_None,0.0
+wall_substrate_Metal panels,0.0
+wall_substrate_Insulated foam board,0.0
+wall_substrate_masonry ,0.0
+"roof_system_""Wood, rafter""",0.0
+roof_cover_Built-up with Gravel,0.0
+roof_cover_Built-up without Gravel,0.0
+roof_system_Concrete slab,0.0
+roof_system_Unknown,0.0
+roof_substrate_type_Dimensional lumber,0.0
+"wall_substrate_""Wood, sheathing""",0.0
+roof_cover_Other,0.0
+roof_substrate_type_None,0.0
+roof_substrate_type_Plywood,0.0
+roof_cover_Metal shingles,0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+roof_cover_Clay tiles,0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, corrugated""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+"roof_system_""Wood, rafter"",""Wood, trusses""",0.0
+roof_substrate_type_Metal deck,0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+foundation_type_Wood Piers > 8 ft,0.0
+Buildinglong,0.0
+roof_shape_Arch,0.0
+"roof_shape_Complex,Gable",0.0
+"roof_shape_Complex,Hip",0.0
+"roof_shape_Flat,Gable",0.0
+"roof_shape_Gable,Gambrel",0.0
+roof_cover_Unknown,0.0
+"roof_shape_Gable,Monoslope",0.0
+roof_shape_Gambrel,0.0
+"roof_shape_Hip,Gable",0.0
+roof_shape_Monoslope,0.0
+roof_shape_Unknown,0.0
+foundation_type_Cast-in-place concrete piers,0.0
+"roof_shape_Gable,Hip",0.0
+foundation_type_Crawlspace,0.0
+foundation_type_Ground anchors and strapping,0.0
+"foundation_type_Piers <= 8 ft, unstrapped",0.0
+foundation_type_Reinforced masonry piers,0.0
+foundation_type_Reinforced masonry stem wall,0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+foundation_type_Wood Piers <= 8 ft,0.0
+foundation_type_Concrete piers support cast concrete slab on grade,0.0
+foundation_type_Unreinforced masonry piers,0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+understory_pct_of_building_footprint,2.0529104550071064e-05
+roof_shape_Gable/Hip Combo,3.5931073071562844e-05
+Buildinglat,4.619183292909057e-05
+roof_shape_Hip,5.9938045667246034e-05
+"roof_system_""Steel, hot rolled""",0.00017534382072372512
+mwfrs,0.0003252915444703214
+roof_cover_Asphalt shingles (laminated),0.000366813081973269
+"roof_cover_""Metal, standing seam""",0.0004495458517722345
+roof_substrate_type_Plywood/OSB,0.0006991290215273393
+foundation_type_Unknown,0.0007643461183979794
+foundation_type_Slab-on-grade,0.0020692051472885305
+Unnamed0,0.002264635061126666
+wall_structure,0.0023769508540759043
+longitude,0.002512295011584331
+hazards_present,0.0031441728693090394
+year_built,0.004863184961128331
+rainwater_ingress_damage_rating,0.004908892115393537
+mindist,0.013374911272435444
+surge_damage_rating,1.3649165018066742
+wind_damage_rating,1.4893934770860053

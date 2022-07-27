@@ -1,0 +1,168 @@
+{
+    "new_features": [
+        {
+            "feature1": "mindist",
+            "feature2": "wall_substrate_Unknown",
+            "operation": "sum",
+            "score": 0.7708300661
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "foundation_type_Slabongrade",
+            "operation": "sum",
+            "score": 0.7861716995
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "wall_cladding_PlywoodSidingWoodShakeShingle",
+            "operation": "sum",
+            "score": 0.7861830763
+        },
+        {
+            "feature1": "foundation_type_Unknown",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.7892188384
+        },
+        {
+            "feature1": "building_type_SingleFamily",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8018584173
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "roof_substrate_type_Unknown",
+            "operation": "sum",
+            "score": 0.8073814769
+        },
+        {
+            "feature1": "wall_cladding_FiberCementBoard",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8095080778
+        },
+        {
+            "feature1": "wall_cladding_VinylSidingunknown",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8133004872
+        },
+        {
+            "feature1": "understory_pct_of_building_footprint",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8138636702
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "roof_system_Woodtrusses",
+            "operation": "sum",
+            "score": 0.8141417709
+        },
+        {
+            "feature1": "wall_substrate_Woodsheathingcontinuous",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8142035612
+        },
+        {
+            "feature1": "roof_cover_Metalstandingseam",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8149585144
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "roof_system_Woodunknown",
+            "operation": "sum",
+            "score": 0.8149623954
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "number_of_stories",
+            "operation": "sum",
+            "score": 0.8155077907
+        },
+        {
+            "feature1": "wall_cladding_FiberCementBoardVinylSidingunknown",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8176637279
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "roof_cover_Unknown",
+            "operation": "sum",
+            "score": 0.8189026047
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "foundation_type_WoodPiers_le_8ft",
+            "operation": "sum",
+            "score": 0.8191088314
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "roof_shape_Complex",
+            "operation": "sum",
+            "score": 0.8206493757
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "wall_structure_Woodframe",
+            "operation": "sum",
+            "score": 0.8238607663
+        },
+        {
+            "feature1": "roof_cover_Asphaltshingleslaminated",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8241783839
+        },
+        {
+            "feature1": "mindist",
+            "feature2": "mwfrs_RoofDiaphragmwoodWallDiaphragmwood",
+            "operation": "sum",
+            "score": 0.826669049
+        },
+        {
+            "feature1": "wall_cladding_PlywoodSidingWoodShakeShingle",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8275639504
+        },
+        {
+            "feature1": "building_type_MultiFamily",
+            "feature2": "mindist",
+            "operation": "diff",
+            "score": 0.8279274961
+        }
+    ],
+    "new_columns": [
+        "mindist_sum_wall_substrate_Unknown",
+        "mindist_sum_foundation_type_Slabongrade",
+        "mindist_sum_wall_cladding_PlywoodSidingWoodShakeShingle",
+        "foundation_type_Unknown_diff_mindist",
+        "building_type_SingleFamily_diff_mindist",
+        "mindist_sum_roof_substrate_type_Unknown",
+        "wall_cladding_FiberCementBoard_diff_mindist",
+        "wall_cladding_VinylSidingunknown_diff_mindist",
+        "understory_pct_of_building_footprint_diff_mindist",
+        "mindist_sum_roof_system_Woodtrusses",
+        "wall_substrate_Woodsheathingcontinuous_diff_mindist",
+        "roof_cover_Metalstandingseam_diff_mindist",
+        "mindist_sum_roof_system_Woodunknown",
+        "mindist_sum_number_of_stories",
+        "wall_cladding_FiberCementBoardVinylSidingunknown_diff_mindist",
+        "mindist_sum_roof_cover_Unknown",
+        "mindist_sum_foundation_type_WoodPiers_le_8ft",
+        "mindist_sum_roof_shape_Complex",
+        "mindist_sum_wall_structure_Woodframe",
+        "roof_cover_Asphaltshingleslaminated_diff_mindist",
+        "mindist_sum_mwfrs_RoofDiaphragmwoodWallDiaphragmwood",
+        "wall_cladding_PlywoodSidingWoodShakeShingle_diff_mindist",
+        "building_type_MultiFamily_diff_mindist"
+    ],
+    "ml_task": "regression"
+}

@@ -1,0 +1,8 @@
+if (mindist > 10.564) and (year_built > 1995.5) then class: 1 (proba: 44.98%) | based on 209 samples
+
+if (mindist > 10.564) and (year_built <= 1995.5) then class: 2 (proba: 30.11%) | based on 176 samples
+
+if (mindist <= 10.564) and (year_built <= 1995.0) then class: 4 (proba: 82.86%) | based on 70 samples
+
+if (mindist <= 10.564) and (year_built > 1995.0) then class: 2 (proba: 36.84%) | based on 19 samples
+

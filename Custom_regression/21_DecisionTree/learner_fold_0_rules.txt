@@ -1,0 +1,28 @@
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft <= 0.5) and (building_type_SingleFamily > 0.5) and (number_of_stories <= 1.75) then response: 1.532 | based on 220 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft <= 0.5) and (building_type_SingleFamily > 0.5) and (number_of_stories > 1.75) then response: 2.026 | based on 76 samples
+
+if (mindist <= 10.287) and (year_built <= 2003.5) and (year_built > 970.0) and (wall_cladding_FiberCementBoard <= 0.5) then response: 3.803 | based on 71 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft <= 0.5) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown <= 0.5) then response: 2.492 | based on 65 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft <= 0.5) and (building_type_SingleFamily <= 0.5) and (roof_substrate_type_Unknown > 0.5) then response: 1.214 | based on 14 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft > 0.5) and (mindist <= 16.385) then response: 4.0 | based on 7 samples
+
+if (mindist <= 10.287) and (year_built > 2003.5) and (wall_cladding_PlywoodSidingWoodShakeShingle <= 0.5) and (wall_cladding_VinylSidingunknown > 0.5) then response: 2.75 | based on 4 samples
+
+if (mindist <= 10.287) and (year_built > 2003.5) and (wall_cladding_PlywoodSidingWoodShakeShingle <= 0.5) and (wall_cladding_VinylSidingunknown <= 0.5) then response: 2.0 | based on 4 samples
+
+if (mindist <= 10.287) and (year_built <= 2003.5) and (year_built > 970.0) and (wall_cladding_FiberCementBoard > 0.5) then response: 2.0 | based on 2 samples
+
+if (mindist <= 10.287) and (year_built <= 2003.5) and (year_built <= 970.0) and (wall_cladding_Corrugatedsteelpanels > 0.5) then response: 3.0 | based on 2 samples
+
+if (mindist <= 10.287) and (year_built <= 2003.5) and (year_built <= 970.0) and (wall_cladding_Corrugatedsteelpanels <= 0.5) then response: 2.0 | based on 2 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft > 0.5) and (mindist > 16.385) and (roof_system_Woodunknown > 0.5) then response: 2.0 | based on 1 samples
+
+if (mindist > 10.287) and (foundation_type_WoodPiers_le_8ft > 0.5) and (mindist > 16.385) and (roof_system_Woodunknown <= 0.5) then response: 3.0 | based on 1 samples
+
+if (mindist <= 10.287) and (year_built > 2003.5) and (wall_cladding_PlywoodSidingWoodShakeShingle > 0.5) then response: 0.0 | based on 1 samples
+

@@ -1,0 +1,23 @@
+[
+    "Unnamed0",
+    "mindist",
+    "building_type",
+    "longitude",
+    "Buildinglat",
+    "hazards_present",
+    "year_built",
+    "roof_shape",
+    "wall_substrate",
+    "random_feature",
+    "roof_substrate_type",
+    "rainwater_ingress_damage_rating",
+    "roof_system",
+    "understory_pct_of_building_footprint",
+    "wall_cladding",
+    "number_of_stories",
+    "mwfrs",
+    "wall_structure",
+    "foundation_type",
+    "roof_cover",
+    "Buildinglong"
+]

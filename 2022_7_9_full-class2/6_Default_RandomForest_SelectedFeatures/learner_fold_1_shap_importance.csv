@@ -1,0 +1,10 @@
+feature,shap_importance
+mindist,0.38572695848708116
+year_built,0.20249871140823783
+hazards_present,0.0745024347160842
+roof_system,0.07001259552313245
+foundation_type,0.03881241343463818
+roof_cover,0.03245833836990323
+roof_shape,0.01055206730245262
+wall_substrate,0.0
+roof_substrate_type,0.0

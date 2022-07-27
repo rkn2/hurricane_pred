@@ -1,0 +1,24 @@
+if (surge_damage_rating <= 2.5) and (wind_damage_rating <= 2.5) and (wind_damage_rating <= 1.5) and (wind_damage_rating > 0.5) then response: 1.075 | based on 133 samples
+
+if (surge_damage_rating <= 2.5) and (wind_damage_rating <= 2.5) and (wind_damage_rating > 1.5) and (hazards_present <= 21.5) then response: 1.967 | based on 121 samples
+
+if (surge_damage_rating > 2.5) and (surge_damage_rating > 3.5) then response: 4.0 | based on 71 samples
+
+if (surge_damage_rating <= 2.5) and (wind_damage_rating > 2.5) and (wind_damage_rating <= 3.5) and (wall_structure > 0.5) then response: 2.968 | based on 62 samples
+
+if (surge_damage_rating <= 2.5) and (wind_damage_rating <= 2.5) and (wind_damage_rating <= 1.5) and (wind_damage_rating <= 0.5) then response: 0.143 | based on 35 samples
+
+if (surge_damage_rating <= 2.5) and (wind_damage_rating > 2.5) and (wind_damage_rating > 3.5) and (roof_shape <= 11.5) then response: 3.853 | based on 34 samples
+
+if (surge_damage_rating > 2.5) and (surge_damage_rating <= 3.5) and (wall_structure > 9.0) and (hazards_present <= 18.5) then response: 3.0 | based on 11 samples
+
+if (surge_damage_rating <= 2.5) and (wind_damage_rating > 2.5) and (wind_damage_rating > 3.5) and (roof_shape > 11.5) then response: 2.0 | based on 2 samples
+
+if (surge_damage_rating > 2.5) and (surge_damage_rating <= 3.5) and (wall_structure > 9.0) and (hazards_present > 18.5) then response: 2.0 | based on 1 samples
+
+if (surge_damage_rating > 2.5) and (surge_damage_rating <= 3.5) and (wall_structure <= 9.0) then response: 4.0 | based on 1 samples
+
+if (surge_damage_rating <= 2.5) and (wind_damage_rating > 2.5) and (wind_damage_rating <= 3.5) and (wall_structure <= 0.5) then response: 1.0 | based on 1 samples
+
+if (surge_damage_rating <= 2.5) and (wind_damage_rating <= 2.5) and (wind_damage_rating > 1.5) and (hazards_present > 21.5) then response: 1.0 | based on 1 samples
+

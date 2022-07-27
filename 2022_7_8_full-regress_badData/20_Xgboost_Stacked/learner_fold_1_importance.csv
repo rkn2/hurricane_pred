@@ -1,0 +1,133 @@
+feature,mean_importance
+25_Xgboost_SelectedFeatures_prediction,-0.0008165712718994689
+rainwater_ingress_damage_rating,-0.0007863147364746276
+year_built,-0.0006314345137986733
+19_Xgboost_SelectedFeatures_prediction,-0.0005430783235720632
+"roof_system_""Steel, hot rolled""",-0.0005328763833412381
+24_RandomForest_GoldenFeatures_prediction,-0.0002823590292378358
+14_LightGBM_GoldenFeatures_prediction,-0.00026981127632972056
+22_DecisionTree_prediction,-0.0001660340015655959
+"roof_system_""Wood, trusses""",-0.00011746411975456228
+surge_damage_rating,-9.695059606953382e-05
+wall_structure,-8.926085127705096e-05
+wall_substrate_Not Applicable,-5.7105019068218185e-05
+wall_cladding,-4.174992036722058e-05
+"roof_system_""Wood, unknown""",-3.907763148212617e-05
+number_of_stories,-3.281226471024412e-05
+27_LightGBM_GoldenFeatures_prediction,-3.0707823597417305e-05
+"roof_cover_""Metal, corrugated""",-2.518350463320829e-06
+wall_substrate_None,0.0
+"wall_substrate_Not Applicable,Wood Beams",0.0
+"roof_system_""Steel, cold formed""",0.0
+"roof_system_""Steel, cold formed"",""Steel, joists""",0.0
+wall_substrate_Thin aluminum siding,0.0
+wall_substrate_Metal panels,0.0
+"roof_shape_Hip,Curved",0.0
+"wall_substrate_""Wood, sheathing""",0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+"wall_substrate_""Wood, dimensional planks""",0.0
+foundation_type_helical anchors spaced irregulary,0.0
+foundation_type_Wood Piers > 8 ft,0.0
+foundation_type_Wood Piers <= 8 ft,0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+foundation_type_Unreinforced masonry piers,0.0
+foundation_type_Slab-on-grade,0.0
+foundation_type_Reinforced masonry stem wall,0.0
+foundation_type_Reinforced masonry piers,0.0
+"foundation_type_Piers <= 8 ft, unstrapped",0.0
+foundation_type_Ground anchors and strapping,0.0
+foundation_type_Crawlspace,0.0
+wall_substrate_Insulated foam board,0.0
+"wall_substrate_""Wood, sheathing (corners only)""",0.0
+"roof_system_""Wood, rafter"",""Wood, trusses""",0.0
+"roof_system_""Steel, hot rolled"",""Wood, unknown""",0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+roof_cover_Unknown,0.0
+roof_cover_Tile Slate Roof Cover,0.0
+roof_cover_Roll roofing,0.0
+roof_cover_Red composite shingle,0.0
+roof_cover_Metal shingles,0.0
+roof_cover_Clay tiles,0.0
+roof_cover_Built-up without Gravel,0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, corrugated""",0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+"roof_system_""Steel, hot rolled"",""Steel, joists""",0.0
+roof_cover_Asphalt shingles (3-tab),0.0
+roof_substrate_type_Plywood,0.0
+roof_substrate_type_None,0.0
+roof_substrate_type_Metal deck,0.0
+roof_substrate_type_Dimensional lumber,0.0
+roof_system_Unknown,0.0
+roof_system_Concrete slab,0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+foundation_type_Cast-in-place concrete piers,0.0
+"roof_system_""Wood, rafter""",0.0
+"roof_system_""Steel, joists""",0.0
+"roof_system_""Steel, hot rolled"",Z purlins",0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+roof_shape_Unknown,0.0
+roof_cover_composite shingles,0.0
+"roof_shape_Hip,Gable",0.0
+Buildinglat,0.0
+roof_shape_Arch,0.0
+roof_shape_Complex,0.0
+Buildinglong,0.0
+"roof_shape_Complex,Gable",0.0
+"roof_shape_Complex,Hip",0.0
+roof_shape_Flat,0.0
+1_DecisionTree_prediction,0.0
+"roof_shape_Flat,Gable",0.0
+"roof_shape_Gable,Gambrel",0.0
+"roof_shape_Gable,Hip",0.0
+"roof_shape_Gable,Monoslope",0.0
+roof_shape_Gable/Hip Combo,0.0
+roof_shape_Gambrel,0.0
+roof_shape_Monoslope,0.0
+roof_cover_Wood shingle,0.0
+roof_shape_Gable,0.0
+roof_substrate_type_Plywood/OSB,1.9786367904173208e-05
+23_CatBoost_SelectedFeatures_prediction,2.226276951034778e-05
+mwfrs,3.610800436940065e-05
+21_DecisionTree_prediction,6.306250656884782e-05
+"roof_cover_""Metal, standing seam""",8.755052014921549e-05
+"wall_substrate_""Wood, sheathing (continuous)""",9.377323353674804e-05
+roof_shape_Hip,0.00012258349633632038
+wind_damage_rating,0.0001468983128750323
+roof_cover_Asphalt shingles (laminated),0.00015994747356562478
+10_RandomForest_prediction,0.00017405537381023073
+5_Default_CatBoost_SelectedFeatures_prediction,0.00017443987708686549
+building_type,0.0002711629401514065
+foundation_type_Unknown,0.00027603339276670026
+8_CatBoost_SelectedFeatures_prediction,0.0003204983998639804
+understory_pct_of_building_footprint,0.00037547111615384153
+wall_substrate_Unknown,0.0004171869819904972
+16_CatBoost_prediction,0.000579045690026797
+6_Default_RandomForest_GoldenFeatures_prediction,0.0006440033614026425
+20_Xgboost_prediction,0.000667423473332554
+4_Default_Xgboost_categorical_mix_SelectedFeatures_prediction,0.0007354323324656436
+5_Default_CatBoost_prediction,0.0011596783837203473
+12_RandomForest_GoldenFeatures_prediction,0.0011812151169234785
+3_Default_LightGBM_GoldenFeatures_prediction,0.001203622132250204
+13_LightGBM_GoldenFeatures_prediction,0.0012963056571588776
+Unnamed0,0.0014706138573601368
+9_RandomForest_prediction,0.0015067060971672014
+26_Xgboost_prediction,0.0015681265095180753
+11_RandomForest_GoldenFeatures_prediction,0.0017290893697110622
+hazards_present,0.0019914870883100733
+longitude,0.0022310882037551217
+5_Default_CatBoost_GoldenFeatures_prediction,0.002253378963734781
+roof_substrate_type_Unknown,0.003661340351494469
+6_Default_RandomForest_prediction,0.005633760599850543
+17_LightGBM_prediction,0.006688351087924099
+15_CatBoost_prediction,0.007339446457759208
+2_Linear_prediction,0.008474237638878224
+6_Default_RandomForest_SelectedFeatures_prediction,0.012677365657063464
+18_LightGBM_prediction,0.018241136947000657
+mindist,0.019210195749246737
+4_Default_Xgboost_prediction,0.01942331590126154
+4_Default_Xgboost_categorical_mix_prediction,0.026794293270506753
+3_Default_LightGBM_GoldenFeatures_SelectedFeatures_prediction,0.03822490187671952
+3_Default_LightGBM_prediction,0.07543068271771056
+Ensemble_prediction,0.24031588094517717
+7_CatBoost_SelectedFeatures_prediction,0.26987002985457165

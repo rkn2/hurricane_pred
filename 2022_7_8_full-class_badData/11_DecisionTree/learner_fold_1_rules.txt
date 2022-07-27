@@ -1,0 +1,8 @@
+if (wind_damage_rating <= 1.5) and (wind_damage_rating > 0.5) then class: 1 (proba: 92.7%) | based on 137 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating <= 2.5) then class: 2 (proba: 88.06%) | based on 134 samples
+
+if (wind_damage_rating > 1.5) and (wind_damage_rating > 2.5) then class: 3 (proba: 55.83%) | based on 120 samples
+
+if (wind_damage_rating <= 1.5) and (wind_damage_rating <= 0.5) then class: 4 (proba: 60.98%) | based on 82 samples
+

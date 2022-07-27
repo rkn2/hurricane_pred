@@ -1,0 +1,28 @@
+{
+    "name": "Ensemble",
+    "ml_task": "multiclass_classification",
+    "optimize_metric": "logloss",
+    "selected_models": [
+        {
+            "model": "10_RandomForest_GoldenFeatures_SelectedFeatures",
+            "repeat": 8.0
+        },
+        {
+            "model": "14_NeuralNetwork_SelectedFeatures",
+            "repeat": 1.0
+        },
+        {
+            "model": "19_RandomForest_GoldenFeatures_SelectedFeatures",
+            "repeat": 7.0
+        },
+        {
+            "model": "24_LightGBM_GoldenFeatures_SelectedFeatures",
+            "repeat": 22.0
+        }
+    ],
+    "predictions_fname": "Ensemble/predictions_ensemble.csv",
+    "metric_name": "logloss",
+    "final_loss": 1.0782491354900126,
+    "train_time": 1.9271957874298096,
+    "is_stacked": false
+}

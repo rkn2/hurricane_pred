@@ -1,0 +1,32 @@
+name,model_type,metric_type,metric_value,train_time
+1_Baseline,Baseline,logloss,1.5019794582758008,25.07
+2_DecisionTree,Decision Tree,logloss,1.5861008680775408,49.8
+3_Linear,Linear,logloss,1.3906553673436117,39.45
+4_Default_Xgboost,Xgboost,logloss,1.184888124723944,53.94
+5_Default_NeuralNetwork,Neural Network,logloss,2.0528428351839088,21.48
+6_Default_RandomForest,Random Forest,logloss,1.199216913646338,51.58
+4_Default_Xgboost_categorical_mix,Xgboost,logloss,1.1625565236490976,50.06
+4_Default_Xgboost_categorical_mix_GoldenFeatures,Xgboost,logloss,1.1571995792469967,51.51
+4_Default_Xgboost_GoldenFeatures,Xgboost,logloss,1.1844745786180972,71.65
+6_Default_RandomForest_GoldenFeatures,Random Forest,logloss,1.203302887891224,72.86
+4_Default_Xgboost_categorical_mix_GoldenFeatures_RandomFeature,Xgboost,logloss,1.1635036864097708,72.66
+4_Default_Xgboost_categorical_mix_GoldenFeatures_SelectedFeatures,Xgboost,logloss,1.2278901250101626,73.23
+6_Default_RandomForest_SelectedFeatures,Random Forest,logloss,1.2003895853217095,95.38
+5_Default_NeuralNetwork_SelectedFeatures,Neural Network,logloss,2.1063193103728723,83.93
+7_Xgboost_GoldenFeatures,Xgboost,logloss,1.1571771046429924,96.52
+8_Xgboost,Xgboost,logloss,1.1574964987560854,104.99
+9_RandomForest,Random Forest,logloss,1.1973070679953974,114.14
+10_RandomForest_SelectedFeatures,Random Forest,logloss,1.2081277654347031,121.27
+11_DecisionTree,Decision Tree,logloss,1.3183920067033417,145.99
+12_DecisionTree,Decision Tree,logloss,1.9035311631418717,165.44
+13_NeuralNetwork,Neural Network,logloss,1.9168970972929964,116.97
+14_NeuralNetwork,Neural Network,logloss,1.7655753723777032,130.01
+15_NeuralNetwork_SelectedFeatures,Neural Network,logloss,1.8814483803139872,126.15
+16_NeuralNetwork_SelectedFeatures,Neural Network,logloss,1.828854003924956,116.41
+17_Xgboost_GoldenFeatures,Xgboost,logloss,1.1869536682969664,133.12
+18_Xgboost_GoldenFeatures,Xgboost,logloss,1.1963182238805283,132.1
+19_RandomForest,Random Forest,logloss,1.1966511366434012,143.41
+20_RandomForest,Random Forest,logloss,1.2194343519178683,150.64
+21_RandomForest,Random Forest,logloss,1.2004666457048665,160.3
+22_RandomForest,Random Forest,logloss,1.2119492998719266,224.54
+Ensemble,Ensemble,logloss,1.1239692111450825,1.19

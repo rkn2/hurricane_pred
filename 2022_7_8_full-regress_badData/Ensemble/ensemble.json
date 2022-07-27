@@ -1,0 +1,36 @@
+{
+    "name": "Ensemble",
+    "ml_task": "regression",
+    "optimize_metric": "rmse",
+    "selected_models": [
+        {
+            "model": "11_RandomForest_GoldenFeatures",
+            "repeat": 1.0
+        },
+        {
+            "model": "1_DecisionTree",
+            "repeat": 1.0
+        },
+        {
+            "model": "23_CatBoost_SelectedFeatures",
+            "repeat": 6.0
+        },
+        {
+            "model": "25_Xgboost_SelectedFeatures",
+            "repeat": 2.0
+        },
+        {
+            "model": "4_Default_Xgboost_categorical_mix",
+            "repeat": 1.0
+        },
+        {
+            "model": "7_CatBoost_SelectedFeatures",
+            "repeat": 14.0
+        }
+    ],
+    "predictions_fname": "Ensemble/predictions_ensemble.csv",
+    "metric_name": "rmse",
+    "final_loss": 0.32245482343837356,
+    "train_time": 1.2355389595031738,
+    "is_stacked": false
+}

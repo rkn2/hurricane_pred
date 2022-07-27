@@ -1,0 +1,249 @@
+feature,mean_importance
+year_built,-0.015638877226024174
+8_Xgboost_prediction_0,-0.011827559143054422
+17_Xgboost_GoldenFeatures_prediction_2,-0.010845323163671728
+4_Default_Xgboost_categorical_mix_GoldenFeatures_prediction_2,-0.010737654773377648
+9_RandomForest_prediction_3,-0.0098645140456052
+4_Default_Xgboost_categorical_mix_prediction_2,-0.009680797172193811
+8_Xgboost_prediction_1,-0.009080255122370096
+6_Default_RandomForest_SelectedFeatures_prediction_0,-0.008744074770507782
+14_NeuralNetwork_prediction_0,-0.006264321606199319
+6_Default_RandomForest_prediction_3,-0.00622502604515116
+Ensemble_prediction_0,-0.005818786894699146
+17_Xgboost_GoldenFeatures_prediction_1,-0.004847356163654082
+4_Default_Xgboost_categorical_mix_prediction_4,-0.004573243346159295
+6_Default_RandomForest_SelectedFeatures_prediction_1,-0.0043390439682398085
+9_RandomForest_prediction_0,-0.004309739576292682
+4_Default_Xgboost_prediction_0,-0.0042094365701455414
+21_RandomForest_prediction_0,-0.00405725317717609
+20_RandomForest_prediction_0,-0.0035232631974861928
+22_RandomForest_prediction_0,-0.003420539926581023
+building_type,-0.0032593199842367417
+20_RandomForest_prediction_1,-0.003033168964526256
+4_Default_Xgboost_GoldenFeatures_prediction_2,-0.0027114735368420906
+6_Default_RandomForest_GoldenFeatures_prediction_2,-0.0026909006493432753
+13_NeuralNetwork_prediction_0,-0.0026042422201453695
+22_RandomForest_prediction_3,-0.002466407925391412
+21_RandomForest_prediction_3,-0.0022229701875388307
+12_DecisionTree_prediction_0,-0.0022080965747102166
+4_Default_Xgboost_GoldenFeatures_prediction_4,-0.0021732901418660246
+13_NeuralNetwork_prediction_1,-0.0021452013747532027
+wall_cladding,-0.0021438794382730554
+4_Default_Xgboost_categorical_mix_GoldenFeatures_prediction_1,-0.0021139833982251944
+18_Xgboost_GoldenFeatures_prediction_4,-0.0020888060049600197
+6_Default_RandomForest_prediction_2,-0.002054757274249086
+5_Default_NeuralNetwork_SelectedFeatures_prediction_2,-0.0019398070746610597
+Buildinglong,-0.0017994213724087161
+19_RandomForest_prediction_0,-0.0017399470940107076
+9_RandomForest_prediction_1,-0.0016893407689924978
+21_RandomForest_prediction_2,-0.001584976385621495
+17_Xgboost_GoldenFeatures_prediction_0,-0.0015582173874899574
+20_RandomForest_prediction_3,-0.0015467398306903135
+6_Default_RandomForest_SelectedFeatures_prediction_3,-0.0015159563607528791
+16_NeuralNetwork_SelectedFeatures_prediction_2,-0.0014510983491645923
+roof_cover_Asphalt shingles (3-tab),-0.001407266965433429
+18_Xgboost_GoldenFeatures_prediction_1,-0.0013982602089894324
+12_DecisionTree_prediction_3,-0.00134027146992568
+6_Default_RandomForest_SelectedFeatures_prediction_2,-0.0013298832662717252
+8_Xgboost_prediction_3,-0.001238005589537261
+7_Xgboost_GoldenFeatures_prediction_2,-0.0012288823974233587
+4_Default_Xgboost_categorical_mix_prediction_1,-0.0012152659886775386
+18_Xgboost_GoldenFeatures_prediction_3,-0.0011446362157830237
+6_Default_RandomForest_GoldenFeatures_prediction_4,-0.0011018022268760586
+19_RandomForest_prediction_4,-0.0010470067503071778
+13_NeuralNetwork_prediction_4,-0.0010087977437412744
+roof_shape_Flat,-0.0009398034703331781
+15_NeuralNetwork_SelectedFeatures_prediction_0,-0.0009276930618436818
+18_Xgboost_GoldenFeatures_prediction_2,-0.0009117680813084839
+9_RandomForest_prediction_2,-0.0009010231419772641
+5_Default_NeuralNetwork_prediction_0,-0.0008946345258160626
+hazards_present,-0.0008298825316069181
+4_Default_Xgboost_categorical_mix_prediction_3,-0.0007146566323623649
+21_RandomForest_prediction_4,-0.0006888342755182464
+10_RandomForest_SelectedFeatures_prediction_0,-0.0006879744847783531
+7_Xgboost_GoldenFeatures_prediction_0,-0.0006674325328415165
+7_Xgboost_GoldenFeatures_prediction_3,-0.0006320805922776617
+13_NeuralNetwork_prediction_3,-0.0006100029504600091
+5_Default_NeuralNetwork_prediction_4,-0.0004978970694943463
+4_Default_Xgboost_categorical_mix_GoldenFeatures_prediction_4,-0.00047624579184706305
+"roof_system_""Wood, unknown""",-0.000413863097920153
+wall_substrate_Unknown,-0.0004008305172960913
+11_DecisionTree_prediction_4,-0.0003970338516877447
+3_Linear_prediction_4,-0.0003139633090556426
+"wall_substrate_""Wood, dimensional planks""",-0.00029775532854712237
+roof_substrate_type_Unknown,-0.0002635615212577047
+4_Default_Xgboost_categorical_mix_prediction_0,-0.0002476412928154925
+roof_cover_Asphalt shingles (laminated),-0.00014339500114703973
+6_Default_RandomForest_prediction_1,-0.0001353244007636256
+roof_shape_Gable,-0.0001144832923632766
+5_Default_NeuralNetwork_prediction_2,-0.0001050300082239275
+number_of_stories_ratio_Buildinglat,-0.0001046127475360592
+roof_substrate_type_Plywood/OSB,-0.00010297268378640645
+12_DecisionTree_prediction_4,-6.032901651726874e-05
+2_DecisionTree_prediction_3,-1.3981621806369304e-05
+foundation_type_Wood Piers > 8 ft,0.0
+"wall_substrate_""Wood, sheathing (continuous)""",0.0
+wall_substrate_Metal panels,0.0
+"wall_substrate_Not Applicable,Wood Beams",0.0
+roof_cover_Wood shingle,0.0
+wall_substrate_None,0.0
+wall_substrate_Thin aluminum siding,0.0
+foundation_type_helical anchors spaced irregulary,0.0
+roof_cover_composite shingles,0.0
+foundation_type_Unreinforced masonry piers,0.0
+roof_shape_Unknown,0.0
+roof_shape_Monoslope,0.0
+"roof_shape_Hip,Gable",0.0
+"roof_shape_Hip,Curved",0.0
+roof_shape_Gambrel,0.0
+roof_shape_Gable/Hip Combo,0.0
+"roof_shape_Gable,Monoslope",0.0
+"roof_shape_Gable,Hip",0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+"roof_shape_Gable,Gambrel",0.0
+"roof_shape_Complex,Hip",0.0
+roof_shape_Arch,0.0
+Buildinglong_ratio_understory_pct_of_building_footprint,0.0
+foundation_type_Ground anchors and strapping,0.0
+"foundation_type_Piers <= 8 ft, unstrapped",0.0
+foundation_type_Reinforced masonry piers,0.0
+foundation_type_Reinforced masonry stem wall,0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+"roof_shape_Flat,Gable",0.0
+wall_substrate_masonry ,0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+"roof_system_""Steel, cold formed"",""Steel, joists""",0.0
+roof_substrate_type_Metal deck,0.0
+roof_substrate_type_None,0.0
+roof_substrate_type_Plywood,0.0
+"roof_cover_""Metal, corrugated""",0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+"roof_system_""Steel, cold formed""",0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, corrugated""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+roof_substrate_type_Dimensional lumber,0.0
+roof_cover_Built-up with Gravel,0.0
+roof_cover_Clay tiles,0.0
+roof_cover_Metal shingles,0.0
+roof_cover_Other,0.0
+roof_cover_Red composite shingle,0.0
+roof_cover_Roll roofing,0.0
+roof_cover_Tile Slate Roof Cover,0.0
+roof_cover_Unknown,0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+number_of_stories,0.0
+roof_cover_Built-up without Gravel,0.0
+roof_system_Unknown,0.0
+"roof_cover_""Metal, standing seam""",0.0
+foundation_type_Crawlspace,0.0
+roof_system_Concrete slab,0.0
+foundation_type_Cast-in-place concrete piers,0.0
+"roof_system_""Wood, rafter"",""Wood, trusses""",0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+"roof_system_""Steel, hot rolled"",""Wood, unknown""",0.0
+11_DecisionTree_prediction_1,0.0
+"roof_system_""Steel, hot rolled"",Z purlins",0.0
+"roof_system_""Steel, hot rolled"",""Steel, joists""",0.0
+wall_substrate_Insulated foam board,1.4024622290165213e-07
+"roof_system_""Steel, joists""",1.794821074017072e-05
+year_built_ratio_understory_pct_of_building_footprint,3.167723908137354e-05
+number_of_stories_ratio_understory_pct_of_building_footprint,3.311679142861124e-05
+Buildinglat_diff_number_of_stories,4.014461418653248e-05
+roof_shape_Hip,5.317853779343018e-05
+foundation_type_Wood Piers <= 8 ft,6.073297572730674e-05
+understory_pct_of_building_footprint,7.712071558003686e-05
+"roof_system_""Wood, rafter""",8.895539623843263e-05
+"roof_shape_Complex,Gable",9.376210074458768e-05
+19_RandomForest_prediction_3,0.00012386458135447143
+10_RandomForest_SelectedFeatures_prediction_4,0.00013757977916406539
+7_Xgboost_GoldenFeatures_prediction_4,0.00016745361147303407
+understory_pct_of_building_footprint_sum_number_of_stories,0.0001690566289323403
+foundation_type_Slab-on-grade,0.00017341449230654505
+2_DecisionTree_prediction_2,0.00018916370488009093
+Buildinglat_ratio_number_of_stories,0.0001973064694584359
+2_DecisionTree_prediction_0,0.00021568472896298373
+understory_pct_of_building_footprint_multiply_number_of_stories,0.00023161553535131497
+11_DecisionTree_prediction_2,0.0002515189224430614
+18_Xgboost_GoldenFeatures_prediction_0,0.00030189221959644465
+14_NeuralNetwork_prediction_4,0.0003231839816860482
+2_DecisionTree_prediction_4,0.00033214806007735297
+4_Default_Xgboost_prediction_3,0.00034192517838049774
+roof_shape_Complex,0.00040981203568075665
+wall_structure,0.0004279356543756663
+mwfrs,0.0004322769918611691
+17_Xgboost_GoldenFeatures_prediction_3,0.0004368148618886014
+16_NeuralNetwork_SelectedFeatures_prediction_3,0.00044860410339691014
+2_DecisionTree_prediction_1,0.0004993562030942034
+4_Default_Xgboost_categorical_mix_GoldenFeatures_SelectedFeatures_prediction_2,0.000610759757271273
+11_DecisionTree_prediction_0,0.0006319930917825012
+4_Default_Xgboost_categorical_mix_GoldenFeatures_SelectedFeatures_prediction_1,0.0006749800617704693
+4_Default_Xgboost_categorical_mix_GoldenFeatures_prediction_0,0.0007473637326424143
+number_of_stories_multiply_Buildinglat,0.0007510669091168154
+12_DecisionTree_prediction_1,0.0008051779903783362
+5_Default_NeuralNetwork_SelectedFeatures_prediction_1,0.0008999906762056753
+21_RandomForest_prediction_1,0.0009095641400883814
+Ensemble_prediction_3,0.0009681022780782644
+Buildinglat,0.0009903689611609145
+9_RandomForest_prediction_4,0.0009976745277893607
+3_Linear_prediction_0,0.0011194245498470146
+7_Xgboost_GoldenFeatures_prediction_1,0.001184795045552045
+11_DecisionTree_prediction_3,0.0012076479046283506
+10_RandomForest_SelectedFeatures_prediction_1,0.0012560878355963201
+19_RandomForest_prediction_1,0.001328653247416467
+10_RandomForest_SelectedFeatures_prediction_2,0.001398241056614502
+"roof_system_""Steel, hot rolled""",0.001454935736265428
+17_Xgboost_GoldenFeatures_prediction_4,0.0014885379862384696
+foundation_type_Unknown,0.001508176473884948
+Ensemble_prediction_4,0.0016106307099596595
+20_RandomForest_prediction_4,0.0016380482361095794
+3_Linear_prediction_2,0.0016634902502057347
+8_Xgboost_prediction_2,0.0016968373303152262
+22_RandomForest_prediction_2,0.0017713006335395853
+mindist,0.001950945216817912
+5_Default_NeuralNetwork_SelectedFeatures_prediction_3,0.002160644133676959
+13_NeuralNetwork_prediction_2,0.002216588871694336
+16_NeuralNetwork_SelectedFeatures_prediction_1,0.0022969574518814095
+16_NeuralNetwork_SelectedFeatures_prediction_0,0.0023668145244361226
+4_Default_Xgboost_prediction_2,0.002685439001236567
+6_Default_RandomForest_SelectedFeatures_prediction_4,0.0028059354537173673
+6_Default_RandomForest_GoldenFeatures_prediction_1,0.002831386045372719
+6_Default_RandomForest_prediction_0,0.002873289650853872
+wall_substrate_Not Applicable,0.0031215626339451408
+16_NeuralNetwork_SelectedFeatures_prediction_4,0.003223597389810218
+6_Default_RandomForest_GoldenFeatures_prediction_3,0.0032538921016604496
+"roof_system_""Wood, trusses""",0.0033661554528384486
+Ensemble_prediction_2,0.003428132531522676
+5_Default_NeuralNetwork_prediction_3,0.00351527357364394
+22_RandomForest_prediction_4,0.0035379428823454793
+4_Default_Xgboost_prediction_1,0.003569335418463737
+12_DecisionTree_prediction_2,0.003635539828228218
+5_Default_NeuralNetwork_SelectedFeatures_prediction_4,0.0037161810370553105
+4_Default_Xgboost_prediction_4,0.003918330086504706
+14_NeuralNetwork_prediction_1,0.004121787132335264
+15_NeuralNetwork_SelectedFeatures_prediction_4,0.004181920693201091
+10_RandomForest_SelectedFeatures_prediction_3,0.00418378773356678
+20_RandomForest_prediction_2,0.0048693077717007595
+19_RandomForest_prediction_2,0.0050372324539582625
+3_Linear_prediction_1,0.005168320579814312
+4_Default_Xgboost_categorical_mix_GoldenFeatures_SelectedFeatures_prediction_3,0.005195628998785384
+4_Default_Xgboost_categorical_mix_GoldenFeatures_prediction_3,0.005422491057454959
+5_Default_NeuralNetwork_prediction_1,0.005930441962320199
+number_of_stories_sum_Buildinglat,0.00614786147445181
+15_NeuralNetwork_SelectedFeatures_prediction_2,0.006617253583644534
+15_NeuralNetwork_SelectedFeatures_prediction_1,0.006712445494632657
+15_NeuralNetwork_SelectedFeatures_prediction_3,0.007023822118629841
+14_NeuralNetwork_prediction_2,0.00736383572846897
+Ensemble_prediction_1,0.009263993339503474
+4_Default_Xgboost_GoldenFeatures_prediction_3,0.00942262603643056
+6_Default_RandomForest_GoldenFeatures_prediction_0,0.009493546864064761
+4_Default_Xgboost_categorical_mix_GoldenFeatures_SelectedFeatures_prediction_0,0.009908397677315283
+5_Default_NeuralNetwork_SelectedFeatures_prediction_0,0.01047824685062677
+3_Linear_prediction_3,0.01284186056807255
+6_Default_RandomForest_prediction_4,0.013340561808783447
+14_NeuralNetwork_prediction_3,0.014648546892053905
+4_Default_Xgboost_GoldenFeatures_prediction_0,0.01700508801438727
+22_RandomForest_prediction_1,0.01862282305642826
+4_Default_Xgboost_GoldenFeatures_prediction_1,0.01934997222441077
+4_Default_Xgboost_categorical_mix_GoldenFeatures_SelectedFeatures_prediction_4,0.07149569496449795
+8_Xgboost_prediction_4,0.09916658178284887

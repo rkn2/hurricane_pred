@@ -1,0 +1,10 @@
+feature,mean_importance
+rainwater_ingress_damage_rating,-0.00021028764652564202
+wall_substrate,0.0005600972092100864
+Unnamed0,0.001330259157308966
+Buildinglat,0.001911088411665196
+hazards_present,0.002797026376312406
+mindist,0.005128125584865939
+roof_substrate_type,0.007022829720662127
+surge_damage_rating,0.7011520981464148
+wind_damage_rating,3.3239972643187614

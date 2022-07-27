@@ -1,0 +1,8 @@
+if (mindist > 10.507) and (year_built > 1995.5) then response: 1.581 | based on 217 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) then response: 2.165 | based on 164 samples
+
+if (mindist <= 10.507) and (year_built <= 1996.5) then response: 3.726 | based on 73 samples
+
+if (mindist <= 10.507) and (year_built > 1996.5) then response: 2.6 | based on 20 samples
+

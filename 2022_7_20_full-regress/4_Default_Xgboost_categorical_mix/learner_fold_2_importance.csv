@@ -1,0 +1,93 @@
+feature,mean_importance
+foundation_type_Slab-on-grade,-0.008655209639936268
+"wall_substrate_""Wood, sheathing (continuous)""",-0.00763874516330425
+"roof_system_""Wood, trusses""",-0.005364530013523483
+mwfrs,-0.0044459219452404495
+"roof_cover_""Metal, standing seam""",-0.0010066855927910012
+foundation_type_Unknown,-0.0008615787750659409
+wall_substrate_Unknown,-0.0002663123264715628
+roof_cover_Clay tiles,-0.0001766432452502187
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",-0.00015375913522104324
+foundation_type_Cast-in-place concrete piers,-7.105805125051656e-05
+"roof_shape_Complex,Hip",-5.560551902372701e-05
+"roof_system_""Wood, rafter""",0.0
+"roof_system_""Steel, hot rolled"",Z purlins",0.0
+"roof_system_""Steel, hot rolled"",""Wood, unknown""",0.0
+"roof_system_""Steel, hot rolled"",""Steel, joists""",0.0
+wall_substrate_Thin aluminum siding,0.0
+"wall_substrate_Not Applicable,Wood Beams",0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+"roof_system_""Wood, rafter"",""Wood, trusses""",0.0
+"roof_system_""Steel, cold formed"",""Steel, joists""",0.0
+"roof_system_""Steel, cold formed""",0.0
+wall_substrate_masonry ,0.0
+"roof_system_""Steel, hot rolled""",0.0
+wall_substrate_None at first floor Rc moment frame,0.0
+roof_substrate_type_Dimensional lumber,0.0
+roof_system_Concrete slab,0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+roof_cover_Unknown,0.0
+roof_cover_Tile Slate Roof Cover,0.0
+roof_cover_Roll roofing,0.0
+roof_cover_Red composite shingle,0.0
+roof_cover_Other,0.0
+roof_cover_Metal shingles,0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+roof_cover_Built-up without Gravel,0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, corrugated""",0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+roof_substrate_type_Plywood,0.0
+roof_substrate_type_None,0.0
+roof_substrate_type_Metal deck,0.0
+roof_cover_Wood shingle,0.0
+roof_cover_Built-up with Gravel,0.0
+wall_substrate_Metal panels,0.0
+roof_cover_composite shingles,0.0
+"wall_substrate_""Wood, sheathing (corners only)""",0.0
+"roof_shape_Gable,Gambrel",0.0
+"roof_shape_Gable,Hip",0.0
+wall_substrate_Insulated foam board,0.0
+roof_shape_Gambrel,0.0
+"roof_shape_Hip,Curved",0.0
+"roof_shape_Hip,Gable",0.0
+foundation_type_Concrete piers support cast concrete slab on grade,0.0
+foundation_type_Ground anchors and strapping,0.0
+foundation_type_Reinforced masonry piers,0.0
+roof_shape_Unknown,0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+foundation_type_Unreinforced masonry piers,0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+foundation_type_Reinforced masonry stem wall,0.0
+foundation_type_helical anchors spaced irregulary,0.0
+roof_shape_Monoslope,5.0895125463412684e-06
+foundation_type_Crawlspace,0.00014627119750740825
+roof_shape_Complex,0.00044446171763636857
+foundation_type_Wood Piers > 8 ft,0.0007002608245482378
+"roof_system_""Wood, unknown""",0.0011374877262575467
+"roof_cover_""Metal, corrugated""",0.0014745301652991927
+wall_structure,0.0018360580838907125
+roof_shape_Gable,0.0028072948634368933
+"roof_shape_Complex,Gable",0.0034248648644291447
+roof_cover_Asphalt shingles (3-tab),0.0037203568477095716
+roof_shape_Flat,0.004160785815287204
+"wall_substrate_""Wood, dimensional planks""",0.004412427748987114
+"roof_shape_Flat,Gable",0.004742141430753288
+roof_substrate_type_Plywood/OSB,0.004849022729186215
+roof_shape_Hip,0.0058174996529145595
+roof_shape_Gable/Hip Combo,0.0058756982422124345
+foundation_type_Wood Piers <= 8 ft,0.006921086799772813
+understory_pct_of_building_footprint,0.007244639739837378
+number_of_stories,0.007501636891509867
+building_type,0.00788934449599532
+wall_substrate_Not Applicable,0.00853892414310875
+wall_cladding,0.009950237511060722
+roof_cover_Asphalt shingles (laminated),0.010394588237594694
+roof_substrate_type_Unknown,0.012358509945320839
+roof_system_Unknown,0.015628364326434975
+"roof_system_""Steel, joists""",0.018164618361586227
+Buildinglat,0.02679227273667826
+Buildinglong,0.10143107495564359
+hazards_present,0.12088311646547496
+mindist,0.14439379754451415
+year_built,0.16093675647753702

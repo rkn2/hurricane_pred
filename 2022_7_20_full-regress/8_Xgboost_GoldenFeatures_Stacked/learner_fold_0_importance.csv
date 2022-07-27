@@ -1,0 +1,128 @@
+feature,mean_importance
+year_built,-0.023559087296145465
+18_NeuralNetwork_prediction,-0.016070815328326105
+5_Default_NeuralNetwork_SelectedFeatures_prediction,-0.006789293103042593
+13_DecisionTree_prediction,-0.006724893072706984
+hazards_present,-0.006531205247415417
+Buildinglong,-0.004213022950733692
+year_built_ratio_number_of_stories,-0.004022319354073644
+"roof_shape_Complex,Gable",-0.0036302370293912257
+5_Default_NeuralNetwork_prediction,-0.0028359284772295325
+mindist,-0.0028216242331242205
+2_DecisionTree_prediction,-0.0025906786417402962
+14_DecisionTree_prediction,-0.0025886571796781555
+number_of_stories_diff_mindist,-0.002239768844101131
+mindist_multiply_year_built,-0.0020438375881368653
+4_Default_Xgboost_GoldenFeatures_prediction,-0.0019360208141724789
+wall_cladding,-0.0018820795019829583
+11_RandomForest_prediction,-0.001871482789327228
+number_of_stories_ratio_year_built,-0.0015834979262508765
+6_Default_RandomForest_prediction,-0.0014421174190758946
+understory_pct_of_building_footprint_diff_mindist,-0.0011569491030436919
+understory_pct_of_building_footprint,-0.0011383566373051712
+3_Linear_prediction,-0.0010975193412544604
+roof_shape_Gable/Hip Combo,-0.0005015771405163072
+roof_cover_Asphalt shingles (laminated),-0.0003890476008643562
+mwfrs,-0.0002668544942498574
+"roof_system_""Steel, cold formed""",-8.319474307181274e-05
+"roof_system_""Steel, cold formed"",""Steel, joists""",0.0
+foundation_type_Reinforced masonry piers,0.0
+"foundation_type_Piers <= 8 ft, unstrapped",0.0
+foundation_type_Ground anchors and strapping,0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+foundation_type_Crawlspace,0.0
+"wall_substrate_""Wood, sheathing (continuous)""",0.0
+foundation_type_Concrete piers support cast concrete slab on grade,0.0
+foundation_type_Cast-in-place concrete piers,0.0
+"roof_system_""Steel, joists""",0.0
+roof_shape_Monoslope,0.0
+"roof_shape_Hip,Curved",0.0
+roof_cover_Wood shingle,0.0
+foundation_type_Reinforced masonry stem wall,0.0
+"roof_system_""Steel, hot rolled"",""Steel, joists""",0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+foundation_type_Slab-on-grade,0.0
+"wall_substrate_""Wood, sheathing""",0.0
+"wall_substrate_""Wood, dimensional planks""",0.0
+foundation_type_helical anchors spaced irregulary,0.0
+wall_substrate_Insulated foam board,0.0
+roof_shape_Gambrel,0.0
+wall_substrate_None,0.0
+wall_substrate_None at first floor Rc moment frame,0.0
+wall_substrate_Thin aluminum siding,0.0
+foundation_type_Wood Piers > 8 ft,0.0
+foundation_type_Wood Piers <= 8 ft,0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+foundation_type_Unreinforced masonry piers,0.0
+"roof_system_""Wood, trusses""",0.0
+wall_substrate_masonry ,0.0
+foundation_type_Unknown,0.0
+"wall_substrate_""Wood, sheathing (corners only)""",0.0
+roof_cover_composite shingles,0.0
+"roof_system_""Wood, rafter"",""Wood, trusses""",0.0
+"roof_shape_Gable,Hip",0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+roof_cover_Unknown,0.0
+roof_cover_Red composite shingle,0.0
+roof_cover_Other,0.0
+roof_cover_Metal shingles,0.0
+roof_cover_Clay tiles,0.0
+roof_cover_Built-up without Gravel,0.0
+roof_cover_Built-up with Gravel,0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+"roof_cover_""Metal, standing seam""",0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+"roof_shape_Gable,Monoslope",0.0
+roof_substrate_type_Plywood/OSB,0.0
+roof_substrate_type_Plywood,0.0
+"roof_cover_""Metal, corrugated""",0.0
+roof_substrate_type_Dimensional lumber,0.0
+roof_system_Unknown,0.0
+roof_system_Concrete slab,0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+mindist_ratio_year_built,0.0
+"roof_system_""Wood, rafter""",0.0
+roof_substrate_type_None,0.0
+roof_shape_Arch,0.0
+roof_shape_Complex,0.0
+"roof_shape_Complex,Hip",0.0
+"roof_shape_Flat,Gable",0.0
+roof_shape_Gable,6.376866968267336e-05
+wall_substrate_Not Applicable,6.984899663289301e-05
+"roof_system_""Steel, hot rolled""",0.00010207976986802425
+"roof_system_""Wood, unknown""",0.00015207821571854295
+number_of_stories_multiply_Buildinglat,0.00022818431381974592
+number_of_stories,0.00033950767898118797
+roof_cover_Asphalt shingles (3-tab),0.000460745751784164
+16_NeuralNetwork_SelectedFeatures_prediction,0.0005375560110849609
+roof_shape_Flat,0.0005808485194828794
+Buildinglat_diff_Buildinglong,0.0006012863735047391
+building_type,0.0007459522050133449
+roof_shape_Hip,0.0008506679810874607
+24_NeuralNetwork_prediction,0.0008752090553089342
+roof_substrate_type_Unknown,0.0009434928887124272
+23_NeuralNetwork_prediction,0.0009815508431414654
+17_NeuralNetwork_prediction,0.0011011014154110655
+12_RandomForest_prediction,0.0012815010884813295
+wall_structure,0.0013788229227036375
+10_RandomForest_SelectedFeatures_prediction,0.0014182020508452854
+4_Default_Xgboost_categorical_mix_prediction,0.0014854076121363358
+number_of_stories_sum_Buildinglat,0.0016863808535517277
+Buildinglong_multiply_Buildinglat,0.0016909464983976053
+22_NeuralNetwork_SelectedFeatures_prediction,0.0023029396153365854
+4_Default_Xgboost_prediction,0.0026674702481431557
+9_RandomForest_SelectedFeatures_prediction,0.002715057069409088
+Buildinglat,0.0028661777202113824
+6_Default_RandomForest_GoldenFeatures_prediction,0.003388913341968203
+4_Default_Xgboost_categorical_mix_GoldenFeatures_prediction,0.0034290609630266864
+7_Xgboost_GoldenFeatures_SelectedFeatures_prediction,0.003640948976914138
+20_RandomForest_SelectedFeatures_prediction,0.005673905132719303
+8_Xgboost_GoldenFeatures_prediction,0.0075582667188776485
+wall_substrate_Unknown,0.00814701548153709
+19_Xgboost_GoldenFeatures_SelectedFeatures_prediction,0.009699580276638175
+15_NeuralNetwork_SelectedFeatures_prediction,0.016037000143940005
+6_Default_RandomForest_SelectedFeatures_prediction,0.018451321963803412
+21_NeuralNetwork_SelectedFeatures_prediction,0.02145460952589573
+4_Default_Xgboost_categorical_mix_GoldenFeatures_SelectedFeatures_prediction,0.07165440333550191
+Ensemble_prediction,0.20717911066498348

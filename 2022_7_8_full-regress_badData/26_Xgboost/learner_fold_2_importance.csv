@@ -1,0 +1,98 @@
+feature,mean_importance
+"roof_system_""Wood, unknown""",-0.003261555172999575
+wall_cladding,-0.0020754029818380536
+"wall_substrate_""Wood, sheathing (continuous)""",-0.0006743246918846868
+longitude,-0.0006372427312403367
+roof_shape_Gable,-0.0006146614826364694
+number_of_stories,-0.000594150796772358
+"roof_system_""Wood, trusses""",-0.00037083221804646573
+foundation_type_Slab-on-grade,-0.0002697862996684869
+roof_cover_Asphalt shingles (3-tab),-0.00026195115586319926
+mwfrs,-0.00026140140303293203
+understory_pct_of_building_footprint,-0.0001029998147111244
+roof_shape_Complex,-4.586130142356093e-05
+wall_structure,-4.123208508533538e-05
+"roof_cover_""Metal, corrugated""",-1.3545736813727615e-05
+"roof_system_""Steel, hot rolled"",""Steel, joists""",0.0
+"roof_system_""Steel, hot rolled""",0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+"roof_system_""Steel, hot rolled"",""Wood, unknown""",0.0
+"roof_system_""Steel, hot rolled"",Z purlins",0.0
+"roof_system_""Wood, rafter""",0.0
+"roof_system_""Wood, rafter"",""Wood, trusses""",0.0
+"roof_system_""Steel, cold formed"",""Steel, joists""",0.0
+"roof_system_""Steel, cold formed""",0.0
+wall_substrate_masonry ,0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+wall_substrate_Thin aluminum siding,0.0
+roof_system_Concrete slab,0.0
+roof_system_Unknown,0.0
+wall_substrate_Insulated foam board,0.0
+roof_substrate_type_Metal deck,0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+roof_cover_Unknown,0.0
+roof_cover_Tile Slate Roof Cover,0.0
+roof_cover_Roll roofing,0.0
+roof_cover_Red composite shingle,0.0
+roof_cover_Other,0.0
+roof_cover_Metal shingles,0.0
+roof_cover_Clay tiles,0.0
+roof_cover_Built-up without Gravel,0.0
+roof_cover_Built-up with Gravel,0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, corrugated""",0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+"wall_substrate_Not Applicable,Wood Beams",0.0
+roof_substrate_type_Plywood,0.0
+roof_substrate_type_None,0.0
+roof_substrate_type_Dimensional lumber,0.0
+wall_substrate_None at first floor Rc moment frame,0.0
+roof_cover_composite shingles,0.0
+roof_cover_Wood shingle,0.0
+"roof_shape_Gable,Hip",0.0
+roof_shape_Flat,0.0
+"roof_shape_Complex,Hip",0.0
+roof_shape_Gambrel,0.0
+wall_substrate_Metal panels,0.0
+"roof_shape_Hip,Curved",0.0
+"roof_shape_Hip,Gable",0.0
+roof_shape_Monoslope,0.0
+roof_shape_Unknown,0.0
+foundation_type_Cast-in-place concrete piers,0.0
+foundation_type_Concrete piers support cast concrete slab on grade,0.0
+foundation_type_Crawlspace,0.0
+"roof_shape_Gable,Gambrel",0.0
+foundation_type_Ground anchors and strapping,0.0
+"roof_shape_Complex,Gable",0.0
+Buildinglat,0.0
+"wall_substrate_""Wood, sheathing (corners only)""",0.0
+"wall_substrate_""Wood, dimensional planks""",0.0
+Buildinglong,0.0
+foundation_type_Reinforced masonry piers,0.0
+foundation_type_Wood Piers > 8 ft,0.0
+foundation_type_helical anchors spaced irregulary,0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+foundation_type_Unreinforced masonry piers,0.0
+foundation_type_Unknown,0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+foundation_type_Reinforced masonry stem wall,0.0
+foundation_type_Wood Piers <= 8 ft,0.0
+"roof_shape_Flat,Gable",0.0
+roof_shape_Gable/Hip Combo,9.609847976432828e-07
+roof_cover_Asphalt shingles (laminated),9.530932194106722e-05
+roof_shape_Hip,0.00013432112415908692
+roof_substrate_type_Unknown,0.00017379436340982102
+rainwater_ingress_damage_rating,0.00017541533933851383
+building_type,0.0003517536467907145
+"roof_system_""Steel, joists""",0.00040346470904166764
+wall_substrate_Not Applicable,0.0005341469608646093
+year_built,0.000689826019946263
+wall_substrate_Unknown,0.0011488656509552413
+roof_substrate_type_Plywood/OSB,0.0011663425724885768
+Unnamed0,0.0014717738302113203
+"roof_cover_""Metal, standing seam""",0.002345650727703835
+hazards_present,0.00414221745075567
+mindist,0.00841625368319604
+surge_damage_rating,0.9144503985122325
+wind_damage_rating,1.516219560740436

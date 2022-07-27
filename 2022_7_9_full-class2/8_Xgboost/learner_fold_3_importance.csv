@@ -1,0 +1,95 @@
+feature,mean_importance
+wall_structure,-0.011357559427871556
+roof_shape_Flat,-0.010486470162868456
+mwfrs,-0.0031094259503534174
+"roof_cover_""Metal, corrugated""",-0.002641915694131658
+roof_shape_Gable/Hip Combo,-0.0025179588314840464
+roof_cover_Clay tiles,-0.0024050626461789458
+"roof_system_""Wood, unknown""",-0.002397771141791738
+understory_pct_of_building_footprint,-0.002030912092176562
+roof_cover_Asphalt shingles (3-tab),-0.0017058935584658209
+"wall_substrate_""Wood, dimensional planks""",-0.0015650942163952131
+foundation_type_Unknown,-0.0013668589925362352
+roof_cover_Unknown,-0.0004150206759824471
+"roof_shape_Complex,Gable",-0.0002852188328565042
+roof_shape_Gable,-0.00024890668563926077
+roof_substrate_type_None,-7.184258962080747e-05
+wall_substrate_None at first floor Rc moment frame,0.0
+wall_substrate_None,0.0
+"roof_cover_""Metal, corrugated"",""Metal, standing seam""",0.0
+roof_cover_composite shingles,0.0
+"wall_substrate_""Wood, sheathing""",0.0
+"wall_substrate_""Wood, sheathing (corners only)""",0.0
+foundation_type_helical anchors spaced irregulary,0.0
+"roof_cover_Asphalt shingles (3-tab),""Metal, standing seam""",0.0
+roof_cover_Wood shingle,0.0
+"wall_substrate_Not Applicable,Wood Beams",0.0
+"roof_system_""Steel, cold formed"",Concrete slab",0.0
+wall_substrate_masonry ,0.0
+roof_substrate_type_Plywood,0.0
+"roof_system_""Steel, cold formed"",""Steel, joists""",0.0
+"roof_system_""Steel, hot rolled"",""Steel, joists""",0.0
+"roof_system_""Steel, hot rolled"",""Wood, unknown""",0.0
+"roof_system_""Steel, hot rolled"",Z purlins",0.0
+"roof_system_""Steel, joists""",0.0
+"roof_system_""Wood, rafter""",0.0
+roof_substrate_type_Metal deck,0.0
+"roof_system_""Wood, trusses"",""Wood, rafter""",0.0
+wall_substrate_Thin aluminum siding,0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, corrugated""",0.0
+foundation_type_Reinforced masonry stem wall,0.0
+foundation_type_Unreinforced masonry piers,0.0
+"roof_cover_Wood shake,Wood shingle",0.0
+roof_cover_Tile Slate Roof Cover,0.0
+roof_cover_Roll roofing,0.0
+roof_cover_Red composite shingle,0.0
+roof_cover_Other,0.0
+roof_cover_Metal shingles,0.0
+roof_shape_Arch,0.0
+"roof_shape_Complex,Hip",0.0
+"roof_shape_Flat,Gable",0.0
+"roof_shape_Gable,Hip",0.0
+"roof_shape_Gable,Monoslope",0.0
+roof_shape_Gambrel,0.0
+foundation_type_Unreinforced masonry stem wall,0.0
+roof_cover_Built-up without Gravel,0.0
+"roof_shape_Hip,Gable",0.0
+roof_shape_Monoslope,0.0
+roof_shape_Unknown,0.0
+roof_cover_Built-up with Gravel,0.0
+foundation_type_Concrete piers support cast concrete slab on grade,0.0
+foundation_type_Crawlspace,0.0
+foundation_type_Ground anchors and strapping,0.0
+"foundation_type_Piers <= 8 ft, unstrapped",0.0
+foundation_type_Reinforced masonry piers,0.0
+roof_system_Concrete slab,0.0
+"foundation_type_Slab on Grate and Wood Piers, unknown height",0.0
+"roof_cover_Asphalt shingles (laminated),""Metal, standing seam""",0.0
+"roof_shape_Hip,Curved",0.0
+roof_substrate_type_Dimensional lumber,0.0
+wall_substrate_Insulated foam board,6.0230392520699284e-05
+"roof_system_""Steel, cold formed""",6.817205477567256e-05
+wall_substrate_Unknown,0.00016553139282486916
+roof_shape_Hip,0.00041037859805554967
+foundation_type_Slab-on-grade,0.00042915632159026276
+roof_system_Unknown,0.00043543697161188
+"roof_system_""Steel, hot rolled""",0.0007364542807562824
+"wall_substrate_""Wood, sheathing (continuous)""",0.0011292926588300834
+foundation_type_Wood Piers > 8 ft,0.001286013676958575
+foundation_type_Cast-in-place concrete piers,0.002425988245818589
+roof_substrate_type_Plywood/OSB,0.003012729941283254
+building_type,0.004461581146312943
+foundation_type_Wood Piers <= 8 ft,0.006000667722043352
+"roof_cover_""Metal, standing seam""",0.007409016788005785
+"roof_system_""Wood, trusses""",0.007614827699075288
+Buildinglat,0.007758966467138029
+wall_substrate_Not Applicable,0.008072228073063537
+wall_cladding,0.010074993134555177
+roof_shape_Complex,0.013185090117030196
+number_of_stories,0.01384271278472271
+roof_cover_Asphalt shingles (laminated),0.01616060815877831
+roof_substrate_type_Unknown,0.017349658022492644
+hazards_present,0.038170585061533965
+Buildinglong,0.09094030506024922
+year_built,0.16223549112930136
+mindist,0.2289339350315474

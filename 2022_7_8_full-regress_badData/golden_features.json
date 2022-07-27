@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "surge_damage_rating",
+            "feature2": "wind_damage_rating",
+            "operation": "sum",
+            "score": 0.0919691958
+        },
+        {
+            "feature1": "wind_damage_rating",
+            "feature2": "Buildinglat",
+            "operation": "ratio",
+            "score": 0.1072272639
+        },
+        {
+            "feature1": "Buildinglat",
+            "feature2": "wind_damage_rating",
+            "operation": "diff",
+            "score": 0.1123761152
+        },
+        {
+            "feature1": "Buildinglat",
+            "feature2": "wind_damage_rating",
+            "operation": "ratio",
+            "score": 0.1161212377
+        },
+        {
+            "feature1": "wind_damage_rating",
+            "feature2": "Buildinglong",
+            "operation": "ratio",
+            "score": 0.1182874064
+        },
+        {
+            "feature1": "wind_damage_rating",
+            "feature2": "longitude",
+            "operation": "ratio",
+            "score": 0.1182874064
+        },
+        {
+            "feature1": "wind_damage_rating",
+            "feature2": "longitude",
+            "operation": "multiply",
+            "score": 0.125398068
+        },
+        {
+            "feature1": "Buildinglong",
+            "feature2": "wind_damage_rating",
+            "operation": "multiply",
+            "score": 0.125398068
+        },
+        {
+            "feature1": "wind_damage_rating",
+            "feature2": "Buildinglat",
+            "operation": "multiply",
+            "score": 0.1264890352
+        },
+        {
+            "feature1": "longitude",
+            "feature2": "wind_damage_rating",
+            "operation": "diff",
+            "score": 0.1269244705
+        }
+    ],
+    "new_columns": [
+        "surge_damage_rating_sum_wind_damage_rating",
+        "wind_damage_rating_ratio_Buildinglat",
+        "Buildinglat_diff_wind_damage_rating",
+        "Buildinglat_ratio_wind_damage_rating",
+        "wind_damage_rating_ratio_Buildinglong",
+        "wind_damage_rating_ratio_longitude",
+        "wind_damage_rating_multiply_longitude",
+        "Buildinglong_multiply_wind_damage_rating",
+        "wind_damage_rating_multiply_Buildinglat",
+        "longitude_diff_wind_damage_rating"
+    ],
+    "ml_task": "regression"
+}

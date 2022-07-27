@@ -1,0 +1,2012 @@
+{
+    "uid": "106cc153-8812-4d6b-bc1b-0878431c7164",
+    "name": "2_DecisionTree",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "roof_substrate_type": "Plywood/OSB"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "hazards_present": {
+                            "None": 0,
+                            "Rain": 1,
+                            "Rain,Surge,Wind": 2,
+                            "Rain,Surge,Wind,Wind-borne debris": 3,
+                            "Rain,Tree,Wind": 4,
+                            "Rain,Wind": 5,
+                            "Surge": 6,
+                            "Surge,Tree": 7,
+                            "Surge,Wind": 8,
+                            "Surge,Wind, Debris": 9,
+                            "Surge,Wind,Rain": 10,
+                            "Tree,Wind": 11,
+                            "Unknown": 12,
+                            "Wind": 13,
+                            "Wind,Rain": 14,
+                            "Wind,Surge": 15,
+                            "Wind,Surge,Rain": 16,
+                            "Wind,Surge,Unknown": 17,
+                            "Wind,Surge,Wind-borne debris": 18,
+                            "Wind,Tree": 19,
+                            "Wind,Wind-borne debris": 20,
+                            "Wind,Wind-borne debris,Rain": 21,
+                            "Wind,Wind-borne debris,Surge": 22,
+                            "Wind,Wind-borne debris,Tree,Rain": 23,
+                            "Wind-borne debris": 24,
+                            "Wind-borne debris,Wind": 25
+                        },
+                        "building_type": {
+                            "Apartment": 0,
+                            "Apartment (>10 units)": 1,
+                            "Assisted Living Center": 2,
+                            "Barn": 3,
+                            "Condominium (> 10 units)": 4,
+                            "General Area": 5,
+                            "Government": 6,
+                            "Greenhouse": 7,
+                            "Hospital": 8,
+                            "Hotel/Motel": 9,
+                            "Library": 10,
+                            "Manufactured Home": 11,
+                            "Marina": 12,
+                            "Multi-Family": 13,
+                            "Office": 14,
+                            "Professional": 15,
+                            "Religious": 16,
+                            "Restaurant": 17,
+                            "Retail": 18,
+                            "Service station": 19,
+                            "Shed": 20,
+                            "Single Family": 21,
+                            "Unknown": 22,
+                            "Warehouse": 23
+                        },
+                        "roof_shape": {
+                            "Arch": 0,
+                            "Complex": 1,
+                            "Complex,Gable": 2,
+                            "Complex,Hip": 3,
+                            "Flat": 4,
+                            "Flat,Gable": 5,
+                            "Gable": 6,
+                            "Gable,Gambrel": 7,
+                            "Gable,Hip": 8,
+                            "Gable,Monoslope": 9,
+                            "Gable/Hip Combo": 10,
+                            "Gambrel": 11,
+                            "Hip": 12,
+                            "Hip,Curved": 13,
+                            "Hip,Gable": 14,
+                            "Monoslope": 15,
+                            "Unknown": 16
+                        },
+                        "mwfrs": {
+                            "\"Roof Diaphragm, composite\",\"Wall Diaphragm, wood\"": 0,
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, masonry\"": 1,
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, steel\",\"Wall Diaphragm, concrete\"": 2,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\"": 3,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\",Moment Frame": 4,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, wood\"": 5,
+                            "\"Roof Diaphragm, steel\",Moment Frame": 6,
+                            "\"Roof Diaphragm, wood\"": 7,
+                            "\"Roof Diaphragm, wood\",\"Roof Diaphragm, composite\"": 8,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, concrete\"": 9,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, masonry\"": 10,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, steel\"": 11,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"": 12,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\",\"Wall Diaphragm, concrete\"": 13,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\",\"Wall Diaphragm, masonry\"": 14,
+                            "\"Wall Diaphragm, concrete\"": 15,
+                            "\"Wall Diaphragm, masonry\"": 16,
+                            "\"Wall Diaphragm, wood\"": 17,
+                            "\"Wall, X-bracing\",Moment Frame": 18,
+                            "Single Row of Columns": 19,
+                            "Unknown": 20
+                        },
+                        "foundation_type": {
+                            "Cast-in-place concrete piers": 0,
+                            "Crawlspace": 1,
+                            "Ground anchors and strapping": 2,
+                            "Piers <= 8 ft, unstrapped": 3,
+                            "Reinforced masonry piers": 4,
+                            "Reinforced masonry stem wall": 5,
+                            "Slab on Grate and Wood Piers, unknown height": 6,
+                            "Slab-on-grade": 7,
+                            "Unknown": 8,
+                            "Unreinforced masonry piers": 9,
+                            "Unreinforced masonry stem wall": 10,
+                            "Wood Piers <= 8 ft": 11,
+                            "Wood Piers > 8 ft": 12,
+                            "helical anchors spaced irregulary": 13
+                        },
+                        "wall_structure": {
+                            "\"Concrete, moment resisting frame\"": 0,
+                            "\"Concrete, tilt-up\"": 1,
+                            "\"Steel, braced frame\"": 2,
+                            "\"Steel, cold form\"": 3,
+                            "\"Steel, moment resisting frame\"": 4,
+                            "\"Steel, moment resisting frame\",\"Steel, braced frame\"": 5,
+                            "Brick": 6,
+                            "Masonry (reinforced)": 7,
+                            "Masonry (unknown)": 8,
+                            "Masonry (unknown),\"Steel, moment resisting frame\"": 9,
+                            "Masonry (unreinforced)": 10,
+                            "Masonry (unreinforced),\"Steel, moment resisting frame\"": 11,
+                            "Solid Brick Wythe": 12,
+                            "Steel Frame": 13,
+                            "Unknown": 14,
+                            "Wood frame": 15,
+                            "Wood frame,Masonry (reinforced)": 16,
+                            "Wood frame,Masonry (unknown)": 17,
+                            "Wood frame,Masonry (unreinforced)": 18,
+                            "Wood frame,Masonry (unreinforced),Masonry (reinforced)": 19
+                        },
+                        "wall_substrate": {
+                            "\"Wood, dimensional planks\"": 0,
+                            "\"Wood, sheathing (continuous)\"": 1,
+                            "Insulated foam board": 2,
+                            "Metal panels": 3,
+                            "None": 4,
+                            "Not Applicable": 5,
+                            "Not Applicable,Wood Beams": 6,
+                            "Thin aluminum siding": 7,
+                            "Unknown": 8,
+                            "masonry ": 9
+                        },
+                        "wall_cladding": {
+                            "Aluminum siding": 0,
+                            "Aluminum siding,EIFS": 1,
+                            "Brick": 2,
+                            "Brick,Corrugated steel panels": 3,
+                            "Brick,EIFS": 4,
+                            "Brick,Fiber-Cement Board": 5,
+                            "Brick,Plywood Siding": 6,
+                            "Brick,Stucco": 7,
+                            "Brick,Stucco,Wood Boards": 8,
+                            "Brick,Vinyl Siding (single wythe)": 9,
+                            "Brick,Vinyl Siding (standard)": 10,
+                            "Brick,Vinyl Siding (unknown)": 11,
+                            "Brick,Vinyl Siding (unknown),Wood Shake/Shingle": 12,
+                            "Brick,Wood Boards": 13,
+                            "Brick,Wood Shake/Shingle": 14,
+                            "Cedar": 15,
+                            "Cedar wood": 16,
+                            "Concrete Block": 17,
+                            "Corrugated steel panels": 18,
+                            "Corrugated steel panels,Stucco": 19,
+                            "EIFS": 20,
+                            "Fiber-Cement Board": 21,
+                            "Fiber-Cement Board,Corrugated steel panels": 22,
+                            "Fiber-Cement Board,Plywood Siding": 23,
+                            "Fiber-Cement Board,Vinyl Siding (unknown)": 24,
+                            "Fiber-Cement Board,Vinyl Siding (unknown),Wood Boards": 25,
+                            "Fiber-Cement Board,Wood Boards": 26,
+                            "Fiber-Cement Board,Wood Boards,Wood Shake/Shingle": 27,
+                            "Fiber-Cement Board,Wood Boards,concrete blocks": 28,
+                            "Fiber-Cement Board,Wood Shake/Shingle": 29,
+                            "Fiber-Cement Board,concrete block": 30,
+                            "Masonry/concrete": 31,
+                            "Plywood Siding": 32,
+                            "Plywood Siding,Stucco": 33,
+                            "Sheet Metal": 34,
+                            "Stucco": 35,
+                            "Stucco,Concrete Block": 36,
+                            "Stucco,Stone brick": 37,
+                            "Stucco,Vinyl Siding (unknown)": 38,
+                            "Stucco,Wood Boards": 39,
+                            "Unknown": 40,
+                            "Vinyl Siding (high wind rated)": 41,
+                            "Vinyl Siding (standard)": 42,
+                            "Vinyl Siding (standard),Stone": 43,
+                            "Vinyl Siding (standard),Wood Shake/Shingle": 44,
+                            "Vinyl Siding (unknown)": 45,
+                            "Vinyl Siding (unknown),Wood Boards": 46,
+                            "Vinyl Siding (unknown),Wood Shake/Shingle": 47,
+                            "Vinyl Siding (unknown),concrete blocks": 48,
+                            "Wood Boards": 49,
+                            "Wood Boards,Concrete block": 50,
+                            "Wood Boards,Wood Shake/Shingle": 51,
+                            "Wood Boards,Wood Shake/Shingle,stone wall ": 52,
+                            "Wood Boards,stone": 53,
+                            "Wood Shake/Shingle": 54,
+                            "concrete masonry units": 55
+                        },
+                        "roof_system": {
+                            "\"Steel, cold formed\"": 0,
+                            "\"Steel, cold formed\",\"Steel, joists\"": 1,
+                            "\"Steel, cold formed\",Concrete slab": 2,
+                            "\"Steel, hot rolled\"": 3,
+                            "\"Steel, hot rolled\",\"Steel, joists\"": 4,
+                            "\"Steel, hot rolled\",\"Wood, unknown\"": 5,
+                            "\"Steel, hot rolled\",Z purlins": 6,
+                            "\"Steel, joists\"": 7,
+                            "\"Wood, rafter\"": 8,
+                            "\"Wood, rafter\",\"Wood, trusses\"": 9,
+                            "\"Wood, trusses\"": 10,
+                            "\"Wood, trusses\",\"Wood, rafter\"": 11,
+                            "\"Wood, unknown\"": 12,
+                            "Concrete slab": 13,
+                            "Unknown": 14
+                        },
+                        "roof_substrate_type": {
+                            "Dimensional lumber": 0,
+                            "Metal deck": 1,
+                            "None": 2,
+                            "Plywood": 3,
+                            "Plywood/OSB": 4,
+                            "Unknown": 5
+                        },
+                        "roof_cover": {
+                            "\"Metal, corrugated\"": 0,
+                            "\"Metal, corrugated\",\"Metal, standing seam\"": 1,
+                            "\"Metal, standing seam\"": 2,
+                            "Asphalt shingles (3-tab)": 3,
+                            "Asphalt shingles (3-tab),\"Metal, standing seam\"": 4,
+                            "Asphalt shingles (laminated)": 5,
+                            "Asphalt shingles (laminated),\"Metal, corrugated\"": 6,
+                            "Asphalt shingles (laminated),\"Metal, standing seam\"": 7,
+                            "Built-up with Gravel": 8,
+                            "Built-up without Gravel": 9,
+                            "Clay tiles": 10,
+                            "Metal shingles": 11,
+                            "Other": 12,
+                            "Red composite shingle": 13,
+                            "Roll roofing": 14,
+                            "Tile Slate Roof Cover": 15,
+                            "Unknown": 16,
+                            "Wood shake,Wood shingle": 17,
+                            "Wood shingle": 18,
+                            "composite shingles": 19
+                        }
+                    },
+                    "columns": [
+                        "hazards_present",
+                        "building_type",
+                        "roof_shape",
+                        "mwfrs",
+                        "foundation_type",
+                        "wall_structure",
+                        "wall_substrate",
+                        "wall_cladding",
+                        "roof_system",
+                        "roof_substrate_type",
+                        "roof_cover"
+                    ]
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "hazards_present": [
+                        "categorical_to_int"
+                    ],
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "building_type": [
+                        "categorical_to_int"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_system": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1995.5,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "hazards_present": {
+                            "None": 0,
+                            "Rain": 1,
+                            "Rain,Surge,Wind": 2,
+                            "Rain,Surge,Wind,Wind-borne debris": 3,
+                            "Rain,Tree,Wind": 4,
+                            "Rain,Wind": 5,
+                            "Surge": 6,
+                            "Surge,Tree": 7,
+                            "Surge,Wind": 8,
+                            "Surge,Wind, Debris": 9,
+                            "Surge,Wind,Rain": 10,
+                            "Surge,Wind,Wind-borne debris": 11,
+                            "Tree": 12,
+                            "Tree,Wind": 13,
+                            "Tree,Wind,Surge": 14,
+                            "Tree,Wind,Wind-borne debris": 15,
+                            "Unknown": 16,
+                            "Wind": 17,
+                            "Wind,Rain": 18,
+                            "Wind,Surge": 19,
+                            "Wind,Surge,Rain": 20,
+                            "Wind,Surge,Wind-borne debris": 21,
+                            "Wind,Tree": 22,
+                            "Wind,Wind-borne debris": 23,
+                            "Wind,Wind-borne debris,Surge": 24,
+                            "Wind,Wind-borne debris,Tree,Rain": 25,
+                            "Wind-borne debris,Wind": 26
+                        },
+                        "building_type": {
+                            "Apartment": 0,
+                            "Apartment (>10 units)": 1,
+                            "Assisted Living Center": 2,
+                            "Condominium (> 10 units)": 3,
+                            "General Area": 4,
+                            "Government": 5,
+                            "Hospital": 6,
+                            "Hotel/Motel": 7,
+                            "Library": 8,
+                            "Manufactured Home": 9,
+                            "Marina": 10,
+                            "Multi-Family": 11,
+                            "Office": 12,
+                            "Professional": 13,
+                            "Religious": 14,
+                            "Restaurant": 15,
+                            "Retail": 16,
+                            "Service station": 17,
+                            "Single Family": 18,
+                            "Unknown": 19,
+                            "Warehouse": 20
+                        },
+                        "roof_shape": {
+                            "Arch": 0,
+                            "Complex": 1,
+                            "Complex,Gable": 2,
+                            "Complex,Hip": 3,
+                            "Flat": 4,
+                            "Flat,Gable": 5,
+                            "Gable": 6,
+                            "Gable,Gambrel": 7,
+                            "Gable,Hip": 8,
+                            "Gable,Monoslope": 9,
+                            "Gable/Hip Combo": 10,
+                            "Gambrel": 11,
+                            "Hip": 12,
+                            "Hip,Gable": 13,
+                            "Monoslope": 14,
+                            "Unknown": 15
+                        },
+                        "mwfrs": {
+                            "\"Roof Diaphragm, composite\",\"Wall Diaphragm, wood\"": 0,
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, masonry\"": 1,
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, steel\",\"Wall Diaphragm, concrete\"": 2,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, masonry\"": 3,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\"": 4,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\",Moment Frame": 5,
+                            "\"Roof Diaphragm, steel\",Moment Frame": 6,
+                            "\"Roof Diaphragm, wood\"": 7,
+                            "\"Roof Diaphragm, wood\",\"Roof Diaphragm, composite\"": 8,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, concrete\"": 9,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, masonry\"": 10,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, steel\"": 11,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"": 12,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\",\"Wall Diaphragm, concrete\"": 13,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\",\"Wall Diaphragm, masonry\"": 14,
+                            "\"Wall Diaphragm, concrete\"": 15,
+                            "\"Wall Diaphragm, masonry\"": 16,
+                            "\"Wall Diaphragm, wood\"": 17,
+                            "\"Wall, X-bracing\",Moment Frame": 18,
+                            "Single Row of Columns": 19,
+                            "Unknown": 20
+                        },
+                        "foundation_type": {
+                            "Cast-in-place concrete piers": 0,
+                            "Concrete piers support cast concrete slab on grade": 1,
+                            "Crawlspace": 2,
+                            "Ground anchors and strapping": 3,
+                            "Piers <= 8 ft, unstrapped": 4,
+                            "Reinforced masonry piers": 5,
+                            "Reinforced masonry stem wall": 6,
+                            "Slab on Grate and Wood Piers, unknown height": 7,
+                            "Slab-on-grade": 8,
+                            "Unknown": 9,
+                            "Unreinforced masonry piers": 10,
+                            "Unreinforced masonry stem wall": 11,
+                            "Wood Piers <= 8 ft": 12,
+                            "Wood Piers > 8 ft": 13
+                        },
+                        "wall_structure": {
+                            "\"Concrete, moment resisting frame\"": 0,
+                            "\"Concrete, tilt-up\"": 1,
+                            "\"Steel, braced frame\"": 2,
+                            "\"Steel, cold form\"": 3,
+                            "\"Steel, moment resisting frame\"": 4,
+                            "\"Steel, moment resisting frame\",\"Steel, braced frame\"": 5,
+                            "Brick": 6,
+                            "Concrete piers, insulated concrete form (ICF) walls": 7,
+                            "Masonry (reinforced)": 8,
+                            "Masonry (unknown)": 9,
+                            "Masonry (unknown),\"Steel, moment resisting frame\"": 10,
+                            "Masonry (unreinforced)": 11,
+                            "Masonry (unreinforced),\"Steel, moment resisting frame\"": 12,
+                            "Solid Brick Wythe": 13,
+                            "Unknown": 14,
+                            "Wood frame": 15,
+                            "Wood frame,Masonry (reinforced)": 16,
+                            "Wood frame,Masonry (unknown)": 17,
+                            "Wood frame,Masonry (unreinforced)": 18,
+                            "Wood frame,Masonry (unreinforced),Masonry (reinforced)": 19
+                        },
+                        "wall_substrate": {
+                            "\"Wood, dimensional planks\"": 0,
+                            "\"Wood, sheathing (continuous)\"": 1,
+                            "\"Wood, sheathing (corners only)\"": 2,
+                            "\"Wood, sheathing\"": 3,
+                            "Insulated foam board": 4,
+                            "Metal panels": 5,
+                            "None": 6,
+                            "None at first floor Rc moment frame": 7,
+                            "Not Applicable": 8,
+                            "Not Applicable,Wood Beams": 9,
+                            "Unknown": 10
+                        },
+                        "wall_cladding": {
+                            "Aluminum siding": 0,
+                            "Aluminum siding,Concrete block": 1,
+                            "Aluminum siding,EIFS": 2,
+                            "Brick": 3,
+                            "Brick,Corrugated steel panels": 4,
+                            "Brick,EIFS": 5,
+                            "Brick,Fiber-Cement Board": 6,
+                            "Brick,Plywood Siding": 7,
+                            "Brick,Plywood Siding,Vinyl Siding (unknown)": 8,
+                            "Brick,Stucco": 9,
+                            "Brick,Stucco,Wood Boards": 10,
+                            "Brick,Vinyl Siding (single wythe)": 11,
+                            "Brick,Vinyl Siding (standard)": 12,
+                            "Brick,Vinyl Siding (unknown)": 13,
+                            "Brick,Vinyl Siding (unknown),Wood Shake/Shingle": 14,
+                            "Brick,Wood Boards": 15,
+                            "Brick,Wood Shake/Shingle": 16,
+                            "Brick,above avg. gray shingle": 17,
+                            "Cedar": 18,
+                            "Cedar,stone": 19,
+                            "Concrete masonry units": 20,
+                            "Corrugated steel panels": 21,
+                            "Corrugated steel panels,Stucco": 22,
+                            "EIFS": 23,
+                            "EIFS,Wood Boards": 24,
+                            "Fiber-Cement Board": 25,
+                            "Fiber-Cement Board,Corrugated steel panels": 26,
+                            "Fiber-Cement Board,Plywood Siding": 27,
+                            "Fiber-Cement Board,Vinyl Siding (unknown)": 28,
+                            "Fiber-Cement Board,Vinyl Siding (unknown),Wood Boards": 29,
+                            "Fiber-Cement Board,Wood Boards": 30,
+                            "Fiber-Cement Board,Wood Boards,Wood Shake/Shingle": 31,
+                            "Fiber-Cement Board,Wood Boards,concrete blocks": 32,
+                            "Fiber-Cement Board,Wood Shake/Shingle": 33,
+                            "Fiber-Cement Board,concrete block": 34,
+                            "Masonry/concrete": 35,
+                            "Plywood Siding": 36,
+                            "Plywood Siding,Stucco": 37,
+                            "Plywood Siding,Wood Shake/Shingle": 38,
+                            "Sheet Metal": 39,
+                            "Stucco": 40,
+                            "Stucco,Stone brick": 41,
+                            "Stucco,Vinyl Siding (unknown)": 42,
+                            "Stucco,Wood Boards": 43,
+                            "Stucco,Wood Boards,Stone": 44,
+                            "Unknown": 45,
+                            "Vinyl Siding (high wind rated)": 46,
+                            "Vinyl Siding (standard)": 47,
+                            "Vinyl Siding (standard),Stone": 48,
+                            "Vinyl Siding (standard),Wood Shake/Shingle": 49,
+                            "Vinyl Siding (unknown)": 50,
+                            "Vinyl Siding (unknown),Stone": 51,
+                            "Vinyl Siding (unknown),Wood Boards": 52,
+                            "Vinyl Siding (unknown),Wood Shake/Shingle": 53,
+                            "Vinyl Siding (unknown),concrete blocks": 54,
+                            "Wood Boards": 55,
+                            "Wood Boards,Concrete block": 56,
+                            "Wood Boards,Wood Shake/Shingle": 57,
+                            "Wood Boards,Wood Shake/Shingle,stone wall ": 58,
+                            "Wood Boards,stone": 59,
+                            "Wood Panel Siding": 60,
+                            "Wood Shake/Shingle": 61,
+                            "concrete blocks": 62
+                        },
+                        "roof_system": {
+                            "\"Steel, cold formed\"": 0,
+                            "\"Steel, cold formed\",\"Steel, joists\"": 1,
+                            "\"Steel, cold formed\",Concrete slab": 2,
+                            "\"Steel, hot rolled\"": 3,
+                            "\"Steel, hot rolled\",\"Steel, joists\"": 4,
+                            "\"Steel, hot rolled\",\"Wood, unknown\"": 5,
+                            "\"Steel, hot rolled\",Z purlins": 6,
+                            "\"Steel, joists\"": 7,
+                            "\"Wood, rafter\"": 8,
+                            "\"Wood, rafter\",\"Wood, trusses\"": 9,
+                            "\"Wood, trusses\"": 10,
+                            "\"Wood, trusses\",\"Wood, rafter\"": 11,
+                            "\"Wood, unknown\"": 12,
+                            "Concrete slab": 13,
+                            "Unknown": 14
+                        },
+                        "roof_substrate_type": {
+                            "Dimensional lumber": 0,
+                            "Metal deck": 1,
+                            "None": 2,
+                            "Plywood": 3,
+                            "Plywood/OSB": 4,
+                            "Unknown": 5
+                        },
+                        "roof_cover": {
+                            "\"Metal, corrugated\"": 0,
+                            "\"Metal, corrugated\",\"Metal, standing seam\"": 1,
+                            "\"Metal, standing seam\"": 2,
+                            "Asphalt shingles (3-tab)": 3,
+                            "Asphalt shingles (3-tab),\"Metal, standing seam\"": 4,
+                            "Asphalt shingles (laminated)": 5,
+                            "Asphalt shingles (laminated),\"Metal, corrugated\"": 6,
+                            "Asphalt shingles (laminated),\"Metal, standing seam\"": 7,
+                            "Built-up without Gravel": 8,
+                            "Clay tiles": 9,
+                            "Metal shingles": 10,
+                            "Roll roofing": 11,
+                            "Unknown": 12,
+                            "Wood shake,Wood shingle": 13,
+                            "Wood shingle": 14,
+                            "composite shingles": 15
+                        }
+                    },
+                    "columns": [
+                        "hazards_present",
+                        "building_type",
+                        "roof_shape",
+                        "mwfrs",
+                        "foundation_type",
+                        "wall_structure",
+                        "wall_substrate",
+                        "wall_cladding",
+                        "roof_system",
+                        "roof_substrate_type",
+                        "roof_cover"
+                    ]
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "hazards_present": [
+                        "categorical_to_int"
+                    ],
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "building_type": [
+                        "categorical_to_int"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_system": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1997.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "hazards_present": {
+                            "None": 0,
+                            "Rain": 1,
+                            "Rain,Surge,Wind": 2,
+                            "Rain,Surge,Wind,Wind-borne debris": 3,
+                            "Rain,Tree,Wind": 4,
+                            "Rain,Wind": 5,
+                            "Surge": 6,
+                            "Surge,Tree": 7,
+                            "Surge,Wind": 8,
+                            "Surge,Wind, Debris": 9,
+                            "Surge,Wind,Wind-borne debris": 10,
+                            "Tree": 11,
+                            "Tree,Wind": 12,
+                            "Tree,Wind,Surge": 13,
+                            "Tree,Wind,Wind-borne debris": 14,
+                            "Unknown": 15,
+                            "Wind": 16,
+                            "Wind,Rain": 17,
+                            "Wind,Surge": 18,
+                            "Wind,Surge,Rain": 19,
+                            "Wind,Surge,Unknown": 20,
+                            "Wind,Surge,Wind-borne debris": 21,
+                            "Wind,Tree": 22,
+                            "Wind,Wind-borne debris": 23,
+                            "Wind,Wind-borne debris,Rain": 24,
+                            "Wind,Wind-borne debris,Surge": 25,
+                            "Wind,Wind-borne debris,Tree,Rain": 26,
+                            "Wind-borne debris": 27,
+                            "Wind-borne debris,Wind": 28
+                        },
+                        "building_type": {
+                            "Apartment": 0,
+                            "Apartment (>10 units)": 1,
+                            "Barn": 2,
+                            "Condominium (> 10 units)": 3,
+                            "General Area": 4,
+                            "Government": 5,
+                            "Greenhouse": 6,
+                            "Hotel/Motel": 7,
+                            "Library": 8,
+                            "Manufactured Home": 9,
+                            "Marina": 10,
+                            "Multi-Family": 11,
+                            "Office": 12,
+                            "Professional": 13,
+                            "Religious": 14,
+                            "Restaurant": 15,
+                            "Retail": 16,
+                            "Service station": 17,
+                            "Shed": 18,
+                            "Single Family": 19,
+                            "Unknown": 20,
+                            "Warehouse": 21
+                        },
+                        "roof_shape": {
+                            "Complex": 0,
+                            "Complex,Gable": 1,
+                            "Complex,Hip": 2,
+                            "Flat": 3,
+                            "Flat,Gable": 4,
+                            "Gable": 5,
+                            "Gable,Gambrel": 6,
+                            "Gable,Hip": 7,
+                            "Gable,Monoslope": 8,
+                            "Gable/Hip Combo": 9,
+                            "Gambrel": 10,
+                            "Hip": 11,
+                            "Hip,Curved": 12,
+                            "Hip,Gable": 13,
+                            "Monoslope": 14,
+                            "Unknown": 15
+                        },
+                        "mwfrs": {
+                            "\"Roof Diaphragm, composite\",\"Wall Diaphragm, wood\"": 0,
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, masonry\"": 1,
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, steel\",\"Wall Diaphragm, concrete\"": 2,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, masonry\"": 3,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\"": 4,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\",Moment Frame": 5,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, wood\"": 6,
+                            "\"Roof Diaphragm, wood\"": 7,
+                            "\"Roof Diaphragm, wood\",\"Roof Diaphragm, composite\"": 8,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, concrete\"": 9,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, masonry\"": 10,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, steel\"": 11,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"": 12,
+                            "\"Wall Diaphragm, concrete\"": 13,
+                            "\"Wall Diaphragm, masonry\"": 14,
+                            "\"Wall Diaphragm, wood\"": 15,
+                            "Unknown": 16
+                        },
+                        "foundation_type": {
+                            "Cast-in-place concrete piers": 0,
+                            "Concrete piers support cast concrete slab on grade": 1,
+                            "Crawlspace": 2,
+                            "Ground anchors and strapping": 3,
+                            "Piers <= 8 ft, unstrapped": 4,
+                            "Reinforced masonry piers": 5,
+                            "Reinforced masonry stem wall": 6,
+                            "Slab-on-grade": 7,
+                            "Unknown": 8,
+                            "Unreinforced masonry piers": 9,
+                            "Unreinforced masonry stem wall": 10,
+                            "Wood Piers <= 8 ft": 11,
+                            "Wood Piers > 8 ft": 12,
+                            "helical anchors spaced irregulary": 13
+                        },
+                        "wall_structure": {
+                            "\"Concrete, tilt-up\"": 0,
+                            "\"Steel, braced frame\"": 1,
+                            "\"Steel, cold form\"": 2,
+                            "\"Steel, moment resisting frame\"": 3,
+                            "\"Steel, moment resisting frame\",\"Steel, braced frame\"": 4,
+                            "Brick": 5,
+                            "Concrete piers, insulated concrete form (ICF) walls": 6,
+                            "Masonry (unknown)": 7,
+                            "Masonry (unknown),\"Steel, moment resisting frame\"": 8,
+                            "Masonry (unreinforced)": 9,
+                            "Masonry (unreinforced),\"Steel, moment resisting frame\"": 10,
+                            "Solid Brick Wythe": 11,
+                            "Steel Frame": 12,
+                            "Unknown": 13,
+                            "Wood frame": 14,
+                            "Wood frame,Masonry (unknown)": 15
+                        },
+                        "wall_substrate": {
+                            "\"Wood, dimensional planks\"": 0,
+                            "\"Wood, sheathing (continuous)\"": 1,
+                            "\"Wood, sheathing (corners only)\"": 2,
+                            "\"Wood, sheathing\"": 3,
+                            "Insulated foam board": 4,
+                            "Metal panels": 5,
+                            "None": 6,
+                            "None at first floor Rc moment frame": 7,
+                            "Not Applicable": 8,
+                            "Thin aluminum siding": 9,
+                            "Unknown": 10,
+                            "masonry ": 11
+                        },
+                        "wall_cladding": {
+                            "Aluminum siding": 0,
+                            "Aluminum siding,Concrete block": 1,
+                            "Brick": 2,
+                            "Brick,Corrugated steel panels": 3,
+                            "Brick,EIFS": 4,
+                            "Brick,Fiber-Cement Board": 5,
+                            "Brick,Plywood Siding": 6,
+                            "Brick,Plywood Siding,Vinyl Siding (unknown)": 7,
+                            "Brick,Stucco": 8,
+                            "Brick,Stucco,Wood Boards": 9,
+                            "Brick,Vinyl Siding (single wythe)": 10,
+                            "Brick,Vinyl Siding (standard)": 11,
+                            "Brick,Vinyl Siding (unknown)": 12,
+                            "Brick,Vinyl Siding (unknown),Wood Shake/Shingle": 13,
+                            "Brick,Wood Boards": 14,
+                            "Brick,Wood Shake/Shingle": 15,
+                            "Brick,above avg. gray shingle": 16,
+                            "Cedar wood": 17,
+                            "Cedar,stone": 18,
+                            "Concrete Block": 19,
+                            "Concrete masonry units": 20,
+                            "Corrugated steel panels": 21,
+                            "Corrugated steel panels,Stucco": 22,
+                            "EIFS": 23,
+                            "EIFS,Wood Boards": 24,
+                            "Fiber-Cement Board": 25,
+                            "Fiber-Cement Board,Plywood Siding": 26,
+                            "Fiber-Cement Board,Vinyl Siding (unknown)": 27,
+                            "Fiber-Cement Board,Wood Boards": 28,
+                            "Fiber-Cement Board,Wood Shake/Shingle": 29,
+                            "Fiber-Cement Board,concrete block": 30,
+                            "Masonry/concrete": 31,
+                            "Plywood Siding": 32,
+                            "Plywood Siding,Stucco": 33,
+                            "Plywood Siding,Wood Shake/Shingle": 34,
+                            "Sheet Metal": 35,
+                            "Stucco": 36,
+                            "Stucco,Concrete Block": 37,
+                            "Stucco,Vinyl Siding (unknown)": 38,
+                            "Stucco,Wood Boards": 39,
+                            "Stucco,Wood Boards,Stone": 40,
+                            "Unknown": 41,
+                            "Vinyl Siding (high wind rated)": 42,
+                            "Vinyl Siding (standard)": 43,
+                            "Vinyl Siding (standard),Stone": 44,
+                            "Vinyl Siding (unknown)": 45,
+                            "Vinyl Siding (unknown),Stone": 46,
+                            "Vinyl Siding (unknown),Wood Shake/Shingle": 47,
+                            "Wood Boards": 48,
+                            "Wood Boards,Concrete block": 49,
+                            "Wood Boards,Wood Shake/Shingle": 50,
+                            "Wood Panel Siding": 51,
+                            "Wood Shake/Shingle": 52,
+                            "concrete blocks": 53,
+                            "concrete masonry units": 54
+                        },
+                        "roof_system": {
+                            "\"Steel, cold formed\"": 0,
+                            "\"Steel, cold formed\",\"Steel, joists\"": 1,
+                            "\"Steel, cold formed\",Concrete slab": 2,
+                            "\"Steel, hot rolled\"": 3,
+                            "\"Steel, hot rolled\",\"Steel, joists\"": 4,
+                            "\"Steel, hot rolled\",Z purlins": 5,
+                            "\"Steel, joists\"": 6,
+                            "\"Wood, rafter\"": 7,
+                            "\"Wood, rafter\",\"Wood, trusses\"": 8,
+                            "\"Wood, trusses\"": 9,
+                            "\"Wood, unknown\"": 10,
+                            "Concrete slab": 11,
+                            "Unknown": 12
+                        },
+                        "roof_substrate_type": {
+                            "Dimensional lumber": 0,
+                            "Metal deck": 1,
+                            "None": 2,
+                            "Plywood": 3,
+                            "Plywood/OSB": 4,
+                            "Unknown": 5
+                        },
+                        "roof_cover": {
+                            "\"Metal, corrugated\"": 0,
+                            "\"Metal, corrugated\",\"Metal, standing seam\"": 1,
+                            "\"Metal, standing seam\"": 2,
+                            "Asphalt shingles (3-tab)": 3,
+                            "Asphalt shingles (3-tab),\"Metal, standing seam\"": 4,
+                            "Asphalt shingles (laminated)": 5,
+                            "Asphalt shingles (laminated),\"Metal, standing seam\"": 6,
+                            "Built-up with Gravel": 7,
+                            "Built-up without Gravel": 8,
+                            "Clay tiles": 9,
+                            "Metal shingles": 10,
+                            "Other": 11,
+                            "Red composite shingle": 12,
+                            "Tile Slate Roof Cover": 13,
+                            "Unknown": 14,
+                            "Wood shake,Wood shingle": 15,
+                            "composite shingles": 16
+                        }
+                    },
+                    "columns": [
+                        "hazards_present",
+                        "building_type",
+                        "roof_shape",
+                        "mwfrs",
+                        "foundation_type",
+                        "wall_structure",
+                        "wall_substrate",
+                        "wall_cladding",
+                        "roof_system",
+                        "roof_substrate_type",
+                        "roof_cover"
+                    ]
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "hazards_present": [
+                        "categorical_to_int"
+                    ],
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "building_type": [
+                        "categorical_to_int"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_system": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1993.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "hazards_present": {
+                            "None": 0,
+                            "Rain,Surge,Wind": 1,
+                            "Rain,Surge,Wind,Wind-borne debris": 2,
+                            "Rain,Wind": 3,
+                            "Surge": 4,
+                            "Surge,Tree": 5,
+                            "Surge,Wind": 6,
+                            "Surge,Wind,Rain": 7,
+                            "Surge,Wind,Wind-borne debris": 8,
+                            "Tree": 9,
+                            "Tree,Wind": 10,
+                            "Tree,Wind,Surge": 11,
+                            "Tree,Wind,Wind-borne debris": 12,
+                            "Wind": 13,
+                            "Wind,Rain": 14,
+                            "Wind,Surge": 15,
+                            "Wind,Surge,Rain": 16,
+                            "Wind,Surge,Unknown": 17,
+                            "Wind,Surge,Wind-borne debris": 18,
+                            "Wind,Tree": 19,
+                            "Wind,Wind-borne debris": 20,
+                            "Wind,Wind-borne debris,Rain": 21,
+                            "Wind,Wind-borne debris,Surge": 22,
+                            "Wind,Wind-borne debris,Tree,Rain": 23,
+                            "Wind-borne debris": 24,
+                            "Wind-borne debris,Wind": 25
+                        },
+                        "building_type": {
+                            "Apartment": 0,
+                            "Apartment (>10 units)": 1,
+                            "Assisted Living Center": 2,
+                            "Barn": 3,
+                            "Condominium (> 10 units)": 4,
+                            "General Area": 5,
+                            "Government": 6,
+                            "Greenhouse": 7,
+                            "Hospital": 8,
+                            "Hotel/Motel": 9,
+                            "Library": 10,
+                            "Manufactured Home": 11,
+                            "Marina": 12,
+                            "Multi-Family": 13,
+                            "Office": 14,
+                            "Professional": 15,
+                            "Religious": 16,
+                            "Restaurant": 17,
+                            "Retail": 18,
+                            "Service station": 19,
+                            "Shed": 20,
+                            "Single Family": 21,
+                            "Unknown": 22,
+                            "Warehouse": 23
+                        },
+                        "roof_shape": {
+                            "Arch": 0,
+                            "Complex": 1,
+                            "Complex,Gable": 2,
+                            "Complex,Hip": 3,
+                            "Flat": 4,
+                            "Flat,Gable": 5,
+                            "Gable": 6,
+                            "Gable,Hip": 7,
+                            "Gable,Monoslope": 8,
+                            "Gable/Hip Combo": 9,
+                            "Gambrel": 10,
+                            "Hip": 11,
+                            "Hip,Curved": 12,
+                            "Hip,Gable": 13,
+                            "Monoslope": 14,
+                            "Unknown": 15
+                        },
+                        "mwfrs": {
+                            "\"Roof Diaphragm, composite\",\"Wall Diaphragm, wood\"": 0,
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, masonry\"": 1,
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, steel\",\"Wall Diaphragm, concrete\"": 2,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, masonry\"": 3,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\"": 4,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\",Moment Frame": 5,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, wood\"": 6,
+                            "\"Roof Diaphragm, steel\",Moment Frame": 7,
+                            "\"Roof Diaphragm, wood\"": 8,
+                            "\"Roof Diaphragm, wood\",\"Roof Diaphragm, composite\"": 9,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, concrete\"": 10,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, masonry\"": 11,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, steel\"": 12,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"": 13,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\",\"Wall Diaphragm, concrete\"": 14,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\",\"Wall Diaphragm, masonry\"": 15,
+                            "\"Wall Diaphragm, concrete\"": 16,
+                            "\"Wall Diaphragm, masonry\"": 17,
+                            "\"Wall, X-bracing\",Moment Frame": 18,
+                            "Single Row of Columns": 19,
+                            "Unknown": 20
+                        },
+                        "foundation_type": {
+                            "Cast-in-place concrete piers": 0,
+                            "Concrete piers support cast concrete slab on grade": 1,
+                            "Crawlspace": 2,
+                            "Ground anchors and strapping": 3,
+                            "Piers <= 8 ft, unstrapped": 4,
+                            "Reinforced masonry piers": 5,
+                            "Reinforced masonry stem wall": 6,
+                            "Slab on Grate and Wood Piers, unknown height": 7,
+                            "Slab-on-grade": 8,
+                            "Unknown": 9,
+                            "Unreinforced masonry piers": 10,
+                            "Unreinforced masonry stem wall": 11,
+                            "Wood Piers <= 8 ft": 12,
+                            "Wood Piers > 8 ft": 13,
+                            "helical anchors spaced irregulary": 14
+                        },
+                        "wall_structure": {
+                            "\"Concrete, moment resisting frame\"": 0,
+                            "\"Concrete, tilt-up\"": 1,
+                            "\"Steel, braced frame\"": 2,
+                            "\"Steel, cold form\"": 3,
+                            "\"Steel, moment resisting frame\"": 4,
+                            "\"Steel, moment resisting frame\",\"Steel, braced frame\"": 5,
+                            "Concrete piers, insulated concrete form (ICF) walls": 6,
+                            "Masonry (reinforced)": 7,
+                            "Masonry (unknown)": 8,
+                            "Masonry (unknown),\"Steel, moment resisting frame\"": 9,
+                            "Masonry (unreinforced)": 10,
+                            "Masonry (unreinforced),\"Steel, moment resisting frame\"": 11,
+                            "Solid Brick Wythe": 12,
+                            "Steel Frame": 13,
+                            "Unknown": 14,
+                            "Wood frame": 15,
+                            "Wood frame,Masonry (reinforced)": 16,
+                            "Wood frame,Masonry (unknown)": 17,
+                            "Wood frame,Masonry (unreinforced)": 18,
+                            "Wood frame,Masonry (unreinforced),Masonry (reinforced)": 19
+                        },
+                        "wall_substrate": {
+                            "\"Wood, dimensional planks\"": 0,
+                            "\"Wood, sheathing (continuous)\"": 1,
+                            "\"Wood, sheathing (corners only)\"": 2,
+                            "\"Wood, sheathing\"": 3,
+                            "Insulated foam board": 4,
+                            "None": 5,
+                            "None at first floor Rc moment frame": 6,
+                            "Not Applicable": 7,
+                            "Not Applicable,Wood Beams": 8,
+                            "Thin aluminum siding": 9,
+                            "Unknown": 10,
+                            "masonry ": 11
+                        },
+                        "wall_cladding": {
+                            "Aluminum siding": 0,
+                            "Aluminum siding,Concrete block": 1,
+                            "Aluminum siding,EIFS": 2,
+                            "Brick": 3,
+                            "Brick,Corrugated steel panels": 4,
+                            "Brick,EIFS": 5,
+                            "Brick,Fiber-Cement Board": 6,
+                            "Brick,Plywood Siding": 7,
+                            "Brick,Plywood Siding,Vinyl Siding (unknown)": 8,
+                            "Brick,Stucco": 9,
+                            "Brick,Stucco,Wood Boards": 10,
+                            "Brick,Vinyl Siding (single wythe)": 11,
+                            "Brick,Vinyl Siding (standard)": 12,
+                            "Brick,Vinyl Siding (unknown)": 13,
+                            "Brick,Vinyl Siding (unknown),Wood Shake/Shingle": 14,
+                            "Brick,Wood Boards": 15,
+                            "Brick,Wood Shake/Shingle": 16,
+                            "Brick,above avg. gray shingle": 17,
+                            "Cedar": 18,
+                            "Cedar wood": 19,
+                            "Cedar,stone": 20,
+                            "Concrete Block": 21,
+                            "Concrete masonry units": 22,
+                            "Corrugated steel panels": 23,
+                            "Corrugated steel panels,Stucco": 24,
+                            "EIFS": 25,
+                            "EIFS,Wood Boards": 26,
+                            "Fiber-Cement Board": 27,
+                            "Fiber-Cement Board,Corrugated steel panels": 28,
+                            "Fiber-Cement Board,Plywood Siding": 29,
+                            "Fiber-Cement Board,Vinyl Siding (unknown),Wood Boards": 30,
+                            "Fiber-Cement Board,Wood Boards": 31,
+                            "Fiber-Cement Board,Wood Boards,Wood Shake/Shingle": 32,
+                            "Fiber-Cement Board,Wood Boards,concrete blocks": 33,
+                            "Fiber-Cement Board,Wood Shake/Shingle": 34,
+                            "Fiber-Cement Board,concrete block": 35,
+                            "Masonry/concrete": 36,
+                            "Plywood Siding": 37,
+                            "Plywood Siding,Stucco": 38,
+                            "Plywood Siding,Wood Shake/Shingle": 39,
+                            "Stucco": 40,
+                            "Stucco,Concrete Block": 41,
+                            "Stucco,Stone brick": 42,
+                            "Stucco,Vinyl Siding (unknown)": 43,
+                            "Stucco,Wood Boards": 44,
+                            "Stucco,Wood Boards,Stone": 45,
+                            "Unknown": 46,
+                            "Vinyl Siding (standard)": 47,
+                            "Vinyl Siding (standard),Stone": 48,
+                            "Vinyl Siding (standard),Wood Shake/Shingle": 49,
+                            "Vinyl Siding (unknown)": 50,
+                            "Vinyl Siding (unknown),Stone": 51,
+                            "Vinyl Siding (unknown),Wood Boards": 52,
+                            "Vinyl Siding (unknown),Wood Shake/Shingle": 53,
+                            "Vinyl Siding (unknown),concrete blocks": 54,
+                            "Wood Boards": 55,
+                            "Wood Boards,Concrete block": 56,
+                            "Wood Boards,Wood Shake/Shingle": 57,
+                            "Wood Boards,Wood Shake/Shingle,stone wall ": 58,
+                            "Wood Boards,stone": 59,
+                            "Wood Panel Siding": 60,
+                            "Wood Shake/Shingle": 61,
+                            "concrete blocks": 62,
+                            "concrete masonry units": 63
+                        },
+                        "roof_system": {
+                            "\"Steel, cold formed\"": 0,
+                            "\"Steel, cold formed\",\"Steel, joists\"": 1,
+                            "\"Steel, cold formed\",Concrete slab": 2,
+                            "\"Steel, hot rolled\"": 3,
+                            "\"Steel, hot rolled\",\"Steel, joists\"": 4,
+                            "\"Steel, hot rolled\",\"Wood, unknown\"": 5,
+                            "\"Steel, hot rolled\",Z purlins": 6,
+                            "\"Steel, joists\"": 7,
+                            "\"Wood, rafter\"": 8,
+                            "\"Wood, trusses\"": 9,
+                            "\"Wood, trusses\",\"Wood, rafter\"": 10,
+                            "\"Wood, unknown\"": 11,
+                            "Concrete slab": 12,
+                            "Unknown": 13
+                        },
+                        "roof_substrate_type": {
+                            "Dimensional lumber": 0,
+                            "Metal deck": 1,
+                            "None": 2,
+                            "Plywood": 3,
+                            "Plywood/OSB": 4,
+                            "Unknown": 5
+                        },
+                        "roof_cover": {
+                            "\"Metal, corrugated\"": 0,
+                            "\"Metal, corrugated\",\"Metal, standing seam\"": 1,
+                            "\"Metal, standing seam\"": 2,
+                            "Asphalt shingles (3-tab)": 3,
+                            "Asphalt shingles (3-tab),\"Metal, standing seam\"": 4,
+                            "Asphalt shingles (laminated)": 5,
+                            "Asphalt shingles (laminated),\"Metal, corrugated\"": 6,
+                            "Asphalt shingles (laminated),\"Metal, standing seam\"": 7,
+                            "Built-up with Gravel": 8,
+                            "Built-up without Gravel": 9,
+                            "Clay tiles": 10,
+                            "Metal shingles": 11,
+                            "Other": 12,
+                            "Red composite shingle": 13,
+                            "Roll roofing": 14,
+                            "Tile Slate Roof Cover": 15,
+                            "Unknown": 16,
+                            "Wood shake,Wood shingle": 17,
+                            "Wood shingle": 18,
+                            "composite shingles": 19
+                        }
+                    },
+                    "columns": [
+                        "hazards_present",
+                        "building_type",
+                        "roof_shape",
+                        "mwfrs",
+                        "foundation_type",
+                        "wall_structure",
+                        "wall_substrate",
+                        "wall_cladding",
+                        "roof_system",
+                        "roof_substrate_type",
+                        "roof_cover"
+                    ]
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "hazards_present": [
+                        "categorical_to_int"
+                    ],
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "building_type": [
+                        "categorical_to_int"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_system": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "rainwater_ingress_damage_rating": -1.0,
+                        "number_of_stories": 1.0,
+                        "understory_pct_of_building_footprint": 0.0,
+                        "year_built": 1992.0,
+                        "roof_shape": "Gable",
+                        "mwfrs": "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"",
+                        "foundation_type": "Slab-on-grade",
+                        "wall_structure": "Wood frame",
+                        "wall_substrate": "\"Wood, sheathing (continuous)\"",
+                        "wall_cladding": "Vinyl Siding (unknown)",
+                        "roof_system": "\"Wood, trusses\"",
+                        "roof_substrate_type": "Plywood/OSB",
+                        "roof_cover": "Asphalt shingles (laminated)"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "hazards_present": {
+                            "None": 0,
+                            "Rain": 1,
+                            "Rain,Surge,Wind": 2,
+                            "Rain,Tree,Wind": 3,
+                            "Rain,Wind": 4,
+                            "Surge": 5,
+                            "Surge,Wind": 6,
+                            "Surge,Wind, Debris": 7,
+                            "Surge,Wind,Rain": 8,
+                            "Surge,Wind,Wind-borne debris": 9,
+                            "Tree": 10,
+                            "Tree,Wind": 11,
+                            "Tree,Wind,Surge": 12,
+                            "Tree,Wind,Wind-borne debris": 13,
+                            "Unknown": 14,
+                            "Wind": 15,
+                            "Wind,Rain": 16,
+                            "Wind,Surge": 17,
+                            "Wind,Surge,Unknown": 18,
+                            "Wind,Tree": 19,
+                            "Wind,Wind-borne debris": 20,
+                            "Wind,Wind-borne debris,Rain": 21,
+                            "Wind,Wind-borne debris,Surge": 22,
+                            "Wind-borne debris": 23,
+                            "Wind-borne debris,Wind": 24
+                        },
+                        "building_type": {
+                            "Apartment (>10 units)": 0,
+                            "Assisted Living Center": 1,
+                            "Barn": 2,
+                            "Condominium (> 10 units)": 3,
+                            "General Area": 4,
+                            "Government": 5,
+                            "Greenhouse": 6,
+                            "Hospital": 7,
+                            "Hotel/Motel": 8,
+                            "Manufactured Home": 9,
+                            "Multi-Family": 10,
+                            "Office": 11,
+                            "Professional": 12,
+                            "Religious": 13,
+                            "Restaurant": 14,
+                            "Retail": 15,
+                            "Service station": 16,
+                            "Shed": 17,
+                            "Single Family": 18,
+                            "Warehouse": 19
+                        },
+                        "roof_shape": {
+                            "Arch": 0,
+                            "Complex": 1,
+                            "Complex,Gable": 2,
+                            "Complex,Hip": 3,
+                            "Flat": 4,
+                            "Flat,Gable": 5,
+                            "Gable": 6,
+                            "Gable,Gambrel": 7,
+                            "Gable,Hip": 8,
+                            "Gable,Monoslope": 9,
+                            "Gable/Hip Combo": 10,
+                            "Gambrel": 11,
+                            "Hip": 12,
+                            "Hip,Curved": 13,
+                            "Monoslope": 14
+                        },
+                        "mwfrs": {
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, masonry\"": 0,
+                            "\"Roof Diaphragm, concrete\",\"Wall Diaphragm, steel\",\"Wall Diaphragm, concrete\"": 1,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, masonry\"": 2,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\"": 3,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, steel\",Moment Frame": 4,
+                            "\"Roof Diaphragm, steel\",\"Wall Diaphragm, wood\"": 5,
+                            "\"Roof Diaphragm, steel\",Moment Frame": 6,
+                            "\"Roof Diaphragm, wood\"": 7,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, concrete\"": 8,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, masonry\"": 9,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, steel\"": 10,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\"": 11,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\",\"Wall Diaphragm, concrete\"": 12,
+                            "\"Roof Diaphragm, wood\",\"Wall Diaphragm, wood\",\"Wall Diaphragm, masonry\"": 13,
+                            "\"Wall Diaphragm, concrete\"": 14,
+                            "\"Wall Diaphragm, masonry\"": 15,
+                            "\"Wall Diaphragm, wood\"": 16,
+                            "\"Wall, X-bracing\",Moment Frame": 17,
+                            "Single Row of Columns": 18,
+                            "Unknown": 19
+                        },
+                        "foundation_type": {
+                            "Cast-in-place concrete piers": 0,
+                            "Concrete piers support cast concrete slab on grade": 1,
+                            "Crawlspace": 2,
+                            "Ground anchors and strapping": 3,
+                            "Reinforced masonry piers": 4,
+                            "Slab on Grate and Wood Piers, unknown height": 5,
+                            "Slab-on-grade": 6,
+                            "Unknown": 7,
+                            "Unreinforced masonry piers": 8,
+                            "Unreinforced masonry stem wall": 9,
+                            "Wood Piers <= 8 ft": 10,
+                            "Wood Piers > 8 ft": 11,
+                            "helical anchors spaced irregulary": 12
+                        },
+                        "wall_structure": {
+                            "\"Concrete, moment resisting frame\"": 0,
+                            "\"Steel, braced frame\"": 1,
+                            "\"Steel, cold form\"": 2,
+                            "\"Steel, moment resisting frame\"": 3,
+                            "\"Steel, moment resisting frame\",\"Steel, braced frame\"": 4,
+                            "Brick": 5,
+                            "Concrete piers, insulated concrete form (ICF) walls": 6,
+                            "Masonry (reinforced)": 7,
+                            "Masonry (unknown)": 8,
+                            "Masonry (unknown),\"Steel, moment resisting frame\"": 9,
+                            "Masonry (unreinforced)": 10,
+                            "Masonry (unreinforced),\"Steel, moment resisting frame\"": 11,
+                            "Solid Brick Wythe": 12,
+                            "Steel Frame": 13,
+                            "Unknown": 14,
+                            "Wood frame": 15,
+                            "Wood frame,Masonry (reinforced)": 16,
+                            "Wood frame,Masonry (unknown)": 17,
+                            "Wood frame,Masonry (unreinforced)": 18,
+                            "Wood frame,Masonry (unreinforced),Masonry (reinforced)": 19
+                        },
+                        "wall_substrate": {
+                            "\"Wood, dimensional planks\"": 0,
+                            "\"Wood, sheathing (continuous)\"": 1,
+                            "\"Wood, sheathing (corners only)\"": 2,
+                            "\"Wood, sheathing\"": 3,
+                            "Insulated foam board": 4,
+                            "Metal panels": 5,
+                            "None at first floor Rc moment frame": 6,
+                            "Not Applicable": 7,
+                            "Not Applicable,Wood Beams": 8,
+                            "Thin aluminum siding": 9,
+                            "Unknown": 10,
+                            "masonry ": 11
+                        },
+                        "wall_cladding": {
+                            "Aluminum siding": 0,
+                            "Aluminum siding,Concrete block": 1,
+                            "Aluminum siding,EIFS": 2,
+                            "Brick": 3,
+                            "Brick,Corrugated steel panels": 4,
+                            "Brick,Fiber-Cement Board": 5,
+                            "Brick,Plywood Siding": 6,
+                            "Brick,Plywood Siding,Vinyl Siding (unknown)": 7,
+                            "Brick,Stucco": 8,
+                            "Brick,Vinyl Siding (single wythe)": 9,
+                            "Brick,Vinyl Siding (standard)": 10,
+                            "Brick,Vinyl Siding (unknown)": 11,
+                            "Brick,Vinyl Siding (unknown),Wood Shake/Shingle": 12,
+                            "Brick,Wood Boards": 13,
+                            "Brick,Wood Shake/Shingle": 14,
+                            "Brick,above avg. gray shingle": 15,
+                            "Cedar": 16,
+                            "Cedar wood": 17,
+                            "Cedar,stone": 18,
+                            "Concrete Block": 19,
+                            "Concrete masonry units": 20,
+                            "Corrugated steel panels": 21,
+                            "Corrugated steel panels,Stucco": 22,
+                            "EIFS": 23,
+                            "EIFS,Wood Boards": 24,
+                            "Fiber-Cement Board": 25,
+                            "Fiber-Cement Board,Corrugated steel panels": 26,
+                            "Fiber-Cement Board,Plywood Siding": 27,
+                            "Fiber-Cement Board,Vinyl Siding (unknown)": 28,
+                            "Fiber-Cement Board,Vinyl Siding (unknown),Wood Boards": 29,
+                            "Fiber-Cement Board,Wood Boards": 30,
+                            "Fiber-Cement Board,Wood Boards,Wood Shake/Shingle": 31,
+                            "Fiber-Cement Board,Wood Boards,concrete blocks": 32,
+                            "Fiber-Cement Board,Wood Shake/Shingle": 33,
+                            "Plywood Siding": 34,
+                            "Plywood Siding,Stucco": 35,
+                            "Plywood Siding,Wood Shake/Shingle": 36,
+                            "Sheet Metal": 37,
+                            "Stucco": 38,
+                            "Stucco,Concrete Block": 39,
+                            "Stucco,Stone brick": 40,
+                            "Stucco,Vinyl Siding (unknown)": 41,
+                            "Stucco,Wood Boards": 42,
+                            "Stucco,Wood Boards,Stone": 43,
+                            "Unknown": 44,
+                            "Vinyl Siding (high wind rated)": 45,
+                            "Vinyl Siding (standard)": 46,
+                            "Vinyl Siding (standard),Wood Shake/Shingle": 47,
+                            "Vinyl Siding (unknown)": 48,
+                            "Vinyl Siding (unknown),Stone": 49,
+                            "Vinyl Siding (unknown),Wood Boards": 50,
+                            "Vinyl Siding (unknown),Wood Shake/Shingle": 51,
+                            "Vinyl Siding (unknown),concrete blocks": 52,
+                            "Wood Boards": 53,
+                            "Wood Boards,Wood Shake/Shingle": 54,
+                            "Wood Boards,Wood Shake/Shingle,stone wall ": 55,
+                            "Wood Boards,stone": 56,
+                            "Wood Panel Siding": 57,
+                            "Wood Shake/Shingle": 58,
+                            "concrete blocks": 59,
+                            "concrete masonry units": 60
+                        },
+                        "roof_system": {
+                            "\"Steel, cold formed\"": 0,
+                            "\"Steel, cold formed\",Concrete slab": 1,
+                            "\"Steel, hot rolled\"": 2,
+                            "\"Steel, hot rolled\",\"Wood, unknown\"": 3,
+                            "\"Steel, joists\"": 4,
+                            "\"Wood, rafter\"": 5,
+                            "\"Wood, rafter\",\"Wood, trusses\"": 6,
+                            "\"Wood, trusses\"": 7,
+                            "\"Wood, trusses\",\"Wood, rafter\"": 8,
+                            "\"Wood, unknown\"": 9,
+                            "Concrete slab": 10,
+                            "Unknown": 11
+                        },
+                        "roof_substrate_type": {
+                            "Dimensional lumber": 0,
+                            "None": 1,
+                            "Plywood": 2,
+                            "Plywood/OSB": 3,
+                            "Unknown": 4
+                        },
+                        "roof_cover": {
+                            "\"Metal, corrugated\"": 0,
+                            "\"Metal, corrugated\",\"Metal, standing seam\"": 1,
+                            "\"Metal, standing seam\"": 2,
+                            "Asphalt shingles (3-tab)": 3,
+                            "Asphalt shingles (3-tab),\"Metal, standing seam\"": 4,
+                            "Asphalt shingles (laminated)": 5,
+                            "Asphalt shingles (laminated),\"Metal, corrugated\"": 6,
+                            "Asphalt shingles (laminated),\"Metal, standing seam\"": 7,
+                            "Built-up with Gravel": 8,
+                            "Built-up without Gravel": 9,
+                            "Clay tiles": 10,
+                            "Metal shingles": 11,
+                            "Other": 12,
+                            "Red composite shingle": 13,
+                            "Roll roofing": 14,
+                            "Tile Slate Roof Cover": 15,
+                            "Unknown": 16,
+                            "Wood shake,Wood shingle": 17,
+                            "Wood shingle": 18
+                        }
+                    },
+                    "columns": [
+                        "hazards_present",
+                        "building_type",
+                        "roof_shape",
+                        "mwfrs",
+                        "foundation_type",
+                        "wall_structure",
+                        "wall_substrate",
+                        "wall_cladding",
+                        "roof_system",
+                        "roof_substrate_type",
+                        "roof_cover"
+                    ]
+                }
+            ],
+            "categorical_y": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4
+            },
+            "ml_task": "multiclass_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "hazards_present": [
+                        "categorical_to_int"
+                    ],
+                    "rainwater_ingress_damage_rating": [
+                        "na_fill_median"
+                    ],
+                    "building_type": [
+                        "categorical_to_int"
+                    ],
+                    "number_of_stories": [
+                        "na_fill_median"
+                    ],
+                    "understory_pct_of_building_footprint": [
+                        "na_fill_median"
+                    ],
+                    "year_built": [
+                        "na_fill_median"
+                    ],
+                    "roof_shape": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "mwfrs": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "foundation_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_structure": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_substrate": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "wall_cladding": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_system": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_substrate_type": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "roof_cover": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "categorical_to_int"
+                ],
+                "ml_task": "multiclass_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "458ffca3-6ddf-4515-a47d-a394be5cd398",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "criterion": "gini",
+                "max_depth": 3,
+                "num_class": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "530c19d0-0a94-477a-a81f-c344d0728383",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "criterion": "gini",
+                "max_depth": 3,
+                "num_class": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "04ec0ea5-eefe-45fd-a144-b973858a1917",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "criterion": "gini",
+                "max_depth": 3,
+                "num_class": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "4e908046-04bb-423c-8330-9c31057f9f03",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "criterion": "gini",
+                "max_depth": 3,
+                "num_class": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "c80981a5-c155-4759-afb2-f5c4ab113ba1",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "multiclass_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "criterion": "gini",
+                "max_depth": 3,
+                "num_class": 5,
+                "explain_level": 2
+            },
+            "name": "learner_fold_4"
+        }
+    ],
+    "params": {
+        "additional": {
+            "trees_in_step": 1,
+            "train_cant_improve_limit": 0,
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "hazards_present": [
+                    "categorical_to_int"
+                ],
+                "rainwater_ingress_damage_rating": [
+                    "na_fill_median"
+                ],
+                "building_type": [
+                    "categorical_to_int"
+                ],
+                "number_of_stories": [
+                    "na_fill_median"
+                ],
+                "understory_pct_of_building_footprint": [
+                    "na_fill_median"
+                ],
+                "year_built": [
+                    "na_fill_median"
+                ],
+                "roof_shape": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "mwfrs": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "foundation_type": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "wall_structure": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "wall_substrate": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "wall_cladding": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "roof_system": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "roof_substrate_type": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "roof_cover": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "categorical_to_int"
+            ],
+            "ml_task": "multiclass_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "2022_7_8_full-cat_norm-tts-class/X.data",
+            "y_path": "2022_7_8_full-cat_norm-tts-class/y.data",
+            "results_path": "2022_7_8_full-cat_norm-tts-class"
+        },
+        "learner": {
+            "model_type": "Decision Tree",
+            "ml_task": "multiclass_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "criterion": "gini",
+            "max_depth": 3,
+            "num_class": 5,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "multiclass_classification",
+        "explain_level": 2,
+        "name": "2_DecisionTree",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "2_DecisionTree/learner_fold_0.decision_tree",
+        "2_DecisionTree/learner_fold_1.decision_tree",
+        "2_DecisionTree/learner_fold_2.decision_tree",
+        "2_DecisionTree/learner_fold_3.decision_tree",
+        "2_DecisionTree/learner_fold_4.decision_tree"
+    ],
+    "predictions_fname": "2_DecisionTree/predictions_out_of_folds.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.4247811890802977,
+    "train_time": 41.403918743133545,
+    "is_stacked": false
+}

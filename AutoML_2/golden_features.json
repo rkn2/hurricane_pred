@@ -1,0 +1,168 @@
+{
+    "new_features": [
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "roof_system_nan",
+            "operation": "sum",
+            "score": 1.4398454112
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "roof_cover_Metalstandingseam",
+            "operation": "diff",
+            "score": 1.4463690491
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "wall_cladding_BrickVinylSidingstandard",
+            "operation": "sum",
+            "score": 1.4492311301
+        },
+        {
+            "feature1": "roof_system_Unknown",
+            "feature2": "roof_system_Woodunknown",
+            "operation": "sum",
+            "score": 1.4504762415
+        },
+        {
+            "feature1": "roof_system_nan",
+            "feature2": "roof_system_Woodtrusses",
+            "operation": "diff",
+            "score": 1.4506481707
+        },
+        {
+            "feature1": "roof_cover_Asphaltshingleslaminated",
+            "feature2": "roof_system_Woodtrusses",
+            "operation": "ratio",
+            "score": 1.4516261451
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "roof_cover_Asphaltshingleslaminated",
+            "operation": "ratio",
+            "score": 1.4516261451
+        },
+        {
+            "feature1": "roof_cover_Asphaltshingleslaminated",
+            "feature2": "roof_system_Woodtrusses",
+            "operation": "multiply",
+            "score": 1.4516261451
+        },
+        {
+            "feature1": "wall_structure_SolidBrickWythe",
+            "feature2": "roof_system_Woodtrusses",
+            "operation": "diff",
+            "score": 1.4532316505
+        },
+        {
+            "feature1": "building_type_Office",
+            "feature2": "roof_system_Woodtrusses",
+            "operation": "diff",
+            "score": 1.4532316505
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "roof_shape_Gambrel",
+            "operation": "sum",
+            "score": 1.4542695291
+        },
+        {
+            "feature1": "roof_substrate_type_Unknown",
+            "feature2": "foundation_type_WoodPiers_le_8ft",
+            "operation": "sum",
+            "score": 1.4544370962
+        },
+        {
+            "feature1": "roof_shape_FlatGable",
+            "feature2": "roof_system_Woodtrusses",
+            "operation": "diff",
+            "score": 1.4548509636
+        },
+        {
+            "feature1": "roof_system_Woodunknown",
+            "feature2": "roof_cover_Asphaltshingleslaminated",
+            "operation": "diff",
+            "score": 1.4553351202
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "roof_cover_MetalcorrugatedMetalstandingseam",
+            "operation": "diff",
+            "score": 1.4553536967
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "roof_cover_Unknown",
+            "operation": "diff",
+            "score": 1.4554372589
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "roof_cover_WoodshakeWoodshingle",
+            "operation": "diff",
+            "score": 1.4563902375
+        },
+        {
+            "feature1": "wall_cladding_FiberCementBoardWoodBoards",
+            "feature2": "roof_system_Woodtrusses",
+            "operation": "diff",
+            "score": 1.4565268554
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "roof_cover_BuiltupwithoutGravel",
+            "operation": "diff",
+            "score": 1.4573629033
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "wall_structure_Woodframe",
+            "operation": "multiply",
+            "score": 1.457424958
+        },
+        {
+            "feature1": "wall_structure_Woodframe",
+            "feature2": "roof_system_Woodtrusses",
+            "operation": "ratio",
+            "score": 1.457424958
+        },
+        {
+            "feature1": "roof_system_Woodtrusses",
+            "feature2": "wall_structure_Woodframe",
+            "operation": "ratio",
+            "score": 1.457424958
+        },
+        {
+            "feature1": "roof_cover_Asphaltshingleslaminated",
+            "feature2": "wall_cladding_FiberCementBoard",
+            "operation": "sum",
+            "score": 1.4574765362
+        }
+    ],
+    "new_columns": [
+        "roof_system_Woodtrusses_sum_roof_system_nan",
+        "roof_system_Woodtrusses_diff_roof_cover_Metalstandingseam",
+        "roof_system_Woodtrusses_sum_wall_cladding_BrickVinylSidingstandard",
+        "roof_system_Unknown_sum_roof_system_Woodunknown",
+        "roof_system_nan_diff_roof_system_Woodtrusses",
+        "roof_cover_Asphaltshingleslaminated_ratio_roof_system_Woodtrusses",
+        "roof_system_Woodtrusses_ratio_roof_cover_Asphaltshingleslaminated",
+        "roof_cover_Asphaltshingleslaminated_multiply_roof_system_Woodtrusses",
+        "wall_structure_SolidBrickWythe_diff_roof_system_Woodtrusses",
+        "building_type_Office_diff_roof_system_Woodtrusses",
+        "roof_system_Woodtrusses_sum_roof_shape_Gambrel",
+        "roof_substrate_type_Unknown_sum_foundation_type_WoodPiers_le_8ft",
+        "roof_shape_FlatGable_diff_roof_system_Woodtrusses",
+        "roof_system_Woodunknown_diff_roof_cover_Asphaltshingleslaminated",
+        "roof_system_Woodtrusses_diff_roof_cover_MetalcorrugatedMetalstandingseam",
+        "roof_system_Woodtrusses_diff_roof_cover_Unknown",
+        "roof_system_Woodtrusses_diff_roof_cover_WoodshakeWoodshingle",
+        "wall_cladding_FiberCementBoardWoodBoards_diff_roof_system_Woodtrusses",
+        "roof_system_Woodtrusses_diff_roof_cover_BuiltupwithoutGravel",
+        "roof_system_Woodtrusses_multiply_wall_structure_Woodframe",
+        "wall_structure_Woodframe_ratio_roof_system_Woodtrusses",
+        "roof_system_Woodtrusses_ratio_wall_structure_Woodframe",
+        "roof_cover_Asphaltshingleslaminated_sum_wall_cladding_FiberCementBoard"
+    ],
+    "ml_task": "multiclass_classification"
+}

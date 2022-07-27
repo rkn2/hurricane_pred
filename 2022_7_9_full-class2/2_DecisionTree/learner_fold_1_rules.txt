@@ -1,0 +1,16 @@
+if (mindist > 10.316) and (year_built > 1995.75) and (hazards_present <= 17.5) then class: 1 (proba: 49.73%) | based on 183 samples
+
+if (mindist > 10.316) and (year_built <= 1995.75) and (mindist > 15.143) then class: 2 (proba: 33.57%) | based on 143 samples
+
+if (mindist <= 10.316) and (hazards_present <= 14.0) and (hazards_present > 4.5) then class: 4 (proba: 94.74%) | based on 57 samples
+
+if (mindist > 10.316) and (year_built > 1995.75) and (hazards_present > 17.5) then class: 2 (proba: 51.43%) | based on 35 samples
+
+if (mindist > 10.316) and (year_built <= 1995.75) and (mindist <= 15.143) then class: 4 (proba: 60.87%) | based on 23 samples
+
+if (mindist <= 10.316) and (hazards_present > 14.0) and (roof_cover <= 2.5) then class: 3 (proba: 47.62%) | based on 21 samples
+
+if (mindist <= 10.316) and (hazards_present > 14.0) and (roof_cover > 2.5) then class: 4 (proba: 85.71%) | based on 7 samples
+
+if (mindist <= 10.316) and (hazards_present <= 14.0) and (hazards_present <= 4.5) then class: 3 (proba: 50.0%) | based on 4 samples
+

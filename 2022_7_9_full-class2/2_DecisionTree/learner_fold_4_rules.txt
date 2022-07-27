@@ -1,0 +1,16 @@
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist > 15.151) then class: 2 (proba: 29.73%) | based on 148 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglong <= -85.399) then class: 2 (proba: 42.86%) | based on 140 samples
+
+if (mindist > 10.507) and (year_built > 1995.5) and (Buildinglong > -85.399) then class: 1 (proba: 60.61%) | based on 66 samples
+
+if (mindist <= 10.507) and (mindist <= 9.188) and (year_built <= 2013.0) then class: 4 (proba: 93.62%) | based on 47 samples
+
+if (mindist <= 10.507) and (mindist > 9.188) and (Buildinglong <= -85.416) then class: 3 (proba: 45.16%) | based on 31 samples
+
+if (mindist > 10.507) and (year_built <= 1995.5) and (mindist <= 15.151) then class: 4 (proba: 53.57%) | based on 28 samples
+
+if (mindist <= 10.507) and (mindist > 9.188) and (Buildinglong > -85.416) then class: 4 (proba: 83.33%) | based on 12 samples
+
+if (mindist <= 10.507) and (mindist <= 9.188) and (year_built > 2013.0) then class: 2 (proba: 100.0%) | based on 2 samples
+
