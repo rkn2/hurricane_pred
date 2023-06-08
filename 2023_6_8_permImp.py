@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import glob
 import numpy as np
+import matplotlib.pyplot as plt
 
 experimentName = 'baseLine'
 
@@ -83,4 +84,49 @@ for i, file_path in enumerate(csv_files):
         synthesized_df = pd.concat([synthesized_df, df[name]], axis=1)
 
 #synthesized_df.reset_index(drop=True, inplace=True)
-synthesized_df.columns
+# synthesized_df.columns
+
+# Threshold value
+threshold = 0.005
+
+# Select numeric columns
+numeric_columns = synthesized_df.select_dtypes(include=np.number).columns
+
+# Check threshold condition for numeric columns
+condition = synthesized_df[numeric_columns].abs() > threshold
+
+# Filter rows based on the condition
+df_filtered = synthesized_df[condition.any(axis=1)]
+
+df = df_filtered
+# Set the feature names as the y-axis labels
+features = df['feature']
+y_pos = np.arange(len(features))
+
+# Set the dataset names and corresponding values
+datasets = df.columns[1:]
+values = df.iloc[:, 1:].values
+
+# Set the colors for the bars
+colors = ['blue', 'green', 'orange']
+
+# Plot the horizontal bar chart
+fig, ax = plt.subplots()
+for i, dataset in enumerate(datasets):
+    ax.barh(y_pos, values[:, i], label=dataset)
+
+# Set the y-axis labels
+ax.set_yticks(y_pos)
+ax.set_yticklabels(features)
+
+# Set the x-axis label
+ax.set_xlabel('Values')
+
+# Set the chart title
+ax.set_title('Horizontal Bar Chart')
+
+# Add a legend
+ax.legend()
+
+# Show the plot
+plt.show()
