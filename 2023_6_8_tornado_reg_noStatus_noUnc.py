@@ -75,14 +75,14 @@ y_test.value_counts().plot(kind='bar', color='blue')
 """
 
 automl = AutoML(
-    results_path='2023_6_8_reg_noStatus_noUnc',
+    results_path='2023_6_8_reg_noStatus_noUnc_noGolden',
     #ml_task='multiclass_classification',
     ml_task = 'regression',
    #algorithms=["CatBoost", "Xgboost", "LightGBM", "Random Forest", "Linear", "Decision Tree"],
     explain_level=2,
     hill_climbing_steps=2,
     top_models_to_improve=2,
-    golden_features=True,  # on / off when needed
+    golden_features=False,  # on / off when needed
     features_selection=True,
     stack_models=False,
     train_ensemble=False,
