@@ -35,21 +35,29 @@ df = pd.DataFrame(data[1:], columns=data[0])
 # Remove whitespace from column names
 df = df.rename(columns=lambda x: x.strip())
 
-# need to do in a loop later PICK UP HERE BECCA - - - - - - - - -- - - -
+folder_names = [str(folder).split('/')[-1] for folder in foldList]
 
-name_value = '2_DecisionTree'
+# Create an empty DataFrame to store the selected columns
+selected_columns_df = pd.DataFrame()
 
-# Filter the DataFrame based on the presence of 'name' in the 'name' column
-selected_row = df[df['name'].str.contains(name_value)]
+# Iterate over the folder names
+for name_value in folder_names:
+    # Filter the DataFrame based on the presence of 'name' in the 'name' column
+    selected_row = df[df['name'].str.contains(name_value)]
 
-if selected_row.empty:
-    print(f"No row with name '{name_value}' found.")
+    if selected_row.empty:
+        print(f"No row with name '{name_value}' found.")
+        continue
 
-# Select specific columns from selected_row DataFrame
-selected_columns = selected_row[['model_type', 'metric_value', 'train_time']]
+    # Select specific columns from selected_row DataFrame
+    selected_columns = selected_row[['model_type', 'metric_value', 'train_time']]
 
-# Write selected columns to a CSV file
-selected_columns.to_csv('data_table.csv', index=False)
+    # Append selected columns to the selected_columns_df
+    selected_columns_df = selected_columns_df.append(selected_columns)
 
+# Write the selected columns to a CSV file
+selected_columns_df.to_csv('data_table.csv', index=False)
+
+# TODO why are there three xgboosts right now?? !!!!!!!!!!!!!!!!!!!!
 
 # what are the hyperparameters for each model (found in individual read me)
