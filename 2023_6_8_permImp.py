@@ -83,20 +83,29 @@ for i, file_path in enumerate(csv_files):
         # Concatenate the new column onto the existing DataFrame
         synthesized_df = pd.concat([synthesized_df, df[name]], axis=1)
 
-#synthesized_df.reset_index(drop=True, inplace=True)
+# synthesized_df.reset_index(drop=True, inplace=True)
 # synthesized_df.columns
 
 # Threshold value
 threshold = 0.005
 
+# ---------------------------
+# Drop the row where 'feature' is 'feature'
+synthesized_df = synthesized_df[synthesized_df['feature'] != 'feature']
+synthesized_df.dropna(inplace=True)
+
 # Select numeric columns
-numeric_columns = synthesized_df.select_dtypes(include=np.number).columns
+numeric_columns = synthesized_df.columns[1:]
+
+# Convert numeric columns to numeric data type
+synthesized_df[numeric_columns] = synthesized_df[numeric_columns].apply(pd.to_numeric, errors='coerce')
 
 # Check threshold condition for numeric columns
 condition = synthesized_df[numeric_columns].abs() > threshold
 
 # Filter rows based on the condition
 df_filtered = synthesized_df[condition.any(axis=1)]
+# ---------------------------
 
 df = df_filtered
 # Set the feature names as the y-axis labels
@@ -110,10 +119,15 @@ values = df.iloc[:, 1:].values
 # Set the colors for the bars
 colors = ['blue', 'green', 'orange']
 
+
+
 # Plot the horizontal bar chart
 fig, ax = plt.subplots()
 for i, dataset in enumerate(datasets):
     ax.barh(y_pos, values[:, i], label=dataset)
+
+# Increase the left margin of the plot
+plt.subplots_adjust(left=0.4)
 
 # Set the y-axis labels
 ax.set_yticks(y_pos)

@@ -65,6 +65,10 @@ data = data.drop(columns=columns_to_drop)
 columns_to_drop = [column for column in data.columns if 'rating' in column]
 data = data.drop(columns=columns_to_drop)
 
+# Drop columns containing the word "rating"
+columns_to_drop = [column for column in data.columns if 'oop_failure' in column]
+data = data.drop(columns=columns_to_drop)
+
 X = data
 X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=0.2, random_state=42, stratify=y)
 
@@ -75,7 +79,7 @@ y_test.value_counts().plot(kind='bar', color='blue')
 """
 
 automl = AutoML(
-    results_path='2023_6_8_reg_noStatus_noUnc_noGolden',
+    results_path='2023_6_8_reg_noStatus_noUnc_noGolden_v2',
     #ml_task='multiclass_classification',
     ml_task = 'regression',
    #algorithms=["CatBoost", "Xgboost", "LightGBM", "Random Forest", "Linear", "Decision Tree"],
