@@ -6,11 +6,13 @@ import markdown
 import pandas as pd
 import re
 from bs4 import BeautifulSoup
+import shutil
 
 experimentName = 'baseLine'
 
-foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc/2_DecisionTree',
-            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc/3_Default_Xgboost']
+
+foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/2_DecisionTree']
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/3_Linear']
 
 # MAKE THE FEATURE PLOTS
 
@@ -55,6 +57,9 @@ for i, folder in enumerate(foldList):
 
     # if first time, we need to write the feature names too
     if i == 0:
+        # Delete the folder if it already exists
+        if os.path.exists(experimentName):
+            shutil.rmtree(experimentName)
         # Create the folder
         os.makedirs(experimentName, exist_ok=True)
         df2 = pd.DataFrame()
@@ -150,7 +155,8 @@ plt.savefig(png_name)
 
 # what are the table values from each file (found in original read me)
 
-mainFolder = '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc'
+#mainFolder = '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc'
+mainFolder = os.path.dirname(foldList[0])
 markdown_file = mainFolder + '/README.md'
 
 with open(markdown_file, 'r') as file:
