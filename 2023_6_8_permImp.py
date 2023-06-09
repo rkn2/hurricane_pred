@@ -222,5 +222,6 @@ for name_value in folder_names:
 
 
 # Write the selected columns to a CSV file
-csv_name = experimentName + '_table.csv'
-selected_columns_df.to_csv(csv_name, index=False)
+table_name = experimentName + '_table.csv'
+selected_columns_df.to_csv(table_name, index=False)
+
