@@ -133,8 +133,9 @@ above_thresh = np.any(synthesized_df.iloc[:, 1:] > thresh_val, axis=1)
 filtered_df = pd.DataFrame(synthesized_df.loc[above_thresh, :].iloc[:, 1:].values, columns=datasets,
                            index=synthesized_df['feature'].loc[above_thresh])
 
-ax = filtered_df.plot.barh()
-#ax.figure.show()
+fig, ax = plt.subplots()
+
+filtered_df.plot.barh(ax=ax)
 
 # Set the x-axis label
 ax.set_xlabel('Values')
@@ -142,12 +143,21 @@ ax.set_xlabel('Values')
 # Set the chart title
 title = 'Feature Importance for ' + experimentName
 ax.set_title(title)
+
 # Add a legend
 ax.legend()
 
+# Adjust y-axis ticks
+y_pos = np.arange(len(filtered_df))
+ax.set_yticks(y_pos)
+ax.set_yticklabels(filtered_df.index)
+
+# Adjust left margin
+plt.subplots_adjust(left=0.4)
+
 # Save the plot as an image file (e.g., PNG)
 png_name = experimentName + '_bars.png'
-ax.figure.savefig(png_name)
+plt.savefig(png_name)
 
 # MAKE THE TABLES
 

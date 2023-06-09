@@ -8,13 +8,24 @@ import re
 from bs4 import BeautifulSoup
 import shutil
 
-experimentName = 'baseLine'
+experimentName = 'search'
 
 
-foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/2_DecisionTree',
-            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/31_DecisionTree']
-
-# MAKE THE FEATURE PLOTS
+foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/3_Default_Xgboost',
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/4_Default_NeuralNetwork',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/5_Default_RandomForest',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/8_RandomForest',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/9_RandomForest',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/14_Xgboost',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/15_Xgboost',
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/16_DecisionTree',
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/17_NeuralNetwork',
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/18_NeuralNetwork',
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/27_DecisionTree',
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/28_DecisionTree',
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/29_DecisionTree',
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/30_DecisionTree'
+            ]
 
 fileList = []
 
@@ -104,7 +115,7 @@ thresholds = {}
 # Iterate over each column (dataset) in the DataFrame
 for column in synthesized_df.columns:
     # Get the threshold value from the 'random' row in the current column
-    threshold_value = synthesized_df.loc[synthesized_df['feature'] == 'random', column].values[0]
+    threshold_value = synthesized_df.loc[synthesized_df['feature'] == 'random', column].values
     # Add the threshold value to the dictionary with the column name as the key
     thresholds[column] = threshold_value
 
@@ -132,8 +143,9 @@ above_thresh = np.any(synthesized_df.iloc[:, 1:] > thresh_val, axis=1)
 filtered_df = pd.DataFrame(synthesized_df.loc[above_thresh, :].iloc[:, 1:].values, columns=datasets,
                            index=synthesized_df['feature'].loc[above_thresh])
 
-ax = filtered_df.plot.barh()
-#ax.figure.show()
+fig, ax = plt.subplots()
+
+filtered_df.plot.barh(ax=ax)
 
 # Set the x-axis label
 ax.set_xlabel('Values')
@@ -141,12 +153,21 @@ ax.set_xlabel('Values')
 # Set the chart title
 title = 'Feature Importance for ' + experimentName
 ax.set_title(title)
+
 # Add a legend
 ax.legend()
 
+# Adjust y-axis ticks
+y_pos = np.arange(len(filtered_df))
+ax.set_yticks(y_pos)
+ax.set_yticklabels(filtered_df.index)
+
+# Adjust left margin
+plt.subplots_adjust(left=0.4)
+
 # Save the plot as an image file (e.g., PNG)
 png_name = experimentName + '_bars.png'
-ax.figure.savefig(png_name)
+plt.savefig(png_name)
 
 # MAKE THE TABLES
 
