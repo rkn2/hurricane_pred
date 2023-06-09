@@ -98,9 +98,15 @@ for i, file_path in enumerate(csv_files):
 # synthesized_df.columns
 
 # Threshold value
-threshold = 0.005
+# Define the dictionary for thresholds
+thresholds = {}
 
-#TODO FOR EACH MODEL CHECK WHAT THE RANDOM VALUE IS, DONT PLOT ANYTHING SMALLER THAN THAT...
+# Iterate over each column (dataset) in the DataFrame
+for column in synthesized_df.columns:
+    # Get the threshold value from the 'random' row in the current column
+    threshold_value = synthesized_df.loc[synthesized_df['feature'] == 'random', column].values[0]
+    # Add the threshold value to the dictionary with the column name as the key
+    thresholds[column] = threshold_value
 
 # Drop the row where 'feature' is 'feature'
 synthesized_df = synthesized_df[synthesized_df['feature'] != 'feature']
@@ -112,32 +118,34 @@ numeric_columns = synthesized_df.columns[1:]
 # Convert numeric columns to numeric data type
 synthesized_df[numeric_columns] = synthesized_df[numeric_columns].apply(pd.to_numeric, errors='coerce')
 
-# Check threshold condition for numeric columns
-condition = synthesized_df[numeric_columns].abs() > threshold
-
-# Filter rows based on the condition
-df_filtered = synthesized_df[condition.any(axis=1)]
-
-df = df_filtered
 # Set the feature names as the y-axis labels
-features = df['feature']
+features = synthesized_df['feature']
 y_pos = np.arange(len(features))
 
 # Set the dataset names and corresponding values
-datasets = df.columns[1:]
-values = df.iloc[:, 1:].values
+datasets = synthesized_df.columns[1:]
+values = synthesized_df.iloc[:, 1:].values
 
 # Plot the horizontal bar chart
 fig, ax = plt.subplots()
 for i, dataset in enumerate(datasets):
-    ax.barh(y_pos, values[:, i], label=dataset)
+    condition = synthesized_df[numeric_columns].abs() > float(thresholds[dataset])
+
+    # Filter the rows based on the condition
+    filtered_values = values[condition.any(axis=1), i]
+    filtered_y_pos = np.arange(len(filtered_values))
+    filtered_features = features[condition.any(axis=1)]
+
+    ax.barh(filtered_y_pos, filtered_values, label=dataset)
+
+    # Set the y-axis labels
+
 
 # Increase the left margin of the plot
 plt.subplots_adjust(left=0.4)
 
-# Set the y-axis labels
-ax.set_yticks(y_pos)
-ax.set_yticklabels(features)
+ax.set_yticks(filtered_y_pos)
+ax.set_yticklabels(filtered_features)
 
 # Set the x-axis label
 ax.set_xlabel('Values')
@@ -148,6 +156,7 @@ ax.set_title(title)
 
 # Add a legend
 ax.legend()
+
 
 # Save the plot as an image file (e.g., PNG)
 png_name = experimentName + '_bars.png'
