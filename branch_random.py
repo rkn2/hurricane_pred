@@ -11,8 +11,8 @@ import shutil
 experimentName = 'baseLine'
 
 
-foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/2_DecisionTree']
-            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/3_Linear']
+foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/2_DecisionTree',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/31_DecisionTree']
 
 # MAKE THE FEATURE PLOTS
 
@@ -126,26 +126,14 @@ y_pos = np.arange(len(features))
 datasets = synthesized_df.columns[1:]
 values = synthesized_df.iloc[:, 1:].values
 
-# Plot the horizontal bar chart
-fig, ax = plt.subplots()
-for i, dataset in enumerate(datasets):
-    condition = synthesized_df[numeric_columns].abs() > float(thresholds[dataset])
+thresh_row = synthesized_df['feature'] == 'random'
+thresh_val = synthesized_df.loc[thresh_row, :].values[:, 1:]
+above_thresh = np.any(synthesized_df.iloc[:, 1:] > thresh_val, axis=1)
+filtered_df = pd.DataFrame(synthesized_df.loc[above_thresh, :].iloc[:, 1:].values, columns=datasets,
+                           index=synthesized_df['feature'].loc[above_thresh])
 
-    # Filter the rows based on the condition
-    filtered_values = values[condition.any(axis=1), i]
-    filtered_y_pos = np.arange(len(filtered_values))
-    filtered_features = features[condition.any(axis=1)]
-
-    ax.barh(filtered_y_pos, filtered_values, label=dataset)
-
-    # Set the y-axis labels
-
-
-# Increase the left margin of the plot
-plt.subplots_adjust(left=0.4)
-
-ax.set_yticks(filtered_y_pos)
-ax.set_yticklabels(filtered_features)
+ax = filtered_df.plot.barh()
+#ax.figure.show()
 
 # Set the x-axis label
 ax.set_xlabel('Values')
@@ -153,14 +141,12 @@ ax.set_xlabel('Values')
 # Set the chart title
 title = 'Feature Importance for ' + experimentName
 ax.set_title(title)
-
 # Add a legend
 ax.legend()
 
-
 # Save the plot as an image file (e.g., PNG)
 png_name = experimentName + '_bars.png'
-plt.savefig(png_name)
+ax.figure.savefig(png_name)
 
 # MAKE THE TABLES
 
