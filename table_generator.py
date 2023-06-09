@@ -42,6 +42,7 @@ selected_columns_df = pd.DataFrame()
 
 # Iterate over the folder names
 for name_value in folder_names:
+    name_value = name_value + '/'
     # Filter the DataFrame based on the presence of 'name' in the 'name' column
     selected_row = df[df['name'].str.contains(name_value)]
 
@@ -57,7 +58,5 @@ for name_value in folder_names:
 
 # Write the selected columns to a CSV file
 selected_columns_df.to_csv('data_table.csv', index=False)
-
-# TODO why are there three xgboosts right now?? !!!!!!!!!!!!!!!!!!!!
 
 # what are the hyperparameters for each model (found in individual read me)
