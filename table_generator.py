@@ -2,6 +2,7 @@ import markdown
 import os
 import pandas as pd
 import re
+from bs4 import BeautifulSoup
 
 foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc/2_DecisionTree',
             '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc/3_Default_Xgboost']
@@ -53,10 +54,31 @@ for name_value in folder_names:
     # Select specific columns from selected_row DataFrame
     selected_columns = selected_row[['model_type', 'metric_value', 'train_time']]
 
+    # what are the hyperparameters for each model (found in individual read me)
+    markdown_file = mainFolder + '/' + name_value + 'README.md'
+
+    with open(markdown_file, 'r') as file:
+        markdown_text = file.read()
+
+    # Convert the Markdown text to HTML
+    html = markdown.markdown(markdown_text)
+
+    # Assuming 'html' contains the HTML content
+    soup = BeautifulSoup(html, 'html.parser')
+
+    # Find the first <ul> tag in the HTML
+    ul_tag = soup.find('ul')
+
+    # Extract the list items from the <ul> tag
+    list_items = ul_tag.find_all('li')
+
+    # Extract the text content from each list item
+    result_list = ', '.join([item.text.strip() for item in list_items])
+
     # Append selected columns to the selected_columns_df
+    selected_columns['hyperparams'] = result_list
     selected_columns_df = selected_columns_df.append(selected_columns)
+
 
 # Write the selected columns to a CSV file
 selected_columns_df.to_csv('data_table.csv', index=False)
-
-# what are the hyperparameters for each model (found in individual read me)

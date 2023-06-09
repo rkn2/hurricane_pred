@@ -1,13 +1,19 @@
-import pandas as pd
 import os
 import glob
 import numpy as np
 import matplotlib.pyplot as plt
+import markdown
+import pandas as pd
+import re
+from bs4 import BeautifulSoup
 
 experimentName = 'baseLine'
 
 foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc/2_DecisionTree',
             '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc/3_Default_Xgboost']
+
+# MAKE THE FEATURE PLOTS
+
 fileList = []
 
 # Extract the last part of each folder name
@@ -89,7 +95,6 @@ for i, file_path in enumerate(csv_files):
 # Threshold value
 threshold = 0.005
 
-# ---------------------------
 # Drop the row where 'feature' is 'feature'
 synthesized_df = synthesized_df[synthesized_df['feature'] != 'feature']
 synthesized_df.dropna(inplace=True)
@@ -105,7 +110,6 @@ condition = synthesized_df[numeric_columns].abs() > threshold
 
 # Filter rows based on the condition
 df_filtered = synthesized_df[condition.any(axis=1)]
-# ---------------------------
 
 df = df_filtered
 # Set the feature names as the y-axis labels
@@ -115,11 +119,6 @@ y_pos = np.arange(len(features))
 # Set the dataset names and corresponding values
 datasets = df.columns[1:]
 values = df.iloc[:, 1:].values
-
-# Set the colors for the bars
-colors = ['blue', 'green', 'orange']
-
-
 
 # Plot the horizontal bar chart
 fig, ax = plt.subplots()
@@ -137,10 +136,91 @@ ax.set_yticklabels(features)
 ax.set_xlabel('Values')
 
 # Set the chart title
-ax.set_title('Horizontal Bar Chart')
+title = 'Feature Importance for ' + experimentName
+ax.set_title(title)
 
 # Add a legend
 ax.legend()
 
-# Show the plot
-plt.show()
+# Save the plot as an image file (e.g., PNG)
+png_name = experimentName + '_bars.png'
+plt.savefig(png_name)
+
+# MAKE THE TABLES
+
+# what are the table values from each file (found in original read me)
+
+mainFolder = '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc'
+markdown_file = mainFolder + '/README.md'
+
+with open(markdown_file, 'r') as file:
+    markdown_text = file.read()
+
+# Convert the Markdown text to HTML
+html = markdown.markdown(markdown_text)
+
+# Find the first table using regular expressions
+table_match = re.search(r'<p>(.*?)</p>', html, re.DOTALL)
+
+if table_match is None:
+    print("No table found in the Markdown file.")
+
+# Extract the matched content
+table_content = table_match.group(1)
+rows = table_content.split('\n')
+
+# Split each row into cells
+data = [row.split('|') for row in rows]
+
+# Create a DataFrame from the data
+df = pd.DataFrame(data[1:], columns=data[0])
+# Remove whitespace from column names
+df = df.rename(columns=lambda x: x.strip())
+
+folder_names = [str(folder).split('/')[-1] for folder in foldList]
+
+# Create an empty DataFrame to store the selected columns
+selected_columns_df = pd.DataFrame()
+
+# Iterate over the folder names
+for name_value in folder_names:
+    name_value = name_value + '/'
+    # Filter the DataFrame based on the presence of 'name' in the 'name' column
+    selected_row = df[df['name'].str.contains(name_value)]
+
+    if selected_row.empty:
+        print(f"No row with name '{name_value}' found.")
+        continue
+
+    # Select specific columns from selected_row DataFrame
+    selected_columns = selected_row[['model_type', 'metric_value', 'train_time']]
+
+    # what are the hyperparameters for each model (found in individual read me)
+    markdown_file = mainFolder + '/' + name_value + 'README.md'
+
+    with open(markdown_file, 'r') as file:
+        markdown_text = file.read()
+
+    # Convert the Markdown text to HTML
+    html = markdown.markdown(markdown_text)
+
+    # Assuming 'html' contains the HTML content
+    soup = BeautifulSoup(html, 'html.parser')
+
+    # Find the first <ul> tag in the HTML
+    ul_tag = soup.find('ul')
+
+    # Extract the list items from the <ul> tag
+    list_items = ul_tag.find_all('li')
+
+    # Extract the text content from each list item
+    result_list = ', '.join([item.text.strip() for item in list_items])
+
+    # Append selected columns to the selected_columns_df
+    selected_columns['hyperparams'] = result_list
+    selected_columns_df = selected_columns_df.append(selected_columns)
+
+
+# Write the selected columns to a CSV file
+csv_name = experimentName + '_table.csv'
+selected_columns_df.to_csv(csv_name, index=False)
