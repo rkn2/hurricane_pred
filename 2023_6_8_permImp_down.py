@@ -1,3 +1,6 @@
+
+#cant have same threshold code since random gets dropped out!
+
 import os
 import glob
 import numpy as np
@@ -11,11 +14,12 @@ import shutil
 experimentName = 'downselect'
 
 
-foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/5_Default_RandomForest',
-            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/5_Default_RandomForest_SelectedFeatures',
-            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/6_RandomForest_SelectedFeatures',
-            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/21_RandomForest_SelectedFeatures',
-            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_8_reg_noStatus_noUnc_noGolden_v2/22_RandomForest_SelectedFeatures',
+foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/5_Default_RandomForest',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/5_Default_RandomForest_SelectedFeatures',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/6_RandomForest_SelectedFeatures',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/20_RandomForest_SelectedFeatures',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/21_RandomForest_SelectedFeatures',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/22_RandomForest_SelectedFeatures',
             ]
 
 fileList = []

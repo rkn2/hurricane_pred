@@ -1,5 +1,3 @@
-#TODO i did baseline and search but not the others, make sure to change folder names!
-
 import os
 import glob
 import numpy as np

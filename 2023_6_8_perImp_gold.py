@@ -12,7 +12,7 @@ experimentName = 'golden'
 
 
 foldList = [
-            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden/5_Default_RandomForest_GoldenFeatures'
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/5_Default_RandomForest_GoldenFeatures'
             ]
 
 fileList = []
@@ -97,7 +97,15 @@ for i, file_path in enumerate(csv_files):
 # synthesized_df.columns
 
 # Threshold value
-threshold = 0.005
+# Define the dictionary for thresholds
+thresholds = {}
+
+# Iterate over each column (dataset) in the DataFrame
+for column in synthesized_df.columns:
+    # Get the threshold value from the 'random' row in the current column
+    threshold_value = synthesized_df.loc[synthesized_df['feature'] == 'random', column].values
+    # Add the threshold value to the dictionary with the column name as the key
+    thresholds[column] = threshold_value
 
 # Drop the row where 'feature' is 'feature'
 synthesized_df = synthesized_df[synthesized_df['feature'] != 'feature']
@@ -109,39 +117,23 @@ numeric_columns = synthesized_df.columns[1:]
 # Convert numeric columns to numeric data type
 synthesized_df[numeric_columns] = synthesized_df[numeric_columns].apply(pd.to_numeric, errors='coerce')
 
-# Check threshold condition for numeric columns
-condition = synthesized_df[numeric_columns].abs() > threshold
-
-# Filter rows based on the condition
-df_filtered = synthesized_df[condition.any(axis=1)]
-
-df = df_filtered
 # Set the feature names as the y-axis labels
-features = df['feature']
+features = synthesized_df['feature']
 y_pos = np.arange(len(features))
 
 # Set the dataset names and corresponding values
-datasets = df.columns[1:]
-values = df.iloc[:, 1:].values
+datasets = synthesized_df.columns[1:]
+values = synthesized_df.iloc[:, 1:].values
 
-# Plot the horizontal bar chart
+thresh_row = synthesized_df['feature'] == 'random'
+thresh_val = synthesized_df.loc[thresh_row, :].values[:, 1:]
+above_thresh = np.any(synthesized_df.iloc[:, 1:] > thresh_val, axis=1)
+filtered_df = pd.DataFrame(synthesized_df.loc[above_thresh, :].iloc[:, 1:].values, columns=datasets,
+                           index=synthesized_df['feature'].loc[above_thresh])
+
 fig, ax = plt.subplots()
-bar_width = 0.1  # Set the width of each bar
 
-for i, dataset in enumerate(datasets):
-    # Calculate the x-coordinates for the bars
-    x_coords = np.arange(len(features)) + i * bar_width
-
-    # Plot the bars
-    ax.barh(x_coords, values[:, i], height=bar_width, label=dataset)
-
-# Set the y-axis ticks and labels
-ax.set_yticks(np.arange(len(features)))
-ax.set_yticklabels(features)
-
-# Increase the left margin of the plot
-plt.subplots_adjust(left=0.4)
-
+filtered_df.plot.barh(ax=ax)
 
 # Set the x-axis label
 ax.set_xlabel('Values')
@@ -150,11 +142,16 @@ ax.set_xlabel('Values')
 title = 'Feature Importance for ' + experimentName
 ax.set_title(title)
 
-# Move the legend outside the figure and place it at the bottom
-ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=1)
+# Add a legend
+ax.legend()
 
-# Adjust the bottom margin to prevent the figure from being cut off
-plt.subplots_adjust(bottom=0.4)
+# Adjust y-axis ticks
+y_pos = np.arange(len(filtered_df))
+ax.set_yticks(y_pos)
+ax.set_yticklabels(filtered_df.index)
+
+# Adjust left margin
+plt.subplots_adjust(left=0.4)
 
 # Save the plot as an image file (e.g., PNG)
 png_name = experimentName + '_bars.png'
@@ -239,4 +236,3 @@ for name_value in folder_names:
 # Write the selected columns to a CSV file
 table_name = experimentName + '_table.csv'
 selected_columns_df.to_csv(table_name, index=False)
-
