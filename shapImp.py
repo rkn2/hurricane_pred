@@ -8,10 +8,62 @@ import re
 from bs4 import BeautifulSoup
 import shutil
 
-foldList = [
-    '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/2_DecisionTree']
 
-# MAKE THE FEATURE PLOTS
+######################################
+#'''
+# SIMPLE
+foldList = [
+    '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/2_DecisionTree',
+    '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/3_Linear',
+    '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/3_Default_Xgboost',
+    '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/5_Default_RandomForest'
+]
+runName = 'simple_'
+foldName = [
+    'Decision Tree',
+    'Linear',
+    'Xg Boost',
+    'Random Forest'
+            ]
+#'''
+######################################
+'''
+# HYPERPARAM
+foldList = [
+    '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/2_DecisionTree',
+    '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/2_DecisionTree'
+]
+runName = 'HYPER_'
+foldName = [
+    'Decision Tree',
+    'Linear'
+            ]
+
+'''
+######################################
+'''
+# golden 
+foldList = [
+    '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/5_Default_RandomForest_GoldenFeatures'
+]
+runName = 'Golden_'
+foldName = [
+    'Random Forest'
+            ]
+'''
+######################################
+'''
+# Best WONT WORK IF selected FEATURES BC IT LOOKS FOR AVERAGE
+foldList = [
+    '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/21_RandomForest_SelectedFeatures'
+]
+runName = 'Selected_'
+foldName = [
+    'Random Forest'
+            ]
+'''
+######################################
+
 
 fileList = []
 
@@ -51,7 +103,10 @@ for i, folder in enumerate(foldList):
     df['dev'] = df[learner_columns].std(axis=1)
 
     # Calculate the average value for the feature 'random'
-    random_average = df.loc[df['feature'] == 'random', 'average'].values[0]
+    if 'Selected_' in runName:
+        random_average = 0
+    else:
+        random_average = df.loc[df['feature'] == 'random', 'average'].values[0]
 
     # Filter the DataFrame to include only rows with average greater than random_average
     filtered_df = df[df['average'] > random_average]
@@ -64,17 +119,18 @@ for i, folder in enumerate(foldList):
     y_values = np.arange(num_features)
 
     # Plot scatter plot for each filtered row
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(4, 2))
     ax.errorbar(filtered_df['average'], y_values, xerr=filtered_df['dev'], fmt='o', capsize=5, color='black')
     ax.set_ylabel('Feature')
     ax.set_xlabel('Average')
-    #foldName = os.path.basename(folder)
-    foldName = 'Decision Tree'
-    ax.set_title(foldName+' SHAP Importance (Average > Random)')
+    # foldName = os.path.basename(folder)
+    folderName = foldName[i]
+    ax.set_title(folderName)
 
     # Set y-tick labels to feature names
     ax.set_yticks(y_values)
     ax.set_yticklabels(feature_names)
+
     ax.tick_params(axis='y', length=0)
 
     # Adjust layout to avoid cutoff of feature names
@@ -83,4 +139,5 @@ for i, folder in enumerate(foldList):
     # Remove white space and make axes tight
     plt.autoscale()
 
-    plt.show()
+    # plt.show()
+    plt.savefig(runName + folderName+'.pdf')
