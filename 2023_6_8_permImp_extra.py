@@ -13,7 +13,9 @@ experimentName = 'additional'
 
 foldList = ['/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/3_Default_Xgboost',
             '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/4_Default_NeuralNetwork',
-            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/5_Default_RandomForest']
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/5_Default_RandomForest',
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/2_DecisionTree'] #baseline
+            #'/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/3_Linear'] #baseline
 
 # MAKE THE FEATURE PLOTS
 

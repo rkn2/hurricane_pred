@@ -8,11 +8,11 @@ import re
 from bs4 import BeautifulSoup
 import shutil
 
-experimentName = 'winner'
+experimentName = 'winner2'
 
 
 foldList = [
-            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_noGolden_rand/20_RandomForest_SelectedFeatures'
+            '/Users/rebeccanapolitano/PycharmProjects/hurricane_pred/2023_6_9_reg_noStatus_noUnc_Golden_rand/21_RandomForest_SelectedFeatures'
             ]
 
 fileList = []
